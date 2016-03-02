@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+
+<teams>
+
+  <team>
+    <id>team_01</id>                  <!-- Ferrari -->
+    <name>Ferrari</name>
+    <description>Ferrari</description>
+    <driver1>driver_01</driver1>      <!-- Kimi RAIKKONEN -->
+    <driver2>driver_02</driver2>      <!-- Felipe MASSA -->
+    <cost>16</cost>
+  </team>
+
+  <team>
+    <id>team_02</id>                  <!-- BMW -->
+    <name>BMW</name>
+    <description>BMW</description>
+    <driver1>driver_03</driver1>      <!-- Nick HEIDFELD -->
+    <driver2>driver_04</driver2>      <!-- Robert KUBICA -->
+    <cost>14</cost>
+  </team>
+
+  <team>
+    <id>team_03</id>                  <!-- Renault -->
+    <name>Renault</name>
+    <description>Renault</description>
+    <driver1>driver_05</driver1>      <!-- Fernando ALONSO -->
+    <driver2>driver_06</driver2>      <!-- Nelsinho Piquet -->
+    <cost>12</cost>
+  </team>
+
+  <team>
+    <id>team_04</id>                  <!-- Williams-Toyota -->
+    <name>Williams-Toyota</name>
+    <description>Williams-Toyota</description>     
+    <driver1>driver_07</driver1>      <!-- Nico ROSBERG -->
+    <driver2>driver_08</driver2>     <!-- Kazuki Nakajima -->
+    <cost>11</cost>
+  </team>
+
+  <team>
+    <id>team_05</id> 
+    <name>Red Bull-Renault</name>               <!-- Red Bull-Renault -->
+    <description>RedBull</description>
+    <driver1>driver_09</driver1>       <!-- David COULTHARD -->
+    <driver2>driver_10</driver2>       <!-- Mark WEBBER -->
+    <cost>9</cost>
+  </team>
+
+  <team>
+    <id>team_06</id>                   <!-- Toyota -->
+    <name>Toyota</name>
+    <description>Toyota</description>
+    <driver1>driver_11</driver1>       <!-- Jarno TRULLI -->
+    <driver2>driver_12</driver2>       <!-- Timo Glock -->
+    <cost>8</cost>
+  </team>
+
+  <team>
+    <id>team_07</id>                   <!-- STR-Ferrari -->
+    <name>STR-Ferrari</name>
+    <description>STR-Ferrari</description>
+    <driver1>driver_14</driver1>       <!-- Sebastien Bourdais -->
+    <driver2>driver_15</driver2>       <!-- Sebastian Vettel -->
+    <cost>7</cost>
+  </team>
+
+  <team>
+    <id>team_08</id>                  <!-- Honda -->
+    <name>Honda</name>
+    <description>Honda</description>    
+    <driver1>driver_16</driver1>      <!-- Jenson BUTTON -->
+    <driver2>driver_17</driver2>      <!-- Rubens BARRICHELLO -->
+    <cost>6</cost>
+  </team>
+
+  <team>
+    <id>team_09</id>                   <!-- Super Aguri-Honda -->
+    <name>Super Aguri-Honda</name>
+    <description>Super Aguri-Honda</description>
+    <driver1>driver_18</driver1>       <!-- Takuma SATO -->
+    <driver2>driver_19</driver2>       <!-- Anthony DAVIDSON -->
+    <cost>5</cost>
+  </team>
+
+  <team>
+    <id>team_10</id>                   <!-- Force India-Ferrari -->
+    <name>Force India-Ferrari</name>
+    <description>Force India-Ferrari</description>
+    <driver1>driver_20</driver1>       <!-- Adrian SUTIL -->
+    <driver2>driver_21</driver2>       <!-- Giancarlo FISICHELLA -->
+    <cost>4</cost>
+  </team>
+
+  <team>
+    <id>team_11</id>                  <!-- McLaren-Mercedes -->
+    <name>McLaren-Mercedes</name>
+    <description>McLaren-Mercedes</description>
+    <driver1>driver_22</driver1>      <!-- Lewis HAMILTON -->
+    <driver2>driver_23</driver2>      <!-- Heikki KOVALAINEN -->
+    <cost>15</cost>
+  </team>
+  
+</teams>

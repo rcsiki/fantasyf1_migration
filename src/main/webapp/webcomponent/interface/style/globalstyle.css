@@ -1,0 +1,146 @@
+    .header   { font-family: Arial, Helvetica, sans-serif;
+                font-size: 10pt;
+                color: rgb(255,255,0);
+              }
+    .logo     { font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: rgb(255,255,255);
+                font-weight: 700;
+                text-align: right;
+              }
+
+	body.outer { font-family: Arial, Helvetica, sans-serif;
+        				margin-top: 0px;
+        				margin-bottom: 0px;
+        				padding: 0px;
+			 background-image : URL(../images/outer_fill.gif); background-repeat:repeat;
+              }
+
+	body.inner { font-family: Arial, Helvetica, sans-serif;
+               margin-top: 0px;
+               margin-bottom: 0px;
+				       padding: 0px;
+               background-image : URL(../images/panel-bg.jpg); background-repeat:repeat;
+              }
+
+
+    .errormessage { font-family: Arial, Helvetica, sans-serif;
+				            font-size: 10px;
+			              font-weight: bold;
+                    text-align: left;
+                    color: rgb( 255,255,255 );
+                }
+
+
+	.tablelayout  { font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    color: navy;
+                    vertical-align: middle;
+                    font-weight: bold;
+                  }
+
+	.tablelayoutnobold  { font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    color: navy;
+                    vertical-align: middle;
+                  }
+                  
+	.tablelayoutrules  { font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    color: navy;
+                    vertical-align: middle;
+                  }
+                  
+	.tablelayoutheader  { font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    color: navy;
+                    vertical-align: top;
+                    font-weight: bold;
+                  }
+
+	.dropdown  { font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    color: navy;
+                    vertical-align: middle;
+                    background-color: #EEEEEE;
+                  }
+                  
+	.altdropdown  { font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    color: navy;
+                    vertical-align: middle;
+                    background-color: #F8F8F8;
+                  }
+
+	.tablelayoutcounter  { font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    background-color: #F8F8F8;
+                    color: navy;
+                    vertical-align: top;
+                    font-weight: bold;
+                  }
+
+    .textfield   { font-family: "Courier New", monospaced;
+                    font-size: 12px;
+                    color: rgb( 0,0,0 );
+                    vertical-align: top;
+				  }
+        
+   .footertext { color: yellow;
+						               font-family: Arial, Helvetica, sans-serif;
+                           font-size: 12px;
+                           font-weight: bold;
+                           margin-top: 0px;
+					                 margin-bottom: 0px;
+                           padding: 0px;
+					                 text-decoration: none;
+			 }
+
+   TR.standingsRowBackgroundColor
+        {
+          background-color : #EEEEEE;
+        }
+
+   TR.standingsRowAltBackgroundColor
+        {
+           background-color : #F8F8F8;
+        }
+        
+   TR.standingsMatchedPlayerRowBackgroundColor
+        {
+           background-color : #B8B8B8;
+        }    
+        
+    .logintitle { font-family: Arial, Helvetica, sans-serif;
+				          font-size: 20px;
+			            font-weight: bold;
+                  text-align: left;
+				          color: rgb(216,216,216 );
+                }
+
+    .loginpage  { background-image: url(inner_fill.gif);
+				          background-color: rgb( 0,0,0 );
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 12px;
+                     color: rgb(216,216,216);
+                        background-image : URL(../images/panel-bg.jpg);
+                        background-repeat:repeat;
+ }
+	.logintext { font-family: Arial, Helvetica, sans-serif;
+               font-size: 12px;
+				       color: rgb(216,216,216);
+                }
+                
+         .logininput { font-family: Arial, Helvetica, sans-serif;
+               font-size: 12px;
+				       color: rgb(0,0,0);
+                }
+
+
+
+    .loginsubmit { text-align: right;
+                   font-family: Arial, Helvetica, sans-serif;
+                   font-size: 12px;
+                    color: rgb(0,0,0);
+                 }
+            

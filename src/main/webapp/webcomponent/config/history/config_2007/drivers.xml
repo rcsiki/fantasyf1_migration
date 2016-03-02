@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drivers>
+   <driver>
+      <id>driver_01</id>                           <!-- Fernando Alonso -->
+      <name>Fernando Alonso</name>
+      <description>Fernando Alonso</description>
+      <team>team_01</team>                         <!-- McLaren -->
+      <cost>16</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_02</id>                           <!-- Lewis Hamilton -->
+      <name>Lewis Hamilton</name>
+      <description>Lewis Hamilton</description>
+      <team>team_01</team>                         <!-- McLaren -->
+      <cost>10</cost>
+      <replacements/>
+   </driver>
+	 
+   <driver>
+      <id>driver_03</id>                           <!-- Giancarlo Fisichella -->
+      <name>Giancarlo Fisichella</name>
+      <description>Giancarlo Fisichella</description>
+      <team>team_02</team>                         <!-- Renault -->
+      <cost>14</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_04</id>                           <!-- Heikki Kovalainen -->
+      <name>Heikki Kovalainen</name>
+      <description>Heikki Kovalainen</description>
+      <team>team_02</team>                         <!-- Renault -->
+      <cost>13</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_05</id>                           <!-- Felipe Massa -->
+      <name>Felipe Massa</name>
+      <description>Felipe Massa</description>
+      <team>team_03</team>                         <!-- Ferrari -->
+      <cost>16</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_06</id>                           <!-- Kimi Räikkönen -->
+      <name>Kimi Räikkönen</name>
+      <description>Kimi Räikkönen</description>
+      <team>team_03</team>                         <!-- Ferrari -->
+      <cost>16</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_07</id>                           <!-- Jenson Button -->
+      <name>Jenson Button</name>
+      <description>Jenson Button</description>
+      <team>team_04</team>                         <!-- Honda -->
+      <cost>14</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_08</id>                           <!-- Rubens Barrichello -->
+      <name>Rubens Barrichello</name>
+      <description>Rubens Barrichello</description>
+      <team>team_04</team>                         <!-- Honda -->
+      <cost>13</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_09</id>                           <!-- Nick Heidfeld -->
+      <name>Nick Heidfeld</name>
+      <description>Nick Heidfeld</description>
+      <team>team_05</team>                         <!-- BMW -->
+      <cost>10</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_10</id>                           <!-- Robert Kubica -->
+      <name>Robert Kubica</name>
+      <description>Robert Kubica</description>
+      <team>team_05</team>                         <!-- BMW -->
+      <cost>9</cost>
+      <replacements/>
+   </driver>
+	 
+   <driver>
+      <id>driver_11</id>                           <!-- Ralf Schumacher -->
+      <name>Ralf Schumacher</name>
+      <description>Ralf Schumacher</description>
+      <team>team_06</team>                         <!-- Toyota -->
+      <cost>10</cost>
+      <replacements/>
+   </driver>
+	 
+   <driver>
+      <id>driver_12</id>                           <!-- Jarno Trulli -->
+      <name>Jarno Trulli</name>
+      <description>Jarno Trulli</description>
+      <team>team_06</team>                         <!-- Toyota -->
+      <cost>9</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_14</id>                           <!-- David Coulthard -->
+      <name>David Coulthard</name>
+      <description>David Coulthard</description>
+      <team>team_07</team>                         <!-- RedBull -->
+      <cost>8</cost>
+      <replacements/>
+   </driver>
+	 
+   <driver>
+      <id>driver_15</id>                           <!-- Mark Webber -->
+      <name>Mark Webber</name>
+      <description>Mark Webber</description>
+      <team>team_07</team>                         <!-- RedBull -->
+      <cost>8</cost>
+      <replacements/>
+   </driver>
+	 
+   <driver>
+      <id>driver_16</id>                           <!-- Nico Rosberg -->
+      <name>Nico Rosberg</name>
+      <description>Nico Rosberg</description>
+      <team>team_08</team>                         <!-- Williamns -->
+      <cost>7</cost>
+      <replacements/>
+   </driver>
+	 
+   <driver>
+      <id>driver_17</id>                           <!-- Alexander Wurz -->
+      <name>Alexander Wurz</name>
+      <description>Alexander Wurz</description>
+      <team>team_08</team>                         <!-- Williamns -->
+      <cost>6</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_18</id>                           <!-- Vitantonio Liuzzi -->
+      <name>Vitantonio Liuzzi</name>
+      <description>Vitantonio Liuzzi</description>
+      <team>team_09</team>                         <!-- TorroRosso -->
+      <cost>6</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_19</id>                           <!-- Scott Speed -->
+      <name>Scott Speed</name>
+      <description>Scott Speed</description>
+      <team>team_09</team>                         <!-- TorroRosso -->
+      <cost>5</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_20</id>                           <!-- Christijan Albers -->
+      <name>Christijan Albers</name>
+      <description>Christijan Albers</description>
+      <team>team_10</team>                         <!-- Spyker -->
+      <cost>5</cost>
+      <replacements/>
+   </driver>
+
+   <driver>
+      <id>driver_21</id>                           <!-- Adrian Sutil -->
+      <name>Adrian Sutil</name>
+      <description>Adrian Sutil</description>
+      <team>team_10</team>                         <!-- Spyker -->
+      <cost>4</cost>
+      <replacements/>
+   </driver>
+	 
+   <driver>
+      <id>driver_22</id>                           <!-- Takuma Sato -->
+      <name>Takuma Sato</name>
+      <description>Takuma Sato</description>
+      <team>team_11</team>                         <!-- SuperAguri -->
+      <cost>4</cost>
+      <replacements/>
+   </driver>
+	 
+   <driver>
+      <id>driver_23</id>                           <!-- Anthony Davidson -->
+      <name>Anthony Davidson</name>
+      <description>Anthony Davidson</description>
+      <team>team_11</team>                         <!-- SuperAguri -->
+      <cost>3</cost>
+      <replacements></replacements>
+   </driver>
+
+</drivers>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<races>
+   <!-- Grand Prix of Australia -->
+   <race>
+      <id>race_01</id>
+      <name>Grand Prix of Australia</name>
+      <description>Australian Grand Prix 2003 Results</description>
+      <date>2003/3/9</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/2/8.html</url>
+   </race>
+   <!-- Grand Prix of Malaysia -->
+   <race>
+      <id>race_02</id>
+      <name>Grand Prix of Malaysia</name>
+      <description>Malaysian Grand Prix 2003 Results</description>
+      <date>2003/3/23</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/3/8.html</url>
+   </race>
+   <!-- Grand Prix of Brazil -->
+   <race>
+      <id>race_03</id>
+      <name>Grand Prix of Brazil</name>
+      <description>Brazilian Grand Prix 2003 Results</description>
+      <date>2003/4/6</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/4/8.html</url>
+   </race>
+   <!-- Grand Prix of San Marino -->
+   <race>
+      <id>race_04</id>
+      <name>Grand Prix of San Marino</name>
+      <description>San Marino Grand Prix 2003 Results</description>
+      <date>2003/4/20</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/21/8.html</url>
+   </race>
+   <!-- Grand Prix of Spain -->
+   <race>
+      <id>race_05</id>
+      <name>Grand Prix of Spain</name>
+      <description>Spanish Grand Prix 2003 Results</description>
+      <date>2003/5/4</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/22/8.html</url>
+   </race>
+   <!-- Grand Prix of Austria -->
+   <race>
+      <id>race_06</id>
+      <name>Grand Prix of Austria</name>
+      <description>Austrian Grand Prix 2003 Results</description>
+      <date>2003/5/18</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/23/8.html</url>
+   </race>
+   <!-- Grand Prix of Monte Carlo -->
+   <race>
+      <id>race_07</id>
+      <name>Grand Prix of Monte Carlo</name>
+      <description>Monaco Grand Prix 2003 Results</description>
+      <date>2003/6/1</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/24/8.html</url>
+   </race>
+   <!-- Grand Prix of Canada -->
+   <race>
+      <id>race_08</id>
+      <name>Grand Prix of Canada</name>
+      <description>Canadian Grand Prix 2003 Results</description>
+      <date>2003/6/15</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/25/8.html</url>
+   </race>
+   <!-- Grand Prix of Europe -->
+   <race>
+      <id>race_09</id>
+      <name>Grand Prix of Europe</name>
+      <description>European Grand Prix 2003 Results</description>
+      <date>2003/6/29</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/26/8.html</url>
+   </race>
+   <!-- Grand Prix of France -->
+   <race>
+      <id>race_10</id>
+      <name>Grand Prix of France</name>
+      <description>French Grand Prix 2003 Results</description>
+      <date>2003/7/6</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/27/8.html</url>
+   </race>
+   <!-- Grand Prix of Great Britain -->
+   <race>
+      <id>race_11</id>
+      <name>Grand Prix of Great Britain</name>
+      <description>British Grand Prix 2003 Results</description>
+      <date>2003/7/20</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/28/8.html</url>
+   </race>
+   <!-- Grand Prix of Germany -->
+   <race>
+      <id>race_12</id>
+      <name>Grand Prix of Germany</name>
+      <description>German Grand Prix 2003 Results</description>
+      <date>2003/8/3</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/29/8.html</url>
+   </race>
+   <!-- Grand Prix of Hungary -->
+   <race>
+      <id>race_13</id>
+      <name>Grand Prix of Hungary</name>
+      <description>Hungarian Grand Prix 2003 Results</description>
+      <date>2003/8/24</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/30/8.html</url>
+   </race>
+   <!-- Grand Prix of Italy -->
+   <race>
+      <id>race_14</id>
+      <name>Grand Prix of Italy</name>
+      <description>Italian Grand Prix 2003 Results</description>
+      <date>2003/9/14</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/31/8.html</url>
+   </race>
+   <!-- Grand Prix of USA -->
+   <race>
+      <id>race_15</id>
+      <name>Grand Prix of USA</name>
+      <description>United States Grand Prix 2003 Results</description>
+      <date>2003/9/28</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/32/8.html</url>
+   </race>
+   <!-- Grand Prix of Japan -->
+   <race>
+      <id>race_16</id>
+      <name>Grand Prix of Japan</name>
+      <description>Japanese Grand Prix 2003 Results</description>
+      <date>2003/10/12</date>
+      <ended>no</ended>
+      <url>http://www.formula1.com/race/result/33/8.html</url>
+   </race>
+</races>

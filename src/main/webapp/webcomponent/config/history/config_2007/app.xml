@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+   <config>
+      <playerbudget>36</playerbudget>
+      <contenttype>UTF-8</contenttype>
+      <seasonracecount>17</seasonracecount>
+      <regdeadline>Fri Mar 16 24:00:00 EST 2007</regdeadline>
+      <adminpwd>belizna</adminpwd>
+      <tiebreakerdrivername>Ralf Schumacher</tiebreakerdrivername>
+   </config>
+</app>

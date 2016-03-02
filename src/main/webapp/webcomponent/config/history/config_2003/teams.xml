@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<teams>
+
+  <!-- Ferrari -->
+  <team>
+    <id>team_01</id> 
+    <name>Ferrari</name>
+    <description>Ferrari</description>
+    <!-- Michael SCHUMACHER -->
+    <driver1>driver_01</driver1>
+    <!-- Rubens BARRICHELLO -->
+    <driver2>driver_02</driver2>
+    <cost>16</cost>
+  </team>  
+
+  <!-- Williams -->
+  <team>
+    <id>team_02</id> 
+    <name>Williams</name>
+    <description>Williams</description>
+    <!-- Juan Pablo MONTOYA -->
+    <driver1>driver_03</driver1>
+    <!-- Ralf SCHUMACHER -->
+    <driver2>driver_04</driver2>
+    <cost>12</cost>
+  </team>  
+  
+  <!-- McLaren -->
+  <team>
+    <id>team_03</id> 
+    <name>McLaren</name>
+    <description>McLaren</description>
+    <!-- Kimi RAIKKONEN -->
+    <driver1>driver_05</driver1>
+    <!-- David COULTHARD -->
+    <driver2>driver_06</driver2>
+    <cost>12</cost>
+  </team>  
+  
+  <!-- Renault -->
+  <team>
+    <id>team_04</id> 
+    <name>Renault</name>
+    <description>Renault</description>
+    <!-- Fernando ALONSO -->
+    <driver1>driver_07</driver1>
+    <!-- Jarno TRULLI -->
+    <driver2>driver_08</driver2>
+    <cost>10</cost>
+  </team>  
+  
+  <!-- BAR -->
+  <team>
+    <id>team_05</id> 
+    <name>BAR</name>
+    <description>BAR</description>
+    <!-- Jenson BUTTON -->
+    <driver1>driver_09</driver1>
+    <!-- Takuma SATO -->
+    <driver2>driver_10</driver2>
+    <cost>9</cost>
+  </team>  
+  
+  <!-- Jaguar -->
+  <team>
+    <id>team_06</id> 
+    <name>Jaguar</name>
+    <description>Jaguar</description>
+    <!-- Mark WEBBER -->
+    <driver1>driver_11</driver1>
+    <!-- Christian KLIEN -->
+    <driver2>driver_12</driver2>
+    <cost>8</cost>
+  </team>  
+  
+  <!-- Sauber -->
+  <team>
+    <id>team_07</id> 
+    <name>Sauber</name>
+    <description>Sauber</description>
+    <!-- Giancarlo FISICHELLA -->
+    <driver1>driver_13</driver1>
+    <!-- Felipe MASSA -->
+    <driver2>driver_14</driver2>
+    <cost>7</cost>
+  </team>  
+  
+  <!-- Toyota -->
+  <team>
+    <id>team_08</id> 
+    <name>Toyota</name>
+    <description>Toyota</description>
+    <!-- Olivier PANIS -->
+    <driver1>driver_15</driver1>
+    <!-- Cristiano Da MATTA -->
+    <driver2>driver_16</driver2>
+    <cost>6</cost>
+  </team>  
+  
+  <!-- Jordan -->
+  <team>
+    <id>team_09</id> 
+    <name>Jordan</name>
+    <description>Jordan</description>
+    <!-- Nick HEIDFELD -->
+    <driver1>driver_17</driver1>
+    <!-- Ralph FIRMAN -->
+    <driver2>driver_18</driver2>
+    <cost>5</cost>
+  </team>  
+  
+  <!-- Minardi -->
+  <team>
+    <id>team_10</id> 
+    <name>Minardi</name>
+    <description>Minardi</description>
+    <!-- Zsolt BAUMGARTNER -->
+    <driver1>driver_19</driver1>
+    <!-- Gianmaria BRUNI -->
+    <driver2>driver_20</driver2>
+    <cost>4</cost>
+  </team>  
+  
+</teams>

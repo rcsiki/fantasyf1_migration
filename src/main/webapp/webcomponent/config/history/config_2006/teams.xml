@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<teams>
+
+  <team>
+    <id>team_01</id>                  <!-- Renault -->
+    <name>Renault</name>
+    <description>Renault</description>
+    <driver1>driver_01</driver1>      <!-- Fernando ALONSO -->
+    <driver2>driver_02</driver2>      <!-- Giancarlo FISICHELLA -->
+    <cost>16</cost>
+  </team>
+
+  <team>
+    <id>team_02</id>                  <!-- McLaren -->
+    <name>McLaren</name>
+    <description>McLaren</description>
+    <driver1>driver_03</driver1>      <!-- Kimi RAIKKONEN -->
+    <driver2>driver_04</driver2>      <!-- Juan Pablo MONTOYA -->
+    <cost>14</cost>
+  </team>
+	
+  <team>
+    <id>team_03</id>                  <!-- Ferrari -->
+    <name>Ferrari</name>
+    <description>Ferrari</description>
+    <driver1>driver_05</driver1>      <!-- Michael SCHUMACHER -->
+    <driver2>driver_06</driver2>      <!-- Felipe MASSA -->
+    <cost>12</cost>
+  </team>
+	
+  <team>
+    <id>team_04</id>                   <!-- Toyota -->
+    <name>Toyota</name>
+    <description>Toyota</description>
+    <driver1>driver_07</driver1>       <!-- Ralf SCHUMACHER -->
+    <driver2>driver_08</driver2>       <!-- Jarno TRULLI -->
+    <cost>6</cost>
+  </team>
+	
+  <team>
+    <id>team_05</id>                  <!-- Williams -->
+    <name>Williams</name>
+    <description>Williams</description>
+    <driver1>driver_09</driver1>      <!-- Mark WEBBER -->
+    <driver2>driver_10</driver2>      <!-- Nico ROSBERG -->
+    <cost>9</cost>
+  </team>
+	
+  <team>
+    <id>team_06</id>                  <!-- BAR -->
+    <name>BAR</name>
+    <description>BAR</description>    
+    <driver1>driver_11</driver1>      <!-- Jenson BUTTON -->
+    <driver2>driver_12</driver2>      <!-- Rubens BARRICHELLO -->
+    <cost>10</cost>
+  </team>
+	
+  <team>
+    <id>team_07</id> 
+    <name>RedBull</name>               <!-- RedBull -->
+    <description>RedBull</description>
+    <driver1>driver_14</driver1>       <!-- David COULTHARD -->
+    <driver2>driver_15</driver2>       <!-- Christian KLIEN -->
+    <cost>7</cost>
+  </team>
+	
+  <team>
+    <id>team_08</id>                  <!-- BMW -->
+    <name>BMW</name>
+    <description>BMW</description>
+    <driver1>driver_16</driver1>      <!-- Nick HEIDFELD -->
+    <driver2>driver_17</driver2>      <!-- Jacques VILLENEUVE -->
+    <cost>8</cost>
+  </team>
+	
+  <team>
+    <id>team_09</id>                   <!-- MidlandF1 -->
+    <name>MidlandF1</name>
+    <description>MidlandF1</description>
+    <driver1>driver_18</driver1>       <!-- Tiago MONTEIRO -->
+    <driver2>driver_19</driver2>       <!-- Christijan ALBERS -->
+    <cost>5</cost>
+  </team>
+	
+  <team>
+    <id>team_10</id>                   <!-- TorroRosso -->
+    <name>TorroRosso</name>
+    <description>TorroRosso</description>
+    <driver1>driver_20</driver1>       <!-- Vitantonio LIUZZI -->
+    <driver2>driver_21</driver2>       <!-- Scott SPEED -->
+    <cost>4</cost>
+  </team>
+	
+  <team>
+    <id>team_11</id>                   <!-- SuperAguriF1 -->
+    <name>SuperAguriF1</name>
+    <description>SuperAguriF1</description>
+    <driver1>driver_22</driver1>       <!-- Takuma SATO -->
+    <driver2>driver_23</driver2>       <!-- Yuji IDE -->
+    <cost>3</cost>
+  </team> 
+  
+</teams>

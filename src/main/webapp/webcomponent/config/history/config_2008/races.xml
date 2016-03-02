@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<races>
+
+  <!-- Grand Prix of Australia -->
+  <race>
+    <id>race_01</id> 
+    <name>Grand Prix of Australia</name>
+    <description>2008 Australian Grand Prix</description>
+    <date>2008/3/16</date>
+
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/732/8.html</url>
+  </race>
+
+  <!-- Grand Prix of Malaysia -->
+  <race>
+    <id>race_02</id> 
+    <name>Grand Prix of Malaysia</name>
+
+    <description>2008 Malaysian Grand Prix</description>
+    <date>2008/3/23</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/733/8.html</url>
+  </race>
+
+  <!-- Grand Prix of Bahrain -->
+
+  <race>
+    <id>race_03</id> 
+    <name>Grand Prix of Bahrain</name>
+    <description>2008 Bahrain Grand Prix</description>
+    <date>2008/4/6</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/716/8.html</url>
+
+  </race>
+
+  <!-- Grand Prix of Spain -->
+  <race>
+    <id>race_04</id> 
+    <name>Grand Prix of Spain</name>
+    <description>2008 Spanish Grand Prix</description>
+    <date>2008/4/27</date>
+
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/718/8.html</url>
+  </race>
+
+  <!-- Grand Prix of Turkey -->
+  <race>
+    <id>race_05</id> 
+    <name>Grand Prix of Turkey</name>
+
+    <description>2008 Turkey Grand Prix</description>
+    <date>2008/5/11</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/726/8.html</url>
+  </race>
+	
+  <!-- Grand Prix of Monaco -->
+  <race>
+
+    <id>race_06</id> 
+    <name>Grand Prix of Monte Carlo</name>
+    <description>2008 Monaco Grand Prix</description>
+    <date>2008/5/25</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/719/8.html</url>
+
+  </race>
+
+  <!-- Grand Prix of Canada -->
+  <race>
+    <id>race_07</id> 
+    <name>Grand Prix of Canada</name>
+    <description>2008 Canadian Grand Prix</description>
+    <date>2008/6/8</date>
+
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/721/8.html</url>
+  </race>  
+
+  <!-- Grand Prix of France -->
+  <race>
+    <id>race_08</id> 
+    <name>Grand Prix of France</name>
+    <description>2008 French Grand Prix</description>
+
+    <date>2008/6/22</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/723/8.html</url>
+  </race>
+
+  <!-- Grand Prix of Great Britain -->
+  <race>
+    <id>race_09</id> 
+    <name>Grand Prix of Great Britain</name>
+
+    <description>2008 British Grand Prix</description>
+    <date>2008/7/6</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/724/8.html</url>
+  </race>
+
+ <!-- Grand Prix of Germany -->
+
+  <race>
+    <id>race_10</id> 
+    <name>Grand Prix of Germany</name>
+    <description>2008 German Grand Prix</description>
+    <date>2008/7/20</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/725/8.html</url>
+
+  </race>  
+
+  <!-- Grand Prix of Hungary -->
+  <race>
+    <id>race_11</id> 
+    <name>Grand Prix of Hungary</name>
+    <description>2008 Hungarian Grand Prix</description>
+    <date>2008/8/3</date>
+    <ended>no</ended>
+
+    <url>http://www.formula1.com/race/result/726/8.html</url>
+  </race> 
+
+  <!-- Grand Prix of Europe -->
+  <race>
+    <id>race_12</id> 
+    <name>Grand Prix of Europe</name>
+    <description>2008 European Grand Prix</description>
+    <date>2008/8/24</date>
+
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/728/8.html</url>
+  </race>
+
+  <!-- Grand Prix of Belgium -->
+  <race>
+    <id>race_13</id> 
+    <name>Grand Prix of Belgium</name>
+
+    <description>2008 Belgium Grand Prix</description>
+    <date>2008/9/7</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/728/8.html</url>
+  </race>
+
+  <!-- Grand Prix of Italy -->
+
+  <race>
+    <id>race_14</id> 
+    <name>Grand Prix of Italy</name>
+    <description>2008 Italian Grand Prix</description>
+    <date>2008/9/14</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/728/8.html</url>
+
+  </race>
+	
+  <!-- Grand Prix of Singapore -->
+  <race>
+    <id>race_15</id> 
+    <name>Grand Prix of Singapore</name>
+    <description>2008 Singapore Grand Prix</description>
+    <date>2008/9/28</date>
+
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/722/8.html</url>
+  </race>  
+
+  <!-- Grand Prix of Japan -->
+  <race>
+    <id>race_16</id> 
+    <name>Grand Prix of Japan</name>
+    <description>2008 Japanese Grand Prix</description>
+
+    <date>2008/10/12</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/730/8.html</url>
+  </race>
+
+  <!-- Grand Prix of China -->
+  <race>
+    <id>race_17</id> 
+    <name>Grand Prix of China</name>
+
+    <description>2008 Chinese Grand Prix</description>
+    <date>2008/10/19</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/729/8.html</url>
+  </race>
+  
+  <!-- Grand Prix of Brazil -->
+  <race>
+
+    <id>race_18</id> 
+    <name>Grand Prix of Brazil</name>
+    <description>2008 Brazilian Grand Prix</description>
+    <date>2008/11/2</date>
+    <ended>no</ended>
+    <url>http://www.formula1.com/race/result/731/8.html</url>
+
+  </race>
+  
+</races>

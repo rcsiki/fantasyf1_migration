@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<drivers>
+
+  <!-- Michael Schumacher -->
+  <driver>
+    <id>driver_01</id> 
+    <name>Michael Schumacher</name>
+    <description>Michael Schumacher</description>
+    <!-- Ferrari -->
+    <team>team_01</team>
+    <cost>16</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Rubens Barrichello -->
+  <driver>
+    <id>driver_02</id> 
+    <name>Rubens Barrichello</name>
+    <description>Rubens Barrichello</description>
+    <!-- Ferrari -->
+    <team>team_01</team>
+    <cost>11</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Juan Pablo Montoya -->
+  <driver>
+    <id>driver_03</id> 
+    <name>Juan Pablo Montoya</name>
+    <description>Juan Pablo Montoya</description>
+    <!-- Williams -->
+    <team>team_02</team>
+    <cost>16</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Ralf Schumacher -->
+  <driver>
+    <id>driver_04</id> 
+    <name>Ralf Schumacher</name>
+    <description>Ralf Schumacher</description>
+    <!-- Williams -->
+    <team>team_02</team>
+    <cost>11</cost>
+    <replacements>
+       <replacement>
+          <raceid>race_14</raceid>
+          <drivername>Marc Gene</drivername>
+       </replacement>
+    </replacements>
+  </driver>  
+
+  <!-- Kimi Räikkönen -->
+  <driver>
+    <id>driver_05</id> 
+    <name>Kimi Räikkönen</name>
+    <description>Kimi Räikkönen</description>
+    <!-- McLaren -->
+    <team>team_03</team>
+    <cost>16</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- David Coulthard -->
+  <driver>
+    <id>driver_06</id> 
+    <name>David Coulthard</name>
+    <description>David Coulthard</description>
+    <!-- McLaren -->
+    <team>team_03</team>
+    <cost>11</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Fernando Alonso -->
+  <driver>
+    <id>driver_07</id> 
+    <name>Fernando Alonso</name>
+    <description>Fernando Alonso</description>
+    <!-- Renault -->
+    <team>team_04</team>
+    <cost>10</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Jarno Trulli -->
+  <driver>
+    <id>driver_08</id> 
+    <name>Jarno Trulli</name>
+    <description>Jarno Trulli</description>
+    <!-- Renault -->
+    <team>team_04</team>
+    <cost>7</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Jenson Button -->
+  <driver>
+    <id>driver_09</id> 
+    <name>Jenson Button</name>
+    <description>Jenson Button</description>
+    <!-- BAR -->
+    <team>team_05</team>
+    <cost>9</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Jacques Villeneuve -->
+  <driver>
+    <id>driver_10</id> 
+    <name>Jacques Villeneuve</name>
+    <description>Jacques Villeneuve</description>
+    <!-- BAR -->
+    <team>team_05</team>
+    <cost>6</cost>
+    <replacements>
+       <replacement>
+          <raceid>race_16</raceid>
+          <drivername>Takuma Sato</drivername>
+       </replacement>
+    </replacements>
+  </driver>  
+
+  <!-- Mark Webber -->
+  <driver>
+    <id>driver_11</id> 
+    <name>Mark Webber</name>
+    <description>Mark Webber</description>
+    <!-- Jaguar -->
+    <team>team_06</team>
+    <cost>9</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Antonio Pizzonia -->
+  <driver>
+    <id>driver_12</id> 
+    <name>Antonio Pizzonia</name>
+    <description>Antonio Pizzonia</description>
+    <!-- Jaguar -->
+    <team>team_06</team>
+    <cost>6</cost>
+    <replacements>
+       <replacement>
+          <raceid>race_12</raceid>
+          <drivername>Justin Wilson</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_13</raceid>
+          <drivername>Justin Wilson</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_14</raceid>
+          <drivername>Justin Wilson</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_15</raceid>
+          <drivername>Justin Wilson</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_16</raceid>
+          <drivername>Justin Wilson</drivername>
+       </replacement>
+    </replacements>
+  </driver>  
+
+  <!-- Heinz-Harald Frentzen -->
+  <driver>
+    <id>driver_13</id> 
+    <name>Heinz-Harald Frentzen</name>
+    <description>Heinz-Harald Frentzen</description>
+    <!-- Sauber -->
+    <team>team_07</team>
+    <cost>7</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Nick Heidfeld -->
+  <driver>
+    <id>driver_14</id> 
+    <name>Nick Heidfeld</name>
+    <description>Nick Heidfeld</description>
+    <!-- Sauber -->
+    <team>team_07</team>
+    <cost>8</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Olivier Panis -->
+  <driver>
+    <id>driver_15</id> 
+    <name>Olivier Panis</name>
+    <description>Olivier Panis</description>
+    <!-- Toyota -->
+    <team>team_08</team>
+    <cost>8</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Cristiano da Matta -->
+  <driver>
+    <id>driver_16</id> 
+    <name>Cristiano da Matta</name>
+    <description>Cristiano da Matta</description>
+    <!-- Toyota -->
+    <team>team_08</team>
+    <cost>6</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Giancarlo Fisichella -->
+  <driver>
+    <id>driver_17</id> 
+    <name>Giancarlo Fisichella</name>
+    <description>Giancarlo Fisichella</description>
+    <!-- Jordan -->
+    <team>team_09</team>
+    <cost>5</cost>
+    <replacements/>
+  </driver>  
+
+  <!-- Ralph Firman -->
+  <driver>
+    <id>driver_18</id> 
+    <name>Ralph Firman</name>
+    <description>Ralph Firman</description>
+    <!-- Jordan -->
+    <team>team_09</team>
+    <cost>4</cost>
+    <replacements>
+       <replacement>
+          <raceid>race_13</raceid>
+          <drivername>Zsolt Baumgartner</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_14</raceid>
+          <drivername>Zsolt Baumgartner</drivername>
+       </replacement>
+    </replacements>
+  </driver>  
+
+  <!-- Justin Wilson -->
+  <driver>
+    <id>driver_19</id> 
+    <name>Justin Wilson</name>
+    <description>Justin Wilson</description>
+    <!-- Minardi -->
+    <team>team_10</team>
+    <cost>3</cost>
+    <replacements>
+       <replacement>
+          <raceid>race_12</raceid>
+          <drivername>Nicolas Kiesa</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_13</raceid>
+          <drivername>Nicolas Kiesa</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_14</raceid>
+          <drivername>Nicolas Kiesa</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_15</raceid>
+          <drivername>Nicolas Kiesa</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_16</raceid>
+          <drivername>Nicolas Kiesa</drivername>
+       </replacement>
+    </replacements>
+  </driver>  
+
+  <!-- Jos Verstappen -->
+  <driver>
+    <id>driver_20</id> 
+    <name>Jos Verstappen</name>
+    <description>Jos Verstappen</description>
+    <!-- Minardi -->
+    <team>team_10</team>
+    <cost>3</cost>
+    <replacements/>
+  </driver>  
+
+</drivers>

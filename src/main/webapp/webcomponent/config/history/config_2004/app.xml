@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<app>
+   <config>
+      <playerbudget>36</playerbudget>
+      <contenttype>ISO-8859-1</contenttype>
+      <seasonracecount>18</seasonracecount>
+      <regdeadline>Sat Mar 06 00:00:01 EST 2004</regdeadline>
+      <adminpwd>belizna</adminpwd>
+   </config>
+</app>

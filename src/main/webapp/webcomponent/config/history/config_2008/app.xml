@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<app>
+   <config>
+      <playerbudget>36</playerbudget>
+      <contenttype>UTF-8</contenttype>
+      <seasonracecount>18</seasonracecount>
+      <regdeadline>Fri Mar 14 24:00:00 EST 2008</regdeadline>
+      <adminpwd>belizna</adminpwd>
+      <tiebreakerdrivername>Jenson Button</tiebreakerdrivername>
+   </config>
+</app>

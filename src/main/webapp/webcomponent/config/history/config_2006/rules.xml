@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<rules>
+
+  <!-- finishes in the top eight rule -->
+  <rule>
+    <id>rule_01</id> 
+    <name>Top eight</name>
+    <description>Finishes in the top eight.\nPoints are awarded as follows:\n\n* 1st place - 100 points\n* 2nd place - 80 points\n* 3rd place - 60 points\n* 4th place - 50 points\n* 5th place - 40 points\n* 6th place - 30 points\n* 7th place - 20 points\n* 8th place - 10 points\n\nThis rule applies to driver and car.</description>
+    <isapplicable>both</isapplicable>
+    <case>
+       <condition>
+            <key>pos</key>
+            <value>1</value>
+       </condition>
+       <fantasypoints>100</fantasypoints>
+    </case>  
+    <case>
+       <condition>
+          <key>pos</key>
+          <value>2</value>
+       </condition>
+       <fantasypoints>80</fantasypoints>
+    </case>  
+    <case>
+       <condition>
+          <key>pos</key>
+          <value>3</value>
+       </condition>
+       <fantasypoints>60</fantasypoints>
+    </case>  
+    <case>
+       <condition>
+          <key>pos</key>
+          <value>4</value>
+       </condition>
+       <fantasypoints>50</fantasypoints>
+    </case>  
+    <case>
+       <condition>
+          <key>pos</key>
+          <value>5</value>
+       </condition>
+       <fantasypoints>40</fantasypoints>
+    </case>  
+    <case>
+       <condition>
+          <key>pos</key>
+          <value>6</value>
+       </condition>
+       <fantasypoints>30</fantasypoints>
+    </case>  
+    <case>
+       <condition>
+          <key>pos</key>
+          <value>7</value>
+       </condition>
+       <fantasypoints>20</fantasypoints>
+    </case>  
+    <case>
+       <condition>
+          <key>pos</key>
+          <value>8</value>
+       </condition>
+       <fantasypoints>10</fantasypoints>
+    </case>  
+  </rule> 
+  
+  <!-- grid position rule -->
+  <rule>
+    <id>rule_02</id> 
+    <name>Grid position</name>
+    <description>Points are awarded for the grid position:\n\n* 1st place - 20 points\n* 2nd place - 19 points\n* 3rd place - 18 points\n...........................\n* 18th place - 3 points\n* 19th place - 2 points\n* 20th place - 1 point\n\nThis rule applies to driver and car.</description>
+    <isapplicable>both</isapplicable>
+    <case>
+       <condition/>
+       <fantasypoints>23-grid</fantasypoints>
+    </case>  
+  </rule> 
+  
+  <!-- positions improved/lost from starting grid to chequered flag rule -->
+  <rule>
+    <id>rule_03</id> 
+    <name>Gain/Loss</name>
+    <description>Positions are awarded or deducted for\nlaps improved or lost from starting grid\nto chequered flag:\n\n* 10 points are awarded for each improved position\n* 10 points are deducted for each lost position\n\nThis rule applies to driver and car, except\nwhere the driver or car did not finish the race.</description>
+    <isapplicable>both</isapplicable>
+    <case>
+       <condition/>
+       <fantasypoints>(grid-pos)*10</fantasypoints>
+    </case>  
+  </rule> 
+
+  <!-- completed laps rule -->
+  <rule>
+    <id>rule_04</id> 
+    <name>Laps</name>
+    <description>Points awarded for the completed laps:\n\n* 1 point for every lap completed\n\nThis rule applies to driver and car.</description>
+    <isapplicable>both</isapplicable>
+    <case>
+       <condition/>
+       <fantasypoints>laps</fantasypoints>
+    </case>  
+  </rule> 
+
+  <!-- did not finish rule -->
+  <rule>
+    <id>rule_05</id> 
+    <name>Retired</name>
+    <description>Failure to finish the race:\n\n* 20 points are deducted\n\nThis rule applies to driver and car.</description>
+    <isapplicable>both</isapplicable>
+    <case>
+       <condition>
+          <key>pos</key>
+          <value>ret</value>
+       </condition>
+       <fantasypoints>(-100)</fantasypoints>
+    </case>  
+  </rule> 
+
+  <!-- fatest lap rule -->
+  <rule>
+    <id>rule_06</id> 
+    <name>Fastest lap</name>
+    <description>Driver records the fatest lap:\n\n* 10 points are awarded\n\nThis rule applies to driver only.</description>
+    <isapplicable>driver</isapplicable>
+    <case>
+       <condition>
+          <key>fastestlap</key>
+          <value>true</value>
+       </condition>
+       <fantasypoints>10</fantasypoints>
+    </case>  
+  </rule> 
+
+  <!-- Hat Trick rule (pole, fatest lap and winner) -->
+  <rule>
+    <id>rule_07</id> 
+    <name>Hat-trick</name>
+    <description>Driver scores a hat-trick of pole position, fastest\nlap and winner:\n\n* 50 points are awarded\n\nThis rule applies to driver only.</description>
+    <isapplicable>driver</isapplicable>
+    <case>
+       <condition>
+          <key>grid</key>
+          <value>1</value>
+       </condition>
+       <condition>
+          <key>pos</key>
+          <value>1</value>
+       </condition>
+       <condition>
+          <key>fastestlap</key>
+          <value>true</value>
+       </condition>
+       <fantasypoints>50</fantasypoints>
+    </case>  
+  </rule> 
+  
+</rules>
+  
