@@ -62,6 +62,11 @@
 			<artifactId>xalan</artifactId>
 			<version>2.5.1</version>
 		</dependency>
+        <dependency>
+            <groupId>jtidy</groupId>
+            <artifactId>jtidy</artifactId>
+            <version>4aug2000r7-dev</version>
+        </dependency>		
 	</dependencies>
 	<profiles>
 		<profile>
