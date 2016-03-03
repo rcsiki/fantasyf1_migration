@@ -1,12 +1,10 @@
-<%@ page errorPage="error.jsp" import="java.io.File,com.homelinux.bela.web.manager.CompetitionManager,com.homelinux.bela.web.fc.IConstants,com.homelinux.bela.web.util.FormUtil"%>
+<%@ page errorPage="error.jsp" import="com.homelinux.bela.web.manager.CompetitionManager,com.homelinux.bela.web.fc.IConstants,com.homelinux.bela.web.util.FormUtil"%>
 
 <%
   if (CompetitionManager.ROOT_FOLDER_PATH == null) {	      
     // CompetitionManager.ROOT_FOLDER_PATH = application.getRealPath("/");
     CompetitionManager.ROOT_FOLDER_PATH = "/var/lib/openshift/56d645d789f5cfb5710000be/app-root/runtime/repo/target/fantasy/";
   }
-  File curDir = new File("./test.txt").getParentFile();
-  String ap = curDir.getAbsolutePath();
   // load the configuration if not already done
   CompetitionManager cm = CompetitionManager.getInstance();
 %>
@@ -24,10 +22,7 @@
     <TD>
       <TABLE BORDER=0 cellspacing=2 cellpadding=2>
         <TR>
-          <TD class="tablelayoutheader">Main Menu</TD>
-        </TR>  
-        <TR>
-          <TD class="tablelayoutheader">ap: <%=ap%></TD>
+          <TD class="tablelayoutheader">Main Menu<b></TD>
         </TR>  
         <TR>
           <TD class="tablelayoutnobold"><A href='<%=FormUtil.makeURL(request, "/webcomponent/jsp/home.jsp")%>' target="dataframe" onclick="resetRaceOptionSelector();">Home</A></TD>
