@@ -40,7 +40,7 @@ will finish the Fantasy Formula 1 season with the same number of points.
 
 <p>
 8. The <b>deadline</b> for receiving your registration entry is the <b>end of day Friday</b> preceding the inaugural Grand Prix 
-<b>(<%=WebConfig.REGISTRATION_DEADLINE%>)</b>. The <%=WebConfig.CURRENT_YEAR%> Formula 1 season will start the following day, will have <%=WebConfig.RACES_THIS_SEASON%> races 
+<b>(<%=WebConfig.REGISTRATION_DEADLINE_TEXT%>)</b>. The <%=WebConfig.CURRENT_YEAR%> Formula 1 season will start the following day, will have <%=WebConfig.RACES_THIS_SEASON%> races 
 and it will last until the end of the year.
 
 <p>

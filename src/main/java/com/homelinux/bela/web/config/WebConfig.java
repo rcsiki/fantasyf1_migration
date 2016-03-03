@@ -42,6 +42,9 @@ public class WebConfig
     /** Stores the registration deadline */
 	public static Date REGISTRATION_DEADLINE;
 
+    /** Stores the registration deadline (as String) */
+    public static String REGISTRATION_DEADLINE_TEXT;
+
     /** Payment deadline (String) */
     public static String PAYMENT_DEADLINE_TEXT;
 
@@ -57,7 +60,7 @@ public class WebConfig
 	/** Driver name to use for the tie breaker case*/
 	public static String TIEBREAKER_DRIVER_NAME;
 
-    /** Driver name to use for the tie breaker case */
+    /** The current year */
     public static int CURRENT_YEAR = Calendar.getInstance().get(Calendar.YEAR);
 
 	static
@@ -86,7 +89,8 @@ public class WebConfig
             RACE_WINNER_REAL_POINTS = Integer
                     .parseInt(ni.nextNode().getFirstChild().getNodeValue());
 		   ni = XPathAPI.selectNodeIterator(doc, "/app/config/regdeadline");
-		   REGISTRATION_DEADLINE = new Date(ni.nextNode().getFirstChild().getNodeValue());
+            REGISTRATION_DEADLINE_TEXT = ni.nextNode().getFirstChild().getNodeValue();
+            REGISTRATION_DEADLINE = new Date(REGISTRATION_DEADLINE_TEXT);
             ni = XPathAPI.selectNodeIterator(doc, "/app/config/paymentdeadlinetext");
             PAYMENT_DEADLINE_TEXT = ni.nextNode().getFirstChild().getNodeValue();
             ni = XPathAPI.selectNodeIterator(doc, "/app/config/paymentmailaddress");
@@ -105,7 +109,8 @@ public class WebConfig
 			CONTENT_TYPE = "UTF-8";
             RACES_THIS_SEASON = 21;
             RACE_WINNER_REAL_POINTS = 25;
-            REGISTRATION_DEADLINE = new Date("Fri Mar 18 24:00:00 EST 2016");
+            REGISTRATION_DEADLINE_TEXT = "Fri Mar 18 24:00:00 EST 2016";
+            REGISTRATION_DEADLINE = new Date(REGISTRATION_DEADLINE_TEXT);
             PAYMENT_DEADLINE_TEXT = "April 2nd, 2016";
             PAYMENT_MAIL_ADDRESS = "Laszlo Benedek, 37 Old Orchard Crescent, Richmond Hill, ON, L4S 0A2, Canada";
             CONTACT_INFO = "Robert Csiki at robert.csiki@gmail.com, Laszlo Benedek at benedekl@yahoo.com";
