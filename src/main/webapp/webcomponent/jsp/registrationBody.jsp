@@ -42,7 +42,7 @@
           <td>
             <table>
                <TR>
-                 <TD CLASS="tablelayout"><u>Tie-Breaker question:</u> How many real F1 points will <%=WebConfig.TIEBREAKER_DRIVER_NAME%> score this season? (0 - <%=WebConfig.RACES_THIS_SEASON * 10 - 10%>)</TD>
+                 <TD CLASS="tablelayout"><u>Tie-Breaker question:</u> How many real F1 points will <%=WebConfig.TIEBREAKER_DRIVER_NAME%> score this season? (0 - <%=WebConfig.RACES_THIS_SEASON * 25%>)</TD>
                  <TD CLASS="textfield"><INPUT CLASS="textfield" TYPE=TEXT NAME="tbQuestion" SIZE=3 maxlength=3>&nbsp;<font color="red" size=4>*</font>
                  <a href="#" onclick="alert('The answer you provide here will be used at the end\nof the season to differentiate you from other Players\n for the case there will be a tie.');"><img src='<%=FormUtil.makeURL(request, "/webcomponent/interface/images/help.gif")%>' alt="Help" border="0" align="middle"/></a></TD>
                </TR>
@@ -73,7 +73,7 @@
         <!-- Register button -->
         <tr>
           <td align='center' valign='bottom'>
-            <INPUT TYPE=SUBMIT NAME="submit" value="Register" onClick='return validateRegistrationForm(<%=WebConfig.PLAYER_BUDGET%>);'>          
+            <INPUT TYPE=SUBMIT NAME="submit" value="Register" onClick='return validateRegistrationForm(<%=WebConfig.PLAYER_BUDGET%>,<%=WebConfig.RACES_THIS_SEASON * 25%>);'>          
           </td>
         </tr>
       </table>    

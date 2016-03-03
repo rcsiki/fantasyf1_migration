@@ -34,7 +34,7 @@ The team manager could be your name if you would like others to know your positi
 
 <p>
 7. When registering, each player will be asked to answer the following <b>"tie-breaker" question</b>: 
-"<i>How many points will Adrian Sutil score this season?</i>" A number in 0 - 180 range must be provided. 
+"<i>How many real F1 points will <%=WebConfig.TIEBREAKER_DRIVER_NAME%> score this season?</i>" A number in 0 - <%=WebConfig.RACES_THIS_SEASON * 25%> range must be provided. 
 It will be used at the end of the season on the standings ordering, for the case two or more Players 
 will finish the Fantasy Formula 1 season with the same number of points.
 

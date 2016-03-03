@@ -595,7 +595,7 @@ public class CompetitionManager
 		try
 		{
 			int iTiBreakerAnswer = Integer.parseInt(strTieBreakerAnswer);
-			if (iTiBreakerAnswer < 0 || iTiBreakerAnswer > 180)
+            if (iTiBreakerAnswer < 0 || iTiBreakerAnswer > WebConfig.RACES_THIS_SEASON * 25)
 			{
 				System.out.println("strTieBreakerAnswer invalid: "+strTieBreakerAnswer);
 				return false; 

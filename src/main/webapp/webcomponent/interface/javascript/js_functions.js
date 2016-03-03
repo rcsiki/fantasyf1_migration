@@ -9,7 +9,7 @@ var isIe   = (agt.indexOf("msie") != -1);
        // validates the form for submission
        // the only thing that will be validated on Server
        // side is the team name duplication
-       function validateRegistrationForm(budget)
+       function validateRegistrationForm(budget, maxPoints)
        {
           var objTeamManager = document.registrationForm.teamManager.value;
           var objTeamName = document.registrationForm.teamName.value;
@@ -30,13 +30,13 @@ var isIe   = (agt.indexOf("msie") != -1);
              return false;
           }
           
-          // tiebreaker result validation (must be a number between 0 and 180)
+          // tiebreaker result validation (must be a number between 0 and maxPoints)
           if ( objTieBreakerQuestion.length == 0 ||
                isNaN(Number(objTieBreakerQuestion)) ||
                Number(objTieBreakerQuestion) < 0 ||
-               Number(objTieBreakerQuestion) > 180 )
+               Number(objTieBreakerQuestion) > maxPoints )
           {
-             alert("Tie-Breaker response is missing or invalid!\n\nPlease enter a number between 0 and 180.");
+             alert("Tie-Breaker response is missing or invalid!\n\nPlease enter a number between 0 and " + maxPoints + ".");
              return false;
           }
           
