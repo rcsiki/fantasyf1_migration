@@ -3,9 +3,9 @@
    <config>
       <playerbudget>36</playerbudget>
       <contenttype>UTF-8</contenttype>
-      <seasonracecount>19</seasonracecount>
-      <regdeadline>Fri Mar 25 24:00:00 EST 2011</regdeadline>
+      <seasonracecount>21</seasonracecount>
+      <regdeadline>Fri Mar 18 24:00:00 EST 2016</regdeadline>
       <adminpwd>belizna</adminpwd>
-      <tiebreakerdrivername>Adrian Sutil</tiebreakerdrivername>
+      <tiebreakerdrivername>Fernando Alonso</tiebreakerdrivername>
    </config>
 </app>

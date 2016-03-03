@@ -39,9 +39,9 @@ It will be used at the end of the season on the standings ordering, for the case
 will finish the Fantasy Formula 1 season with the same number of points.
 
 <p>
-8. The <b>deadline</b> for receiving your registration entry is on Friday preceding the Grand Prix 
-<b>(March 25, 2011 ET)</b>. The 2011 Formula 1 season will start with the Australian Grand Prix 
-on Sunday, March 27.
+8. The <b>deadline</b> for receiving your registration entry is the <b>end of day Friday</b> preceding the inaugural Grand Prix 
+<b>(March 18th, 2016 at midninght, ET)</b>. The 2016 Formula 1 season will start with the Australian Grand Prix 
+on Sunday, March 19th, midnight ET.
 
 <p>
 9. No team changes will be allowed after you have registered it. That means <b>your team structure 
@@ -59,8 +59,8 @@ the FIA, moderated by the <a href= "http://www.formula1.com"><b>official Formula
 <b>THE ENTRY FEE</b>
 <p>
 11. An <b>entry fee</b> of $20 CDN will be used for building up a prize pool. You can participate but <b>you can not win</b> 
-any prizes if <b>your payment is not received by April 10, 
-2011</b>. Prizes will be awarded at the end of the season for the <b>top five players</b> who have 
+any prizes if <b>your payment is not received by April 2nd, 
+2016</b>. Prizes will be awarded at the end of the season for the <b>top five players</b> who have 
 sent the payment, as follows (they will be notified by e-mail):
 <br><ul>
  <li><b>the winner</b> takes 45% from the prize pool
