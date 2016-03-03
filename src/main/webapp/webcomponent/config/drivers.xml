@@ -197,23 +197,5 @@
       <cost>4</cost>
       <replacements/>
    </driver>
-	 
-   <driver>
-      <id>driver_24</id>                           <!-- Timo Glock -->
-      <name>Timo Glock</name>
-      <description>Timo Glock</description>
-      <team>team_12</team>                         <!-- Virgin -->
-      <cost>3</cost>
-      <replacements/>
-   </driver>
 	 	 
-   <driver>
-      <id>driver_25</id>                           <!-- Jerome d'Ambrosio  -->
-      <name>Jerome dAmbrosio </name>
-      <description>Jerome dAmbrosio </description>
-      <team>team_12</team>                         <!-- Virgin -->
-      <cost>3</cost>
-      <replacements/>
-   </driver>
-	 
 </drivers>

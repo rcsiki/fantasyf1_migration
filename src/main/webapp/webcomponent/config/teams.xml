@@ -99,14 +99,5 @@
     <driver2>driver_23</driver2>      <!-- Karun Chandhok -->
     <cost>4</cost>
   </team>
-	
-  <team>
-    <id>team_12</id>                  <!-- Virgin -->
-    <name>Virgin</name>
-    <description>Virgin</description>     
-    <driver1>driver_24</driver1>      <!-- Timo Glock -->
-    <driver2>driver_25</driver2>      <!-- Lucas di Grassi -->
-    <cost>3</cost>
-  </team>
-		
+			
 </teams>

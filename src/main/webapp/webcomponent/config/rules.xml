@@ -77,12 +77,12 @@
   <rule>
     <id>rule_02</id> 
     <name>Grid position</name>
-    <description>Points are awarded for the grid position:\n\n* 1st place - 24 points\n* 2nd place - 23 points\n* 3rd place - 22 points\n...........................\n* 22nd place - 3 points\n* 23rd place - 2 points\n* 24th place - 1 point\n\nThis rule applies to driver and car.</description>
+    <description>Points are awarded for the grid position:\n\n* 1st place - 22 points\n* 2nd place - 21 points\n* 3rd place - 20 points\n...........................\n* 20th place - 3 points\n* 21st place - 2 points\n* 22nd place - 1 point\n\nThis rule applies to driver and car.</description>
     <isapplicable>both</isapplicable>
     <case>
        <condition/>
 
-       <fantasypoints>25-grid</fantasypoints>
+       <fantasypoints>23-grid</fantasypoints>
     </case>  
   </rule> 
   

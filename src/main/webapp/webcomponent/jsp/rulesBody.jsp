@@ -105,13 +105,13 @@ drivers in the race.<br>
 
  - achieves a grid position (that is, all get points here, if they do race):<br>
 <ul>
-     <li>1st - 24 points
-     <li>2nd - 23 points
-     <li>3rd - 21 points
+     <li>1st - 22 points
+     <li>2nd - 21 points
+     <li>3rd - 20 points
      <li>.........................
-     <li>21th - 3 points
-     <li>23th - 2 points
-     <li>24th - 1 point
+     <li>20th - 3 points
+     <li>21st - 2 points
+     <li>22nd - 1 point
 </ul>
 
  - improves positions from starting grid to chequered flag, except where the car didn't finish the race: 10 points per position
