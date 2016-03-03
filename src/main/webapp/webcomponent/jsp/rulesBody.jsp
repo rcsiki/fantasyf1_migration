@@ -34,13 +34,13 @@ The team manager could be your name if you would like others to know your positi
 
 <p>
 7. When registering, each player will be asked to answer the following <b>"tie-breaker" question</b>: 
-"<i>How many real F1 points will <%=WebConfig.TIEBREAKER_DRIVER_NAME%> score this season?</i>" A number in 0 - <%=WebConfig.RACES_THIS_SEASON * 25%> range must be provided. 
+"<i>How many real F1 points will <%=WebConfig.TIEBREAKER_DRIVER_NAME%> score this season?</i>" A number in 0 - <%=WebConfig.RACES_THIS_SEASON * WebConfig.RACE_WINNER_REAL_POINTS%> range must be provided. 
 It will be used at the end of the season on the standings ordering, for the case two or more Players 
 will finish the Fantasy Formula 1 season with the same number of points.
 
 <p>
 8. The <b>deadline</b> for receiving your registration entry is the <b>end of day Friday</b> preceding the inaugural Grand Prix 
-<b>(March 18th, 2016 at midninght, ET)</b>. The 2016 Formula 1 season will start with the Australian Grand Prix 
+<b>(March 18th, 2016 at midninght, ET)</b>. The <%=WebConfig.CURRENT_YEAR%> Formula 1 season will start with the Australian Grand Prix 
 on Sunday, March 19th, midnight ET.
 
 <p>
@@ -59,8 +59,8 @@ the FIA, moderated by the <a target="_blank" href= "http://www.formula1.com"><b>
 <b>THE ENTRY FEE (Optional)</b>
 <p>
 11. An <b>optionally entry fee</b> of $20 CDN will be used for building up a prize pool. You can always participate but <b>you can not win</b> 
-any prizes if <b>your payment is not received by April 2nd, 
-2016</b>. Prizes will be awarded at the end of the season for the <b>top five players</b> who have 
+any prizes if <b>your payment is not received by <%=WebConfig.PAYMENT_DEADLINE_TEXT%></b>. 
+Prizes will be awarded at the end of the season for the <b>top five players</b> who have 
 sent the payment, as follows (they will be notified by e-mail):
 <br><ul>
  <li><b>the winner</b> takes 45% from the prize pool
@@ -71,7 +71,7 @@ sent the payment, as follows (they will be notified by e-mail):
 </ul>
 After registering, you will be asked to please mail in a <b>personal check</b> valued at $20 CDN, to the following address:
 <p>
-<b>Laszlo Benedek, 37 Old Orchard Cres. Richmond Hill, ON, L4S 0A2, Canada</b>
+<b><%=WebConfig.PAYMENT_MAIL_ADDRESS%></b>
 <p>
 Please don't forget to mention your <b>Team Name</b> when submitting the fee. When the payment is received, an <b>acknowledgement</b> will be sent back to you by e-mail.
 <br>

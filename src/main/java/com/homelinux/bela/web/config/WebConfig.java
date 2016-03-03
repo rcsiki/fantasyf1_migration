@@ -7,6 +7,7 @@
 package com.homelinux.bela.web.config;
 
 import java.io.FileInputStream;
+import java.util.Calendar;
 import java.util.Date;
 
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -35,14 +36,29 @@ public class WebConfig
 	/** Stores the number of races for the season */
     public static int RACES_THIS_SEASON;
     
-	/** Stores the registration deadline*/
+    /** Stores the number of points awarded to the real F1 race winner */
+    public static int RACE_WINNER_REAL_POINTS;
+
+    /** Stores the registration deadline */
 	public static Date REGISTRATION_DEADLINE;
 
-	/** Stores the admin password*/
+    /** Payment deadline (String) */
+    public static String PAYMENT_DEADLINE_TEXT;
+
+    /** Payment destination mail address (String) */
+    public static String PAYMENT_MAIL_ADDRESS;
+
+    /** Hosts contact info (String) */
+    public static String CONTACT_INFO;
+
+    /** Stores the admin password*/
 	public static String ADMIN_PWD;
 
 	/** Driver name to use for the tie breaker case*/
 	public static String TIEBREAKER_DRIVER_NAME;
+
+    /** Driver name to use for the tie breaker case */
+    public static int CURRENT_YEAR = Calendar.getInstance().get(Calendar.YEAR);
 
 	static
     {
@@ -66,8 +82,17 @@ public class WebConfig
 		   CONTENT_TYPE = ni.nextNode().getFirstChild().getNodeValue(); 
 		   ni = XPathAPI.selectNodeIterator(doc, "/app/config/seasonracecount");
 		   RACES_THIS_SEASON = Integer.parseInt(ni.nextNode().getFirstChild().getNodeValue());		   
+            ni = XPathAPI.selectNodeIterator(doc, "/app/config/racewinnerrealpoints");
+            RACE_WINNER_REAL_POINTS = Integer
+                    .parseInt(ni.nextNode().getFirstChild().getNodeValue());
 		   ni = XPathAPI.selectNodeIterator(doc, "/app/config/regdeadline");
 		   REGISTRATION_DEADLINE = new Date(ni.nextNode().getFirstChild().getNodeValue());
+            ni = XPathAPI.selectNodeIterator(doc, "/app/config/paymentdeadlinetext");
+            PAYMENT_DEADLINE_TEXT = ni.nextNode().getFirstChild().getNodeValue();
+            ni = XPathAPI.selectNodeIterator(doc, "/app/config/paymentmailaddress");
+            PAYMENT_MAIL_ADDRESS = ni.nextNode().getFirstChild().getNodeValue();
+            ni = XPathAPI.selectNodeIterator(doc, "/app/config/contactinfo");
+            CONTACT_INFO = ni.nextNode().getFirstChild().getNodeValue();
 		   ni = XPathAPI.selectNodeIterator(doc, "/app/config/adminpwd");
 		   ADMIN_PWD = ni.nextNode().getFirstChild().getNodeValue();
 		   ni = XPathAPI.selectNodeIterator(doc, "/app/config/tiebreakerdrivername");
@@ -78,10 +103,14 @@ public class WebConfig
 			System.out.println("Failed to load app.xml file! - will use default values.");
 			PLAYER_BUDGET = 36;
 			CONTENT_TYPE = "UTF-8";
-			RACES_THIS_SEASON = 18;
-			REGISTRATION_DEADLINE = new Date("Fri Mar 14 24:00:00 EST 2008");
+            RACES_THIS_SEASON = 21;
+            RACE_WINNER_REAL_POINTS = 25;
+            REGISTRATION_DEADLINE = new Date("Fri Mar 18 24:00:00 EST 2016");
+            PAYMENT_DEADLINE_TEXT = "April 2nd, 2016";
+            PAYMENT_MAIL_ADDRESS = "Laszlo Benedek, 37 Old Orchard Crescent, Richmond Hill, ON, L4S 0A2, Canada";
+            CONTACT_INFO = "Robert Csiki at robert.csiki@gmail.com, Laszlo Benedek at benedekl@yahoo.com";
 			ADMIN_PWD = "belizna";
-			TIEBREAKER_DRIVER_NAME = "Jenson Button";
+            TIEBREAKER_DRIVER_NAME = "Fernando Alonso";
 		}
     }
 }

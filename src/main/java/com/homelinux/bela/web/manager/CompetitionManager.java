@@ -498,7 +498,8 @@ public class CompetitionManager
 			}
 			else
 			{
-                result.append(" class=\"tablelayout\">Congratulations! Your 2016 Fantasy Formula1 Team configuration is:");
+                result.append(" class=\"tablelayout\">Congratulations! Your "
+                        + WebConfig.CURRENT_YEAR + " Fantasy Formula1 Team configuration is:");
 				result.append("<br><br><table border='0'>");
 				
 				result.append("<tr><td class=\"tablelayoutnobold\">");
@@ -552,12 +553,14 @@ public class CompetitionManager
 
 			    result.append("<br><p><b>Remainder:</b> In order to be eligible to win any prize at the end of the season,");
 			    result.append(" you are now asked to please mail in a <b>personal check</b>");
-                result.append(" valued at $20 CDN by <b>April 2nd, 2016</b>, to the following mail address:<p>");
-                result.append("<b>Laszlo Benedek, 37 Old Orchard Crescent, Richmond Hill, ON, L4S 0A2, Canada</b><p>");
+                result.append(" valued at $20 CDN by <b>" + WebConfig.PAYMENT_DEADLINE_TEXT
+                        + "</b>, to the following mail address:<p>");
+                result.append("<b>" + WebConfig.PAYMENT_MAIL_ADDRESS + "</b><p>");
 				result.append("representing the entry fee to the competition. Please <b>don't forget</b> to mention");
 				result.append(" your <b>Team Name</b> when submitting the fee. When the payment is received, ");
 				result.append("an acknowledgement will be sent back to you by e-mail.");
-                result.append("<br><p><b>Thank You and have a strong 2016 Fantasy Formula 1 Season!</b>");
+                result.append("<br><p><b>Thank You and we wish you have a strong "
+                        + WebConfig.CURRENT_YEAR + " Fantasy Formula 1 Season!</b>");
 			}    		
     	}
 		result.append("</TD></TR></table></td></tr></table>");
