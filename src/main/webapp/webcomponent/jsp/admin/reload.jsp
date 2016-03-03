@@ -16,7 +16,7 @@
 
 <HTML>
   <HEAD>
-	<TITLE>2008 Fantasy Formula 1</TITLE>
+	<TITLE>2016 Fantasy Formula 1</TITLE>
   </HEAD>
   <BODY onload="window.location.href='<%=FormUtil.makeURL(request, "index.html")%>'"></BODY>
 </HTML>

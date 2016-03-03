@@ -2,7 +2,7 @@
 
 <HTML>
     <HEAD>
-        <TITLE>Fantasy Formula 1 2008</TITLE>
+        <TITLE>Fantasy Formula 1 2016</TITLE>
     <link rel="stylesheet" href='<%=FormUtil.makeURL(request, "/webcomponent/interface/style/globalstyle.css")%>' type="text/css">
     <script language='JavaScript1.2' src='<%=FormUtil.makeURL(request, "/webcomponent/interface/javascript/js_functions.js")%>'></script>
     </HEAD>
