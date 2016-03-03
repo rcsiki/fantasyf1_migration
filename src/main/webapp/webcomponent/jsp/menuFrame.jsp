@@ -25,7 +25,7 @@
           <TD class="tablelayoutheader">Main Menu<b></TD>
         </TR>  
         <TR>
-          <TD class="tablelayoutnobold"><A href='<%=FormUtil.makeURL(request, "/webcomponent/html/home.html")%>' target="dataframe" onclick="resetRaceOptionSelector();">Home</A></TD>
+          <TD class="tablelayoutnobold"><A href='<%=FormUtil.makeURL(request, "/webcomponent/jsp/home.jsp")%>' target="dataframe" onclick="resetRaceOptionSelector();">Home</A></TD>
         </TR>  
         <TR>
           <TD class="tablelayoutnobold"><A href="rulesBody.jsp" target="dataframe" onclick="resetRaceOptionSelector();">Rules</A></TD>

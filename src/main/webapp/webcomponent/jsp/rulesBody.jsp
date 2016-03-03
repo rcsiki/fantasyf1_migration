@@ -40,8 +40,8 @@ will finish the Fantasy Formula 1 season with the same number of points.
 
 <p>
 8. The <b>deadline</b> for receiving your registration entry is the <b>end of day Friday</b> preceding the inaugural Grand Prix 
-<b>(March 18th, 2016 at midninght, ET)</b>. The <%=WebConfig.CURRENT_YEAR%> Formula 1 season will start with the Australian Grand Prix 
-on Sunday, March 19th, midnight ET.
+<b>(<%=WebConfig.REGISTRATION_DEADLINE%>)</b>. The <%=WebConfig.CURRENT_YEAR%> Formula 1 season will start the following day, will have <%=WebConfig.RACES_THIS_SEASON%> races 
+and it will last until the end of the year.
 
 <p>
 9. No team changes will be allowed after you have registered it. That means <b>your team structure 
@@ -58,7 +58,7 @@ the FIA, moderated by the <a target="_blank" href= "http://www.formula1.com"><b>
 <p><p>
 <b>THE ENTRY FEE (Optional)</b>
 <p>
-11. An <b>optionally entry fee</b> of $20 CDN will be used for building up a prize pool. You can always participate but <b>you can not win</b> 
+11. An <b>optional entry fee</b> of $20 CDN will be used for building up a prize pool. You can always participate but <b>you can not win</b> 
 any prizes if <b>your payment is not received by <%=WebConfig.PAYMENT_DEADLINE_TEXT%></b>. 
 Prizes will be awarded at the end of the season for the <b>top five players</b> who have 
 sent the payment, as follows (they will be notified by e-mail):

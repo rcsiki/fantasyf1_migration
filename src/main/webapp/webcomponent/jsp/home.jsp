@@ -17,7 +17,7 @@
         Click the Rules link in the Main Menu and find out what the rules for this season are.
       <p>
 	<font size="2">
-        An <b>entry fee</b> of $20 CDN will be used for building up a prize pool. 
+        An optional <b>entry fee</b> of $20 CDN will be used for building up a prize pool. 
 			  Prizes will be awarded at the end of the season for the <b>top five players</b> who have 
         contributed to the prize pool, as follows (they will be notified by e-mail):
         <br><ul>
@@ -32,7 +32,7 @@
         If you would like to contribute to the prize pool please mail in a <b>personal check</b> 
 			  valued at $20 CDN, to the following address:
         <p>
-        <b>Laszlo Benedek, 37 Old Orchard Crescent, Richmond Hill, ON, L4S 0A2, Canada</b>
+        <b><%=WebConfig.PAYMENT_MAIL_ADDRESS%></b>
         <p>
         Don't forget to mention your <b>Team Name</b> when submitting the fee. 
 			  When the payment is received, the <b>Paid</b> column in the <b>Standings</b> page will updated accordingly.
