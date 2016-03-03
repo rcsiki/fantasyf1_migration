@@ -97,7 +97,7 @@
           <TD class="tablelayoutheader">Formula 1 Links<b></TD>
         </TR>  
         <TR>
-          <TD class="tablelayoutnobold"><A href="http://www.formula1.com" target="dataframe" onclick="resetRaceOptionSelector();">Official F1 Site</A></TD>
+          <TD class="tablelayoutnobold"><A href="http://www.formula1.com" target="_blank" onclick="resetRaceOptionSelector();">Official F1 Site</A></TD>
         </TR>  
       </TABLE>
     </TD>

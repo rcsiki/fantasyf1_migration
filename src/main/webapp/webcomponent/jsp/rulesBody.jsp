@@ -53,12 +53,12 @@ the existing team.
 <p>
 10. The Fantasy Formula 1 results (i.e. <b>the overall standings</b>) will be updated and made 
 available soon after each Grand Prix race. Each race result will be based on those from 
-the FIA, moderated by the <a href= "http://www.formula1.com"><b>official Formula 1 website</b></a>.
+the FIA, moderated by the <a target="_blank" href= "http://www.formula1.com"><b>official Formula 1 website</b></a>.
 
 <p><p>
-<b>THE ENTRY FEE</b>
+<b>THE ENTRY FEE (Optional)</b>
 <p>
-11. An <b>entry fee</b> of $20 CDN will be used for building up a prize pool. You can participate but <b>you can not win</b> 
+11. An <b>optionally entry fee</b> of $20 CDN will be used for building up a prize pool. You can always participate but <b>you can not win</b> 
 any prizes if <b>your payment is not received by April 2nd, 
 2016</b>. Prizes will be awarded at the end of the season for the <b>top five players</b> who have 
 sent the payment, as follows (they will be notified by e-mail):
