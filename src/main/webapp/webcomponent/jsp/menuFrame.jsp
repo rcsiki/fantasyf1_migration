@@ -7,7 +7,6 @@
   }
   File curDir = new File("./test.txt").getParentFile();
   String ap = curDir.getAbsolutePath();
-  String af = curDir.getAbsoluteFile();
   // load the configuration if not already done
   CompetitionManager cm = CompetitionManager.getInstance();
 %>
@@ -29,9 +28,6 @@
         </TR>  
         <TR>
           <TD class="tablelayoutheader">ap: <%=ap%></TD>
-        </TR>  
-        <TR>
-          <TD class="tablelayoutheader">af: <%=af%></TD>
         </TR>  
         <TR>
           <TD class="tablelayoutnobold"><A href='<%=FormUtil.makeURL(request, "/webcomponent/jsp/home.jsp")%>' target="dataframe" onclick="resetRaceOptionSelector();">Home</A></TD>
