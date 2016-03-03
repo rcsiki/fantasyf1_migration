@@ -212,7 +212,7 @@ public class CompetitionManager
 	public String renderRegistrationLink()
 	{
 		StringBuffer sb  = new StringBuffer();
-        String helpText = "Registration expires " + WebConfig.PAYMENT_DEADLINE_TEXT;
+        String helpText = "Registration expires " + WebConfig.REGISTRATION_DEADLINE_TEXT;
 		sb.append("<TR><TD class=\"tablelayoutnobold\"");
 		if ( Calendar.getInstance().getTime().after( WebConfig.REGISTRATION_DEADLINE) )
 		{
@@ -220,7 +220,7 @@ public class CompetitionManager
 		}
 		else
 		{
-            sb.append("><A href=\"registrationBody.jsp\" target=\"dataframe\">Registration</A>&nbsp;<A href=\"#\" onclick=\"alert('"
+            sb.append("><A href=\"registrationBody.jsp\" target=\"dataframe\"><b>Registration</b></A>&nbsp;<A href=\"#\" onclick=\"alert('"
                     +
                     helpText
                     + "');\"><img src='../interface/images/help.gif' alt=\"Help\" border=\"0\" align=\"middle\"/></A></TD>");
