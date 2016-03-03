@@ -74,6 +74,7 @@
   </TR>
   <TR>
     <TD>
+      <!--
       <TABLE BORDER=0 cellspacing=2 cellpadding=2>
         <TR>
           <TD class="tablelayoutheader">2010 Fantasy Stats<b></TD>
@@ -85,6 +86,7 @@
           <TD class="tablelayoutnobold"><A href="<%=FormUtil.makeURL(request, "/webcomponent/config/history/config_2010/cars_perf.html")%>" target="dataframe" onclick="resetRaceOptionSelector();">Cars Performance</A></TD>
         </TR>
       </TABLE>
+      -->
     </TD>
   </TR>
   <%=cm.renderAdminLinks()%>
