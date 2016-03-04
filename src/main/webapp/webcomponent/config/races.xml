@@ -5,190 +5,210 @@
   <race>
     <id>race_01</id> 
     <name>Grand Prix of Australia</name>
-    <description>2011 Australian Grand Prix</description>
-    <date>2011/3/27</date>
+    <description>2016 Australian Grand Prix</description>
+    <date>2016/03/20</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/732/8.html</url>
+    <url/>
   </race>
-
-  <!-- Grand Prix of Malaysia -->
+	
+  <!-- Grand Prix of Bahrain -->
   <race>
     <id>race_02</id> 
-    <name>Grand Prix of Malaysia</name>
-    <description>2011 Malaysian Grand Prix</description>
-    <date>2011/4/10</date>
+    <name>Grand Prix of Bahrain</name>
+    <description>2016 Bahrain Grand Prix</description>
+    <date>2016/04/03</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/733/8.html</url>
+    <url/>
   </race>
-
+	
   <!-- Grand Prix of China -->
   <race>
     <id>race_03</id> 
     <name>Grand Prix of China</name>
-    <description>2011 Chinese Grand Prix</description>
-    <date>2011/4/17</date>
+    <description>2016 Chinese Grand Prix</description>
+    <date>2016/04/17</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/729/8.html</url>
+    <url/>
   </race>
-
-	<!-- Grand Prix of Turkey -->
+	
+  <!-- Grand Prix of Russia -->
   <race>
     <id>race_04</id> 
-    <name>Grand Prix of Turkey</name>
-    <description>2011 Turkey Grand Prix</description>
-    <date>2011/5/8</date>
+    <name>Grand Prix of Russia</name>
+    <description>2016 Russian Grand Prix</description>
+    <date>2016/05/01</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/726/8.html</url>
+    <url/>
   </race>
 	
   <!-- Grand Prix of Spain -->
   <race>
     <id>race_05</id> 
     <name>Grand Prix of Spain</name>
-    <description>2011 Spanish Grand Prix</description>
-    <date>2011/5/22</date>
+    <description>2016 Spanish Grand Prix</description>
+    <date>2016/05/15</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/718/8.html</url>
+    <url/>
   </race>
 	
   <!-- Grand Prix of Monaco -->
   <race>
     <id>race_06</id> 
     <name>Grand Prix of Monaco</name>
-    <description>2011 Monaco Grand Prix</description>
-    <date>2011/5/29</date>
+    <description>2016 Monaco Grand Prix</description>
+    <date>2016/05/29</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/719/8.html</url>
+    <url/>
   </race>
-
-	  <!-- Grand Prix of Canada -->
+	
+  <!-- Grand Prix of Canada -->
   <race>
     <id>race_07</id> 
     <name>Grand Prix of Canada</name>
-    <description>2011 Canadian Grand Prix</description>
-    <date>2011/6/12</date>
+    <description>2016 Canadian Grand Prix</description>
+    <date>2016/06/12</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/724/8.html</url>
+    <url/>
   </race>
 	
   <!-- Grand Prix of Europe -->
   <race>
     <id>race_08</id> 
     <name>Grand Prix of Europe</name>
-    <description>2011 European Grand Prix</description>
-    <date>2011/6/26</date>
+    <description>2016 European Grand Prix</description>
+    <date>2016/06/19</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/728/8.html</url>
+    <url/>
   </race>
 	
-  <!-- Grand Prix of Great Britain -->
+  <!-- Grand Prix of Austria -->
   <race>
     <id>race_09</id> 
-    <name>Grand Prix of Britain</name>
-    <description>2011 British Grand Prix</description>
-    <date>2011/7/10</date>
+    <name>Grand Prix of Austria</name>
+    <description>2016 Austrian Grand Prix</description>
+    <date>2016/07/03</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/724/8.html</url>
+    <url/>
   </race>
 	
-  <!-- Grand Prix of Germany -->
+  <!-- Grand Prix of Britain -->
   <race>
     <id>race_10</id> 
-    <name>Grand Prix of Germany</name>
-    <description>2011 German Grand Prix</description>
-    <date>2011/7/24</date>
+    <name>Grand Prix of Britain</name>
+    <description>2016 British Grand Prix</description>
+    <date>2016/07/10</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/725/8.html</url>
-  </race>  
+    <url/>
+  </race>
 	
   <!-- Grand Prix of Hungary -->
   <race>
     <id>race_11</id> 
     <name>Grand Prix of Hungary</name>
-    <description>2011 Hungarian Grand Prix</description>
-    <date>2011/7/31</date>
+    <description>2016 Hungarian Grand Prix</description>
+    <date>2016/07/24</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/726/8.html</url>
-  </race> 
-
-  <!-- Grand Prix of Belgium -->
+    <url/>
+  </race>
+	
+  <!-- Grand Prix of Germany -->
   <race>
     <id>race_12</id> 
-    <name>Grand Prix of Belgium</name>
-    <description>2011 Belgium Grand Prix</description>
-    <date>2011/8/28</date>
+    <name>Grand Prix of Germany</name>
+    <description>2016 German Grand Prix</description>
+    <date>2016/07/31</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/728/8.html</url>
+    <url/>
   </race>
-
-  <!-- Grand Prix of Italy -->
+	
+  <!-- Grand Prix of Belgium -->
   <race>
     <id>race_13</id> 
-    <name>Grand Prix of Italy</name>
-    <description>2011 Italian Grand Prix</description>
-    <date>2011/9/11</date>
+    <name>Grand Prix of Belgium</name>
+    <description>2016 Belgian Grand Prix</description>
+    <date>2016/08/28</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/728/8.html</url>
+    <url/>
+  </race>
+	
+  <!-- Grand Prix of Italy -->
+  <race>
+    <id>race_14</id> 
+    <name>Grand Prix of Italy</name>
+    <description>2016 Italian Grand Prix</description>
+    <date>2016/09/04</date>
+    <ended>no</ended>
+    <url/>
   </race>
 	
   <!-- Grand Prix of Singapore -->
   <race>
-    <id>race_14</id> 
-    <name>Grand Prix of Singapore</name>
-    <description>2011 Singapore Grand Prix</description>
-    <date>2011/9/25</date>
-    <ended>no</ended>
-    <url>http://www.formula1.com/race/result/722/8.html</url>
-  </race>  
-
-  <!-- Grand Prix of Japan -->
-  <race>
     <id>race_15</id> 
-    <name>Grand Prix of Japan</name>
-    <description>2011 Japanese Grand Prix</description>
-    <date>2011/10/9</date>
+    <name>Grand Prix of Singapore</name>
+    <description>2016 Singaporean Grand Prix</description>
+    <date>2016/09/18</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/730/8.html</url>
-  </race>
-  
-  <!-- Grand Prix of Korea -->
-  <race>
-    <id>race_16</id> 
-    <name>Grand Prix of Korea</name>
-    <description>2011 Korean Grand Prix</description>
-    <date>2011/10/16</date>
-    <ended>no</ended>
-    <url>http://www.formula1.com/race/result/731/8.html</url>
+    <url/>
   </race>
 	
-  <!-- Grand Prix of India -->
+  <!-- Grand Prix of Malaysia -->
+  <race>
+    <id>race_16</id> 
+    <name>Grand Prix of Malaysia</name>
+    <description>2016 Malaysian Grand Prix</description>
+    <date>2016/10/02</date>
+    <ended>no</ended>
+    <url/>
+  </race>
+	
+  <!-- Grand Prix of Japan -->
   <race>
     <id>race_17</id> 
-    <name>Grand Prix of India</name>
-    <description>2011 Indian Grand Prix</description>
-    <date>2011/10/30</date>
+    <name>Grand Prix of Japan</name>
+    <description>2016 Japanese Grand Prix</description>
+    <date>2016/10/09</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/731/8.html</url>
+    <url/>
+  </race>
+	
+  <!-- Grand Prix of USA -->
+  <race>
+    <id>race_18</id> 
+    <name>Grand Prix of USA</name>
+    <description>2016 USA Grand Prix</description>
+    <date>2016/10/23</date>
+    <ended>no</ended>
+    <url/>
+  </race>
+	
+  <!-- Grand Prix of Mexico -->
+  <race>
+    <id>race_19</id> 
+    <name>Grand Prix of Mexico</name>
+    <description>2016 Mexican Grand Prix</description>
+    <date>2016/10/30</date>
+    <ended>no</ended>
+    <url/>
+  </race>
+	
+  <!-- Grand Prix of Brasil -->
+  <race>
+    <id>race_20</id> 
+    <name>Grand Prix of Brasil</name>
+    <description>2016 Brasilian Grand Prix</description>
+    <date>2016/11/13</date>
+    <ended>no</ended>
+    <url/>
   </race>
 	
   <!-- Grand Prix of Abu Dhabi -->
   <race>
-    <id>race_18</id> 
+    <id>race_21</id> 
     <name>Grand Prix of Abu Dhabi</name>
-    <description>2011 Abu Dhabi Grand Prix</description>
-    <date>2011/11/13</date>
+    <description>2016 Abu Dhabi Grand Prix</description>
+    <date>2016/11/27</date>
     <ended>no</ended>
-    <url>http://www.formula1.com/race/result/721/8.html</url>
-  </race>
-	
-  <!-- Grand Prix of Brazil -->
-  <race>
-    <id>race_19</id> 
-    <name>Grand Prix of Brazil</name>
-    <description>2011 Brazilian Grand Prix</description>
-    <date>2011/11/27</date>
-    <ended>no</ended>
-    <url>http://www.formula1.com/race/result/731/8.html</url>
+    <url/>
   </race>
 	
 </races>

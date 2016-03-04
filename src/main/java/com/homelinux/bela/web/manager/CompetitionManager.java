@@ -209,7 +209,6 @@ public class CompetitionManager
 	public String renderRegistrationLink()
 	{
 		StringBuffer sb  = new StringBuffer();
-        String helpText = "Registration expires " + WebConfig.REGISTRATION_DEADLINE_TEXT;
 		sb.append("<TR><TD class=\"tablelayoutnobold\"");
 		if ( Calendar.getInstance().getTime().after( WebConfig.REGISTRATION_DEADLINE) )
 		{
@@ -217,10 +216,34 @@ public class CompetitionManager
 		}
 		else
 		{
-            sb.append("><A href=\"registrationBody.jsp\" target=\"dataframe\"><b>Registration</b></A>&nbsp;<A href=\"#\" onclick=\"alert('"
-                    +
-                    helpText
-                    + "');\"><img src='../interface/images/help.gif' alt=\"Help\" border=\"0\" align=\"middle\"/></A></TD>");
+            int timeToDeadlineSeconds = (int) (Calendar.getInstance().getTimeInMillis() / (1000)) -
+                    (int)(WebConfig.REGISTRATION_DEADLINE.getTime()/(1000));
+		    sb.append("><A href=\"registrationBody.jsp\" target=\"dataframe\">Registration</A></TD>");
+            sb.append("<TR><TD class=\"tablelayoutnobold\"><span id=\"countdown\" class=\"tablelayoutnobold\"></span>");
+            sb.append("</TD></TR>");
+            sb.append("<TR><TD class=\"tablelayoutnobold\">Day&nbsp;Hr&nbsp;Min&nbsp;Sec</TD>");
+            sb.append("<script>");
+            sb.append("var seconds = ").append(timeToDeadlineSeconds).append(";");
+            sb.append("function timer() {");
+            sb.append("var days        = Math.floor(seconds/24/60/60);");
+            sb.append("var hoursLeft   = Math.floor((seconds) - (days*86400));");
+            sb.append("var hours       = Math.floor(hoursLeft/3600);");
+            sb.append("var minutesLeft = Math.floor((hoursLeft) - (hours*3600));");
+            sb.append("var minutes     = Math.floor(minutesLeft/60);");
+            sb.append("var remainingSeconds = seconds % 60;");
+            sb.append("if (remainingSeconds < 10) {");
+            sb.append("remainingSeconds = \"0\" + remainingSeconds;");
+            sb.append("}");
+            sb.append("document.getElementById('countdown').innerHTML = days + \":\" + hours + \":\" + minutes + \":\" + remainingSeconds;");
+            sb.append("if (seconds == 0) {");
+            sb.append("clearInterval(countdownTimer);");
+            sb.append("document.getElementById('countdown').innerHTML = \"Completed\";");
+            sb.append("} else {");
+            sb.append("seconds--;");
+            sb.append("}");
+            sb.append("}");
+            sb.append("var countdownTimer = setInterval('timer()', 1000);");
+            sb.append("</script>");
 		}
 		sb.append("</TR>");
 		return sb.toString();

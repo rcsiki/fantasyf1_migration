@@ -2,49 +2,102 @@
 
 <teams>
   <team>
-    <id>team_01</id>                  <!-- Ferrari -->
+    <id>team_01</id>                  <!-- Mercedes -->
+    <name>Mercedes</name>
+    <description>Mercedes</description>
+    <driver1>driver_01</driver1>      <!-- Lewis Hamilton -->
+    <driver2>driver_02</driver2>      <!-- Nico Rosberg -->
+    <cost>16</cost>
+  </team>
+					
+  <team>
+    <id>team_02</id>                  <!-- Ferrari -->
     <name>Ferrari</name>
     <description>Ferrari</description>
-    <driver1>driver_01</driver1>      <!-- Felipe Massa -->
-    <driver2>driver_02</driver2>      <!-- Fernando Alonso -->
-    <cost>14</cost>
+    <driver1>driver_03</driver1>      <!-- Sebastian Vettel -->
+    <driver2>driver_04</driver2>      <!-- Kimi Räikkönen -->
+    <cost>15</cost>
   </team>
-	
-	
+					
   <team>
-    <id>team_02</id>                  <!-- Williams -->
+    <id>team_03</id>                  <!-- Williams -->
     <name>Williams</name>
-    <description>Williams</description>     
-    <driver1>driver_03</driver1>     <!-- Rubens Barrichello -->
-    <driver2>driver_04</driver2>     <!-- Nico Hulkenberg -->
+    <description>Williams</description>
+    <driver1>driver_05</driver1>      <!-- Valtteri Bottas -->
+    <driver2>driver_06</driver2>      <!-- Felipe Massa -->
+    <cost>12</cost>
+  </team>
+					
+  <team>
+    <id>team_04</id>                  <!-- Red Bull -->
+    <name>Red Bull</name>
+    <description>Red Bull</description>
+    <driver1>driver_07</driver1>      <!-- Daniil Kvyat -->
+    <driver2>driver_08</driver2>      <!-- Daniel Ricciardo -->
+    <cost>10</cost>
+  </team>
+					
+  <team>
+    <id>team_05</id>                  <!-- Force India -->
+    <name>Force India</name>
+    <description>Force India</description>
+    <driver1>driver_09</driver1>      <!-- Sergio Perez -->
+    <driver2>driver_10</driver2>      <!-- Nico Hulkenberg -->
     <cost>9</cost>
   </team>
-	
+					
   <team>
-    <id>team_03</id>                   <!-- ForceIndia -->
-    <name>ForceIndia</name>
-    <description>ForceIndia</description>
-    <driver1>driver_05</driver1>       <!-- Adrian Sutil -->
-    <driver2>driver_06</driver2>       <!-- Vitantonio Liuzzi -->
-    <cost>8</cost>
-  </team>
-	
-  <team>
-    <id>team_04</id>                  <!-- Sauber -->
-    <name>Sauber</name>
-    <description>Sauber</description>
-    <driver1>driver_07</driver1>      <!-- Pedro De La Rosa -->
-    <driver2>driver_08</driver2>      <!-- Kamui Kobayashi -->
+    <id>team_06</id>                  <!-- Haas -->
+    <name>Haas</name>
+    <description>Haas</description>
+    <driver1>driver_11</driver1>      <!-- Romain Grosjean -->
+    <driver2>driver_12</driver2>      <!-- Esteban Guiterrez -->
     <cost>7</cost>
   </team>
-	
+					
   <team>
-    <id>team_05</id>                   <!-- Lotus -->
-    <name>Lotus</name>
-    <description>Lotus</description>
-    <driver1>driver_09</driver1>       <!-- Jarno Trulli -->
-    <driver2>driver_10</driver2>       <!-- Heikki Kovalainen -->
+    <id>team_07</id>                  <!-- Toro Rosso -->
+    <name>Toro Rosso</name>
+    <description>Toro Rosso</description>
+    <driver1>driver_14</driver1>      <!-- Max Verstappen -->
+    <driver2>driver_15</driver2>      <!-- Carlos Sainz -->
+    <cost>8</cost>
+  </team>
+					
+  <team>
+    <id>team_08</id>                  <!-- Sauber -->
+    <name>Sauber</name>
+    <description>Sauber</description>
+    <driver1>driver_16</driver1>      <!-- Felipe Nasr -->
+    <driver2>driver_17</driver2>      <!-- Marcus Ericsson -->
     <cost>5</cost>
   </team>
-				
+					
+  <team>
+    <id>team_09</id>                  <!-- McLaren -->
+    <name>McLaren</name>
+    <description>McLaren</description>
+    <driver1>driver_18</driver1>      <!-- Jenson Button -->
+    <driver2>driver_19</driver2>      <!-- Fernando Alonso -->
+    <cost>14</cost>
+  </team>
+					
+  <team>
+    <id>team_10</id>                  <!-- Renault -->
+    <name>Renault</name>
+    <description>Renault</description>
+    <driver1>driver_20</driver1>      <!-- Jolyon Palmer -->
+    <driver2>driver_21</driver2>      <!-- Kevin Magnussen -->
+    <cost>6</cost>
+  </team>
+					
+  <team>
+    <id>team_11</id>                  <!-- Manor -->
+    <name>Manor</name>
+    <description>Manor</description>
+    <driver1>driver_22</driver1>      <!-- Pascal Wehrlein -->
+    <driver2>driver_23</driver2>      <!-- Rio Haryanto -->
+    <cost>3</cost>
+  </team>
+					
 </teams>
