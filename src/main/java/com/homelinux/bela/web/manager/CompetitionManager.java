@@ -216,8 +216,8 @@ public class CompetitionManager
 		}
 		else
 		{
-            int timeToDeadlineSeconds = (int) (Calendar.getInstance().getTimeInMillis() / (1000)) -
-                    (int)(WebConfig.REGISTRATION_DEADLINE.getTime()/(1000));
+            int timeToDeadlineSeconds = (int) (WebConfig.REGISTRATION_DEADLINE.getTime() / (1000)) -
+                    (int) (Calendar.getInstance().getTimeInMillis() / (1000));
 		    sb.append("><A href=\"registrationBody.jsp\" target=\"dataframe\">Registration</A></TD>");
             sb.append("<TR><TD class=\"tablelayoutnobold\"><span id=\"countdown\" class=\"tablelayoutnobold\"></span>");
             sb.append("</TD></TR>");
