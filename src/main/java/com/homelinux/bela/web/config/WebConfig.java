@@ -114,7 +114,7 @@ public class WebConfig
             REGISTRATION_DEADLINE = new Date(REGISTRATION_DEADLINE_TEXT);
             PAYMENT_DEADLINE_TEXT = "April 2nd, 2016";
             PAYMENT_MAIL_ADDRESS = "Laszlo Benedek, 37 Old Orchard Crescent, Richmond Hill, ON, L4S 0A2, Canada";
-            CONTACT_INFO = "Robertos Csiki at robert.csiki@gmail.com, Laszlo Benedek at benedekl@yahoo.com";
+            CONTACT_INFO = "Robert Csiki at robert.csiki@gmail.com, Laszlo Benedek at benedekl@yahoo.com";
 			ADMIN_PWD = "belizna";
             TIEBREAKER_DRIVER_NAME = "Fernando Alonso";
 		}

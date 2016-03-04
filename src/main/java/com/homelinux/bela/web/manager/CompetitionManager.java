@@ -209,7 +209,7 @@ public class CompetitionManager
 	public String renderRegistrationLink()
 	{
 		StringBuffer sb  = new StringBuffer();
-		sb.append("<TR><TD class=\"tablelayoutnobold\"");
+        sb.append("<TR><TD id=\"registrationlink\" class=\"tablelayoutnobold\"");
 		if ( Calendar.getInstance().getTime().after( WebConfig.REGISTRATION_DEADLINE) )
 		{
 			sb.append(" title=\"Sorry, the registration time has expired.\">Registration</TD");			
@@ -231,13 +231,23 @@ public class CompetitionManager
             sb.append("var minutesLeft = Math.floor((hoursLeft) - (hours*3600));");
             sb.append("var minutes     = Math.floor(minutesLeft/60);");
             sb.append("var remainingSeconds = seconds % 60;");
+            sb.append("if (days < 10) {");
+            sb.append("days = \"0\" + days;");
+            sb.append("}");
+            sb.append("if (hours < 10) {");
+            sb.append("hours = \"0\" + hours;");
+            sb.append("}");
+            sb.append("if (minutes < 10) {");
+            sb.append("minutes = \"0\" + minutes;");
+            sb.append("}");
             sb.append("if (remainingSeconds < 10) {");
             sb.append("remainingSeconds = \"0\" + remainingSeconds;");
             sb.append("}");
             sb.append("document.getElementById('countdown').innerHTML = days + \":\" + hours + \":\" + minutes + \":\" + remainingSeconds;");
             sb.append("if (seconds == 0) {");
             sb.append("clearInterval(countdownTimer);");
-            sb.append("document.getElementById('countdown').innerHTML = \"Completed\";");
+            sb.append("document.getElementById('countdown').innerHTML = \"Registration expired.\";");
+            sb.append("document.getElementById('registrationlink').innerHTML = \"Registration\";");
             sb.append("} else {");
             sb.append("seconds--;");
             sb.append("}");
