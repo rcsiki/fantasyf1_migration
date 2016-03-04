@@ -665,10 +665,10 @@ public class CompetitionManager
 	   throws Exception
 	{
 		Document doc = null;
-		File playersXmlFile = new File(APP_ROOT_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
+        File playersXmlFile = new File(APP_DATA_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
 		if ( playersXmlFile.exists() )
 		{
-			doc = getDocument(IConstants.PLAYERS_RELATIVE_FILEPATH);
+            doc = getDocument(APP_DATA_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
 		}
 		else
 		{
@@ -816,10 +816,11 @@ public class CompetitionManager
 	   throws Exception
 	{
 		Document doc = null;
-		File raceResultsXmlFile = new File(APP_ROOT_FOLDER_PATH + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
+        File raceResultsXmlFile = new File(APP_DATA_FOLDER_PATH
+                + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
 		if ( raceResultsXmlFile.exists() )
 		{
-			doc = getDocument(IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
+            doc = getDocument(APP_DATA_FOLDER_PATH + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
 		}
 		else
 		{
@@ -1390,7 +1391,7 @@ public class CompetitionManager
 	private void loadDrivers()
 	   throws Exception
 	{
-		Document doc = getDocument(IConstants.DRIVERS_RELATIVE_FILEPATH);
+        Document doc = getDocument(APP_ROOT_FOLDER_PATH + IConstants.DRIVERS_RELATIVE_FILEPATH);
 		// let's see how many rules we have defined
 		NodeIterator ni = XPathAPI.selectNodeIterator(doc, "/drivers/driver");
 		int nodesCount = 0;
@@ -1454,7 +1455,7 @@ public class CompetitionManager
 	private void loadTeams()
 	   throws Exception
 	{
-		Document doc = getDocument(IConstants.TEAMS_RELATIVE_FILEPATH);
+        Document doc = getDocument(APP_ROOT_FOLDER_PATH + IConstants.TEAMS_RELATIVE_FILEPATH);
 		// let's see how many rules we have defined
 		NodeIterator ni = XPathAPI.selectNodeIterator(doc, "/teams/team");
 		int nodesCount = 0;
@@ -1499,8 +1500,7 @@ public class CompetitionManager
 	private void loadRaces()
 	   throws Exception
 	{
-		Document doc = getDocument(IConstants.RACES_RELATIVE_FILEPATH);
-		// let's see how many rules we have defined
+        Document doc = getDocument(APP_ROOT_FOLDER_PATH + IConstants.RACES_RELATIVE_FILEPATH);
 		NodeIterator ni = XPathAPI.selectNodeIterator(doc, "/races/race");
 		int nodesCount = 0;
 		while ((ni.nextNode())!= null)
@@ -1512,7 +1512,6 @@ public class CompetitionManager
 		String strDescription = null;
 		String strDate = null;
 		String strUrl = null;
-		// now lookup in the doc and build the rules map
 		for (int i = 1 ; i <= nodesCount ; i++)
 		{
 			ni = XPathAPI.selectNodeIterator(doc, "/races/race["+i+"]/id");
@@ -1544,14 +1543,15 @@ public class CompetitionManager
 	private void loadRacesResults()
 	   throws Exception
 	{
-		File racesResultsXmlFile = new File(APP_ROOT_FOLDER_PATH + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
+        File racesResultsXmlFile = new File(APP_DATA_FOLDER_PATH
+                + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
 		if (!racesResultsXmlFile.exists())
 		{
-			// the season hasn't started yed?
+            // the season hasn't started yeT?
 			return;
 		}
 
-		Document doc = getDocument(IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
+        Document doc = getDocument(APP_DATA_FOLDER_PATH + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
 		// let's see how many races have completed
 		NodeIterator ni = XPathAPI.selectNodeIterator(doc, "/results/race");
 		int nodesCount = 0;
@@ -1560,7 +1560,6 @@ public class CompetitionManager
 			nodesCount++;
 		}
 		
-		// now lookup in the doc and build the rules map
 		for (int i = 1 ; i <= nodesCount ; i++)
 		{
 			loadRaceResults(doc, i);
@@ -1627,7 +1626,7 @@ public class CompetitionManager
 	private void loadRules()
 	   throws Exception
 	{
-		Document doc = getDocument(IConstants.RULES_RELATIVE_FILEPATH);
+        Document doc = getDocument(APP_ROOT_FOLDER_PATH + IConstants.RULES_RELATIVE_FILEPATH);
 		// let's see how many rules we have defined
 		NodeIterator ni = XPathAPI.selectNodeIterator(doc, "/rules/rule");
 		int nodesCount = 0;
@@ -1746,15 +1745,14 @@ public class CompetitionManager
 	private void loadPlayers()
 	   throws Exception
 	{
-		File playersXmlFile = new File(APP_ROOT_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
+        File playersXmlFile = new File(APP_DATA_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
 		if (!playersXmlFile.exists())
 		{
 			// no players registered yet
 			return;
 		}
 		
-		Document doc = getDocument(IConstants.PLAYERS_RELATIVE_FILEPATH);
-		// let's see how many rules we have defined
+        Document doc = getDocument(APP_DATA_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
 		NodeIterator ni = XPathAPI.selectNodeIterator(doc, "/players/player");
 		int nodesCount = 0;
 		while ((ni.nextNode())!= null)
@@ -1830,10 +1828,9 @@ public class CompetitionManager
 	}
 		
 
-	private Document getDocument(String strRelativePath)
+    private Document getDocument(String strAbsolutePath)
 	   throws Exception
 	{
-		String strAbsolutePath = APP_ROOT_FOLDER_PATH + strRelativePath;
 		Document doc = null;
         DocumentBuilderFactory dfactory = DocumentBuilderFactory.newInstance();
         FileInputStream fis = new FileInputStream(strAbsolutePath);

@@ -48,7 +48,8 @@ public class ExtractorHelper {
 	static {
 		RACES = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.RACES_RELATIVE_FILEPATH;
 		DRIVERS = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.DRIVERS_RELATIVE_FILEPATH;
-		RACES_RESULTS = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.RACE_RESULTS_RELATIVE_FILEPATH;
+        RACES_RESULTS = CompetitionManager.APP_DATA_FOLDER_PATH
+                + IConstants.RACE_RESULTS_RELATIVE_FILEPATH;
 		XSL = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.XSL_RELATIVE_FILEPATH;
 		TEMP = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.TEMP_RELATIVE_FILEPATH;
 	}

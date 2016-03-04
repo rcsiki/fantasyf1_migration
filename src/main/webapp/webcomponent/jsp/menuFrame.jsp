@@ -32,7 +32,7 @@
         </TR>          
         	<%=cm.renderRegistrationLink()%>
         <TR>
-         <TD class="tablelayoutnobold"><A href="standingsBody.jsp" target="dataframe" onclick="alert('<%=CompetitionManager.APP_DATA_FOLDER_PATH%>');resetRaceOptionSelector();">Standings</A></TD>
+         <TD class="tablelayoutnobold"><A href="standingsBody.jsp" target="dataframe" onclick="resetRaceOptionSelector();">Standings</A></TD>
         </TR>  
       </TABLE>
     </TD>
