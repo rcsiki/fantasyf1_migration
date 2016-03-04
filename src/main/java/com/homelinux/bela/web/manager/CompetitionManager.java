@@ -243,7 +243,7 @@ public class CompetitionManager
             sb.append("if (remainingSeconds < 10) {");
             sb.append("remainingSeconds = \"0\" + remainingSeconds;");
             sb.append("}");
-            sb.append("document.getElementById('countdown').innerHTML = days + \":\" + hours + \":\" + minutes + \":\" + remainingSeconds;");
+            sb.append("document.getElementById('countdown').innerHTML = \"&nbsp;&nbsp;\" + days + \":\" + hours + \":\" + minutes + \":\" + remainingSeconds;");
             sb.append("if (seconds == 0) {");
             sb.append("clearInterval(countdownTimer);");
             sb.append("document.getElementById('countdown').innerHTML = \"Registration expired.\";");
