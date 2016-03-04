@@ -221,7 +221,7 @@ public class CompetitionManager
 		    sb.append("><A href=\"registrationBody.jsp\" target=\"dataframe\">Registration</A></TD>");
             sb.append("<TR><TD class=\"tablelayoutnobold\"><span id=\"countdown\" class=\"tablelayoutnobold\"></span>");
             sb.append("</TD></TR>");
-            sb.append("<TR><TD class=\"tablelayoutnobold\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Day&nbsp;Hr&nbsp;Min&nbsp;Sec</TD>");
+            sb.append("<TR><TD class=\"tablelayoutnobold\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Day&nbsp;Hr&nbsp;Min&nbsp;Sec</TD>");
             sb.append("<script>");
             sb.append("var seconds = ").append(timeToDeadlineSeconds).append(";");
             sb.append("function timer() {");
