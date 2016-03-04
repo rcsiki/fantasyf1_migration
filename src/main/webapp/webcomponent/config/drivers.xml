@@ -48,7 +48,7 @@
    </driver>
 
    <driver>
-      <id>driver_05</id>                           <!-- Paul di Resta -->
+      <id>driver_06</id>                           <!-- Paul di Resta -->
       <name>Paul di Resta</name>
       <description>Paul di Resta</description>
       <team>team_03</team>                         <!-- ForceIndia -->
@@ -57,7 +57,7 @@
    </driver>
 	 
    <driver>
-      <id>driver_06</id>                           <!-- Kamui Kobayashi -->
+      <id>driver_07</id>                           <!-- Kamui Kobayashi -->
       <name>Kamui Kobayashi</name>
       <description>Kamui Kobayashi</description>
       <team>team_04</team>                         <!-- Sauber -->
@@ -66,7 +66,7 @@
    </driver>
 	  
    <driver>
-      <id>driver_07</id>                           <!-- Sergio Perez -->
+      <id>driver_08</id>                           <!-- Sergio Perez -->
       <name>Sergio Perez</name>
       <description>Sergio Perez</description>
       <team>team_04</team>                         <!-- Sauber -->
