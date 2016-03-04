@@ -2706,7 +2706,7 @@ public class CompetitionManager
 	
 	private static boolean m_blHaveRulesBeenApplied = false;
 	public static String APP_ROOT_FOLDER_PATH = null;
-    public static String APP_DATA_FOLDER_PATH = System.getenv("OPENSHIFT_DATA_DIR");
+    public static String APP_DATA_FOLDER_PATH = null;
 	private static String ADMIN_PASSWORD = null;
 }
 

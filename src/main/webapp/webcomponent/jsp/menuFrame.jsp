@@ -1,9 +1,21 @@
-<%@ page errorPage="error.jsp" import="com.homelinux.bela.web.manager.CompetitionManager,com.homelinux.bela.web.fc.IConstants,com.homelinux.bela.web.util.FormUtil"%>
+<%@ page errorPage="error.jsp" import="java.lang.System,com.homelinux.bela.web.manager.CompetitionManager,com.homelinux.bela.web.fc.IConstants,com.homelinux.bela.web.util.FormUtil"%>
 
 <%
-  if (CompetitionManager.APP_ROOT_FOLDER_PATH == null) {	      
-    // CompetitionManager.APP_ROOT_FOLDER_PATH = application.getRealPath("/");
-    CompetitionManager.APP_ROOT_FOLDER_PATH = "/var/lib/openshift/56d645d789f5cfb5710000be/app-root/runtime/repo/target/fantasy/";
+  // set the app root path and app data path
+  if (CompetitionManager.APP_DATA_FOLDER_PATH == null)
+  {	      
+      String strOpenShiftDataDir =  System.getenv("OPENSHIFT_DATA_DIR");
+      String strOpenShiftRepoDir =  System.getenv("OPENSHIFT_REPO_DIR");
+      if (strOpenShiftRepoDir == null && strOpenShiftDataDir == null){
+          // the app is not deployed on OpenShift
+          CompetitionManager.APP_ROOT_FOLDER_PATH = application.getRealPath("/");
+          CompetitionManager.APP_DATA_FOLDER_PATH = CompetitionManager.APP_ROOT_FOLDER_PATH;
+      }
+      else {
+          // the app is deployed on OpenShift
+          CompetitionManager.APP_ROOT_FOLDER_PATH = strOpenShiftRepoDir + "target/fantasy/";
+          CompetitionManager.APP_DATA_FOLDER_PATH = strOpenShiftDataDir;
+      }
   }
   // load the configuration if not already done
   CompetitionManager cm = CompetitionManager.getInstance();
