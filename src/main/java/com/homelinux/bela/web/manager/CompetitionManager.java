@@ -221,7 +221,7 @@ public class CompetitionManager
 		    sb.append("><A href=\"registrationBody.jsp\" target=\"dataframe\">Registration</A></TD>");
             sb.append("<TR><TD class=\"tablelayoutnobold\"><span id=\"countdown\" class=\"tablelayoutnobold\"></span>");
             sb.append("</TD></TR>");
-            sb.append("<TR><TD class=\"tablelayoutnobold\">Day&nbsp;Hr&nbsp;Min&nbsp;Sec</TD>");
+            sb.append("<TR><TD class=\"tablelayoutnobold\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Day&nbsp;Hr&nbsp;Min&nbsp;Sec</TD>");
             sb.append("<script>");
             sb.append("var seconds = ").append(timeToDeadlineSeconds).append(";");
             sb.append("function timer() {");
@@ -243,7 +243,7 @@ public class CompetitionManager
             sb.append("if (remainingSeconds < 10) {");
             sb.append("remainingSeconds = \"0\" + remainingSeconds;");
             sb.append("}");
-            sb.append("document.getElementById('countdown').innerHTML = \"&nbsp;&nbsp;&nbsp;\" + days + \":\" + hours + \":\" + minutes + \":\" + remainingSeconds;");
+            sb.append("document.getElementById('countdown').innerHTML = \"Time left:&nbsp;&nbsp;&nbsp;\" + days + \":\" + hours + \":\" + minutes + \":\" + remainingSeconds;");
             sb.append("if (seconds == 0) {");
             sb.append("clearInterval(countdownTimer);");
             sb.append("document.getElementById('countdown').innerHTML = \"Registration expired.\";");
