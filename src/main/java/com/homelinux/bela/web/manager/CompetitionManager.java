@@ -68,8 +68,7 @@ import com.homelinux.bela.web.util.StringUtil;
 
 
 /**
- * @author mrcsiki
- *
+ * @author Robert Csiki
  */
 public class CompetitionManager
 {
