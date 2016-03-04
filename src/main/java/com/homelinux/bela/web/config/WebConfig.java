@@ -116,6 +116,7 @@ public class WebConfig
             CONTACT_INFO = "Robertos Csiki at robert.csiki@gmail.com, Laszlo Benedek at benedekl@yahoo.com";
 			ADMIN_PWD = "belizna";
             TIEBREAKER_DRIVER_NAME = "Fernando Alonso";
+            throw x;
 		}
     }
 }
