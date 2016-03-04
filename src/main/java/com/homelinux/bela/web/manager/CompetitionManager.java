@@ -212,7 +212,7 @@ public class CompetitionManager
         sb.append("<TR><TD id=\"registrationlink\" class=\"tablelayoutnobold\"");
 		if ( Calendar.getInstance().getTime().after( WebConfig.REGISTRATION_DEADLINE) )
 		{
-			sb.append(" title=\"Sorry, the registration time has expired.\">Registration</TD");			
+            sb.append(" title=\"We are sorry, the registration time has expired.\">Registration</TD");
 		}
 		else
 		{
