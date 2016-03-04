@@ -1,9 +1,9 @@
 <%@ page errorPage="error.jsp" import="com.homelinux.bela.web.manager.CompetitionManager,com.homelinux.bela.web.fc.IConstants,com.homelinux.bela.web.util.FormUtil"%>
 
 <%
-  if (CompetitionManager.ROOT_FOLDER_PATH == null) {	      
-    // CompetitionManager.ROOT_FOLDER_PATH = application.getRealPath("/");
-    CompetitionManager.ROOT_FOLDER_PATH = "/var/lib/openshift/56d645d789f5cfb5710000be/app-root/runtime/repo/target/fantasy/";
+  if (CompetitionManager.APP_ROOT_FOLDER_PATH == null) {	      
+    // CompetitionManager.APP_ROOT_FOLDER_PATH = application.getRealPath("/");
+    CompetitionManager.APP_ROOT_FOLDER_PATH = "/var/lib/openshift/56d645d789f5cfb5710000be/app-root/runtime/repo/target/fantasy/";
   }
   // load the configuration if not already done
   CompetitionManager cm = CompetitionManager.getInstance();
@@ -32,7 +32,7 @@
         </TR>          
         	<%=cm.renderRegistrationLink()%>
         <TR>
-         <TD class="tablelayoutnobold"><A href="standingsBody.jsp" target="dataframe" onclick="resetRaceOptionSelector();">Standings</A></TD>
+         <TD class="tablelayoutnobold"><A href="standingsBody.jsp" target="dataframe" onclick="alert('<%=CompetitionManager.APP_DATA_FOLDER_PATH%>');resetRaceOptionSelector();">Standings</A></TD>
         </TR>  
       </TABLE>
     </TD>

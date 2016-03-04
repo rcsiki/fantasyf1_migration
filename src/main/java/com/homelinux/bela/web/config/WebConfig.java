@@ -72,7 +72,7 @@ public class WebConfig
     {
 		try
 		{
-		   String strAppXmlAbsolutePath = CompetitionManager.ROOT_FOLDER_PATH + IConstants.APP_RELATIVE_FILEPATH;
+		   String strAppXmlAbsolutePath = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.APP_RELATIVE_FILEPATH;
 		   Document doc = null;
 		   FileInputStream fis = new FileInputStream(strAppXmlAbsolutePath);
 		   DocumentBuilderFactory dfactory = DocumentBuilderFactory.newInstance();

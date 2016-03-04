@@ -665,7 +665,7 @@ public class CompetitionManager
 	   throws Exception
 	{
 		Document doc = null;
-		File playersXmlFile = new File(ROOT_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
+		File playersXmlFile = new File(APP_ROOT_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
 		if ( playersXmlFile.exists() )
 		{
 			doc = getDocument(IConstants.PLAYERS_RELATIVE_FILEPATH);
@@ -816,7 +816,7 @@ public class CompetitionManager
 	   throws Exception
 	{
 		Document doc = null;
-		File raceResultsXmlFile = new File(ROOT_FOLDER_PATH + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
+		File raceResultsXmlFile = new File(APP_ROOT_FOLDER_PATH + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
 		if ( raceResultsXmlFile.exists() )
 		{
 			doc = getDocument(IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
@@ -1544,7 +1544,7 @@ public class CompetitionManager
 	private void loadRacesResults()
 	   throws Exception
 	{
-		File racesResultsXmlFile = new File(ROOT_FOLDER_PATH + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
+		File racesResultsXmlFile = new File(APP_ROOT_FOLDER_PATH + IConstants.RACE_RESULTS_RELATIVE_FILEPATH);
 		if (!racesResultsXmlFile.exists())
 		{
 			// the season hasn't started yed?
@@ -1746,7 +1746,7 @@ public class CompetitionManager
 	private void loadPlayers()
 	   throws Exception
 	{
-		File playersXmlFile = new File(ROOT_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
+		File playersXmlFile = new File(APP_ROOT_FOLDER_PATH + IConstants.PLAYERS_RELATIVE_FILEPATH);
 		if (!playersXmlFile.exists())
 		{
 			// no players registered yet
@@ -1833,7 +1833,7 @@ public class CompetitionManager
 	private Document getDocument(String strRelativePath)
 	   throws Exception
 	{
-		String strAbsolutePath = ROOT_FOLDER_PATH + strRelativePath;
+		String strAbsolutePath = APP_ROOT_FOLDER_PATH + strRelativePath;
 		Document doc = null;
         DocumentBuilderFactory dfactory = DocumentBuilderFactory.newInstance();
         FileInputStream fis = new FileInputStream(strAbsolutePath);
@@ -2711,7 +2711,8 @@ public class CompetitionManager
 	private static SortedMap m_players = null;
 	
 	private static boolean m_blHaveRulesBeenApplied = false;
-	public static String ROOT_FOLDER_PATH = null;
+	public static String APP_ROOT_FOLDER_PATH = null;
+    public static String APP_DATA_FOLDER_PATH = System.getenv("OPENSHIFT_DATA_DIR");
 	private static String ADMIN_PASSWORD = null;
 }
 

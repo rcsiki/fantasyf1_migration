@@ -5,10 +5,10 @@
   if (strPwd != null)
   {
      // set the root path
-     if (CompetitionManager.ROOT_FOLDER_PATH == null)
+     if (CompetitionManager.APP_ROOT_FOLDER_PATH == null)
      {	      
-         // CompetitionManager.ROOT_FOLDER_PATH = application.getRealPath("/");
-         CompetitionManager.ROOT_FOLDER_PATH = "/var/lib/openshift/56d645d789f5cfb5710000be/app-root/runtime/repo/target/fantasy/";
+         // CompetitionManager.APP_ROOT_FOLDER_PATH = application.getRealPath("/");
+         CompetitionManager.APP_ROOT_FOLDER_PATH = "/var/lib/openshift/56d645d789f5cfb5710000be/app-root/runtime/repo/target/fantasy/";
      }
      CompetitionManager.getInstance().setAdminPassword(strPwd);  
   }
