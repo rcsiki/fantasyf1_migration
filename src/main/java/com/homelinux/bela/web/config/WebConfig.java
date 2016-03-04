@@ -105,6 +105,7 @@ public class WebConfig
 		catch(Throwable x)
 		{
 			System.out.println("Failed to load app.xml file! - will use default values.");
+            x.printStackTrace();
 			PLAYER_BUDGET = 36;
 			CONTENT_TYPE = "UTF-8";
             RACES_THIS_SEASON = 21;
@@ -116,7 +117,6 @@ public class WebConfig
             CONTACT_INFO = "Robertos Csiki at robert.csiki@gmail.com, Laszlo Benedek at benedekl@yahoo.com";
 			ADMIN_PWD = "belizna";
             TIEBREAKER_DRIVER_NAME = "Fernando Alonso";
-            throw x;
 		}
     }
 }
