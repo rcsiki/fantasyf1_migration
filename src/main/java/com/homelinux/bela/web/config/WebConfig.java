@@ -89,7 +89,9 @@ public class WebConfig
             RACE_WINNER_REAL_POINTS = Integer
                     .parseInt(ni.nextNode().getFirstChild().getNodeValue());
 		   ni = XPathAPI.selectNodeIterator(doc, "/app/config/regdeadline");
-            REGISTRATION_DEADLINE_TEXT = ni.nextNode().getFirstChild().getNodeValue();
+            // REGISTRATION_DEADLINE_TEXT =
+            // ni.nextNode().getFirstChild().getNodeValue();
+            REGISTRATION_DEADLINE_TEXT = "Fri Mar 18 24:00:00 EST 2016";
             REGISTRATION_DEADLINE = new Date(REGISTRATION_DEADLINE_TEXT);
             ni = XPathAPI.selectNodeIterator(doc, "/app/config/paymentdeadlinetext");
             PAYMENT_DEADLINE_TEXT = ni.nextNode().getFirstChild().getNodeValue();
