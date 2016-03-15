@@ -89,9 +89,8 @@ public class WebConfig
             RACE_WINNER_REAL_POINTS = Integer
                     .parseInt(ni.nextNode().getFirstChild().getNodeValue());
 		   ni = XPathAPI.selectNodeIterator(doc, "/app/config/regdeadline");
-            // REGISTRATION_DEADLINE_TEXT =
-            // ni.nextNode().getFirstChild().getNodeValue();
-            REGISTRATION_DEADLINE_TEXT = "Fri Mar 18 24:00:00 EST 2016";
+            REGISTRATION_DEADLINE_TEXT =
+                    ni.nextNode().getFirstChild().getNodeValue();
             REGISTRATION_DEADLINE = new Date(REGISTRATION_DEADLINE_TEXT);
             ni = XPathAPI.selectNodeIterator(doc, "/app/config/paymentdeadlinetext");
             PAYMENT_DEADLINE_TEXT = ni.nextNode().getFirstChild().getNodeValue();
@@ -112,7 +111,7 @@ public class WebConfig
 			CONTENT_TYPE = "UTF-8";
             RACES_THIS_SEASON = 21;
             RACE_WINNER_REAL_POINTS = 25;
-            REGISTRATION_DEADLINE_TEXT = "Fri Mar 18 24:00:00 EST 2016";
+            REGISTRATION_DEADLINE_TEXT = "Fri Mar 18 24:00:00 EDT 2016";
             REGISTRATION_DEADLINE = new Date(REGISTRATION_DEADLINE_TEXT);
             PAYMENT_DEADLINE_TEXT = "April 2nd, 2016";
             PAYMENT_MAIL_ADDRESS = "Laszlo Benedek, 37 Old Orchard Crescent, Richmond Hill, ON, L4S 0A2, Canada";
