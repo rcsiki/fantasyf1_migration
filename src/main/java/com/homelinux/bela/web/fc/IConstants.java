@@ -33,7 +33,10 @@ public interface IConstants
 	public static final String TEAMS_RELATIVE_FILEPATH = RELATIVE_PATH + "teams.xml";
 	public static final String DRIVERS_RELATIVE_FILEPATH = RELATIVE_PATH + "drivers.xml";
 	
-	public static final String XSL_RELATIVE_FILEPATH = RELATIVE_PATH + "races_results.xsl";
+    public static final String F1DOTCOM_XSL_RELATIVE_FILEPATH = RELATIVE_PATH
+            + "f1dotcom_races_results.xsl";
+    public static final String ERGAST_XSL_RELATIVE_FILEPATH = RELATIVE_PATH
+            + "ergast_races_results.xsl";
 	public static final String TEMP_RELATIVE_FILEPATH = RELATIVE_PATH + "temp.xml";
 			
 	public static final String DRIVER_RULE = "driver";

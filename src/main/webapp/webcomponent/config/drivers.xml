@@ -74,18 +74,18 @@
    </driver>
 	 	 	 
    <driver>
-      <id>driver_09</id>                           <!-- Sergio Perez -->
-      <name>Sergio Perez</name>
-      <description>Sergio Perez</description>
+      <id>driver_09</id>                           <!-- Sergio Pérez -->
+      <name>Sergio Pérez</name>
+      <description>Sergio Pérez</description>
       <team>team_05</team>                         <!-- Force India -->
       <cost>8</cost>
       <replacements/>
    </driver>
 	 	 	 
    <driver>
-      <id>driver_10</id>                           <!-- Nico Hulkenberg -->
-      <name>Nico Hulkenberg</name>
-      <description>Nico Hulkenberg</description>
+      <id>driver_10</id>                           <!-- Nico Hülkenberg -->
+      <name>Nico Hülkenberg</name>
+      <description>Nico Hülkenberg</description>
       <team>team_05</team>                         <!-- Force India -->
       <cost>9</cost>
       <replacements/>
@@ -101,9 +101,9 @@
    </driver>
 	 	 	 
    <driver>
-      <id>driver_12</id>                           <!-- Esteban Guiterrez -->
-      <name>Esteban Guiterrez</name>
-      <description>Esteban Guiterrez</description>
+      <id>driver_12</id>                           <!-- Esteban Gutiérrez -->
+      <name>Esteban Gutiérrez</name>
+      <description>Esteban Gutiérrez</description>
       <team>team_06</team>                         <!-- Haas -->
       <cost>7</cost>
       <replacements/>

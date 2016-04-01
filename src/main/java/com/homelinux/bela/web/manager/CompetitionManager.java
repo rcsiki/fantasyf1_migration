@@ -6,11 +6,42 @@
  */
 package com.homelinux.bela.web.manager;
 
+import com.homelinux.bela.web.config.WebConfig;
+import com.homelinux.bela.web.extractor.ErgastExtractor;
+import com.homelinux.bela.web.extractor.ExtractorException;
+import com.homelinux.bela.web.fc.IConstants;
+import com.homelinux.bela.web.fc.IDriver;
+import com.homelinux.bela.web.fc.IPlayer;
+import com.homelinux.bela.web.fc.IPlayerComponent;
+import com.homelinux.bela.web.fc.IRace;
+import com.homelinux.bela.web.fc.IRacePositionDetail;
+import com.homelinux.bela.web.fc.IRaceResult;
+import com.homelinux.bela.web.fc.IRule;
+import com.homelinux.bela.web.fc.IRuleCase;
+import com.homelinux.bela.web.fc.ITeam;
+import com.homelinux.bela.web.impl.Driver;
+import com.homelinux.bela.web.impl.Player;
+import com.homelinux.bela.web.impl.Race;
+import com.homelinux.bela.web.impl.RacePositionDetail;
+import com.homelinux.bela.web.impl.RaceResult;
+import com.homelinux.bela.web.impl.Rule;
+import com.homelinux.bela.web.impl.RuleCase;
+import com.homelinux.bela.web.impl.Team;
+import com.homelinux.bela.web.util.StringUtil;
+
+import org.apache.xpath.XPathAPI;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Text;
+import org.w3c.dom.traversal.NodeIterator;
+import org.xml.sax.InputSource;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -33,38 +64,6 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-
-import org.apache.xpath.XPathAPI;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Text;
-import org.w3c.dom.traversal.NodeIterator;
-import org.xml.sax.InputSource;
-
-import com.homelinux.bela.web.config.WebConfig;
-import com.homelinux.bela.web.extractor.Extractor;
-import com.homelinux.bela.web.extractor.ExtractorException;
-import com.homelinux.bela.web.fc.IConstants;
-import com.homelinux.bela.web.fc.IDriver;
-import com.homelinux.bela.web.fc.IPlayer;
-import com.homelinux.bela.web.fc.IPlayerComponent;
-import com.homelinux.bela.web.fc.IRace;
-import com.homelinux.bela.web.fc.IRacePositionDetail;
-import com.homelinux.bela.web.fc.IRaceResult;
-import com.homelinux.bela.web.fc.IRule;
-import com.homelinux.bela.web.fc.IRuleCase;
-import com.homelinux.bela.web.fc.ITeam;
-import com.homelinux.bela.web.impl.Driver;
-import com.homelinux.bela.web.impl.Player;
-import com.homelinux.bela.web.impl.Race;
-import com.homelinux.bela.web.impl.RacePositionDetail;
-import com.homelinux.bela.web.impl.RaceResult;
-import com.homelinux.bela.web.impl.Rule;
-import com.homelinux.bela.web.impl.RuleCase;
-import com.homelinux.bela.web.impl.Team;
-import com.homelinux.bela.web.util.StringUtil;
 
 
 /**
@@ -271,11 +270,11 @@ public class CompetitionManager
 			sb.append("<TR>");
 			sb.append("<TD class=\"tablelayoutheader\">Admin Utilities<b></TD>");
 			sb.append("</TR>");
-//			sb.append("<TR>");
-//			sb.append("<TD class=\"tablelayoutnobold\"><A href=\"admin/extractRaceResult.jsp\" target=\"dataframe\">Extract Race Result</A></TD>");
-//			sb.append("</TR>");
 			sb.append("<TR>");
-			sb.append("<TD class=\"tablelayoutnobold\"><A href=\"admin/editRaceResult.jsp\" target=\"dataframe\">Next Race Result</A></TD>");
+            sb.append("<TD class=\"tablelayoutnobold\"><A href=\"admin/extractRaceResult.jsp\" target=\"dataframe\">(Auto) Next Race Result</A></TD>");
+            sb.append("</TR>");
+            sb.append("<TR>");
+            sb.append("<TD class=\"tablelayoutnobold\"><A href=\"admin/editRaceResult.jsp\" target=\"dataframe\">(Manual) Next Race Result</A></TD>");
 			sb.append("</TR>");
 			sb.append("<TR>");
 			sb.append("<TD class=\"tablelayoutnobold\"><A href=\"admin/reloadResult.jsp\" target=\"dataframe\">Reload Config</A></TD>");
@@ -410,8 +409,8 @@ public class CompetitionManager
 	{
 		try
 		{
-			Extractor extractor = new Extractor();
-			extractor.extract(strUrl);		
+            ErgastExtractor extractor = new ErgastExtractor();
+            extractor.extract(strUrl);
 		}
 		catch (ExtractorException exe)
 		{

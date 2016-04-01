@@ -41,8 +41,8 @@
     <id>team_05</id>                  <!-- Force India -->
     <name>Force India</name>
     <description>Force India</description>
-    <driver1>driver_09</driver1>      <!-- Sergio Perez -->
-    <driver2>driver_10</driver2>      <!-- Nico Hulkenberg -->
+    <driver1>driver_09</driver1>      <!-- Sergio Pérez -->
+    <driver2>driver_10</driver2>      <!-- Nico Hülkenberg -->
     <cost>9</cost>
   </team>
 					
@@ -51,7 +51,7 @@
     <name>Haas</name>
     <description>Haas</description>
     <driver1>driver_11</driver1>      <!-- Romain Grosjean -->
-    <driver2>driver_12</driver2>      <!-- Esteban Guiterrez -->
+    <driver2>driver_12</driver2>      <!-- Esteban Gutiérrez -->
     <cost>7</cost>
   </team>
 					

@@ -15,7 +15,9 @@ import java.io.PrintStream;
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
 public class ExtractorException extends Exception {
-	private Exception innerException;
+
+    private static final long serialVersionUID = -996313252590891431L;
+    private Exception innerException;
 	
 	public ExtractorException() { super(); innerException = null; }
 	public ExtractorException(String message) { super(message); innerException = null; }

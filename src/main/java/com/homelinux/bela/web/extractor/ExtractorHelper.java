@@ -6,51 +6,36 @@
  */
 package com.homelinux.bela.web.extractor;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.StringReader;
-import java.net.URL;
-import java.net.URLConnection;
-
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+import com.homelinux.bela.web.fc.IConstants;
+import com.homelinux.bela.web.manager.CompetitionManager;
 
 import org.apache.xml.serialize.OutputFormat;
 import org.apache.xml.serialize.XMLSerializer;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
-import org.w3c.tidy.Tidy;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import com.homelinux.bela.web.fc.IConstants;
-import com.homelinux.bela.web.manager.CompetitionManager;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.StringReader;
 
-/**
- * @author Administrator
- *
- * To change the template for this generated type comment go to
- * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
- */
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
 public class ExtractorHelper {
 	
-	public static String DRIVERS, RACES_RESULTS, RACES, XSL, TEMP;
+    public static String DRIVERS, RACES_RESULTS, RACES, TEMP;
 	
 	static {
 		RACES = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.RACES_RELATIVE_FILEPATH;
 		DRIVERS = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.DRIVERS_RELATIVE_FILEPATH;
         RACES_RESULTS = CompetitionManager.APP_DATA_FOLDER_PATH
                 + IConstants.RACE_RESULTS_RELATIVE_FILEPATH;
-		XSL = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.XSL_RELATIVE_FILEPATH;
 		TEMP = CompetitionManager.APP_ROOT_FOLDER_PATH + IConstants.TEMP_RELATIVE_FILEPATH;
 	}
 
@@ -75,77 +60,6 @@ public class ExtractorHelper {
 		}
 	}
 	
-	/**
-	 * 
-	 * @param url
-	 * @return
-	 * @throws ExtractorHelperException
-	 */
-	public static Document tidyHTML(URL url) throws ExtractorException {
-		try {
-			URLConnection inConnection = url.openConnection();
-			BufferedReader br = new BufferedReader(new InputStreamReader(inConnection.getInputStream()));
-			StringBuffer sb = new StringBuffer(); 
-			String inputLine;
-			String tableBegin = "<table width=\"100%\" height=\"10\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">";
-			String tableEnd = "</table>";
-			boolean canAppend = false;
-			boolean isSecond = false;
-			
-			while ((inputLine = br.readLine()) != null) {
-				if (canAppend) {
-					if ( inputLine.indexOf(tableEnd) != -1 ) {
-						if (isSecond) {
-							sb.append(tableEnd);
-							break;
-						}
-						isSecond = true;
-					}
-					sb.append(inputLine);
-				}
-				
-				if ( !canAppend && (inputLine.indexOf(tableBegin) != -1) ) {
-					sb.append(tableBegin);
-					canAppend = true;
-				}
-			} 
-			br.close();
-
-			InputStream bais = new ByteArrayInputStream(sb.toString().getBytes());
-				
-			org.w3c.tidy.TagTable tags = new org.w3c.tidy.TagTable();
-			tags.defineBlockTag("script");
-				
-			Tidy tidy = new Tidy();
-			
-			tidy.setShowWarnings(false);
-			tidy.setXmlOut(true);
-			tidy.setXmlPi(false);
-			tidy.setDocType("omit");
-			tidy.setXHTML(false);
-			tidy.setRawOut(true);
-			tidy.setNumEntities(true);
-			tidy.setQuiet(true);
-			tidy.setFixComments(true);
-			tidy.setIndentContent(true);
-			tidy.setCharEncoding(org.w3c.tidy.Configuration.ASCII);
-			
-			ByteArrayOutputStream baos = new ByteArrayOutputStream();
-			
-			org.w3c.tidy.Node tNode = tidy.parse(bais, baos);
-			
-			String result = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n" +
-							baos.toString();
-				
-			bais.close();
-			baos.close();
-
-			return parseXMLFromString(result);
-			
-		} catch (IOException e) {
-			throw new ExtractorException("Unable to perform input/output", e);
-		}
-	}
 
 	/**
 	 * 
