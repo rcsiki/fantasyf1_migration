@@ -160,7 +160,12 @@
       <description>Fernando Alonso</description>
       <team>team_09</team>                         <!-- McLaren -->
       <cost>14</cost>
-      <replacements/>
+      <replacements>
+         <replacement>
+            <raceid>race_02</raceid>
+            <drivername>Stoffel Vandoorne</drivername>
+         </replacement>
+      </replacements>
    </driver>
 	 	 	 
    <driver>
