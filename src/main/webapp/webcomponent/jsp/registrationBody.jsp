@@ -1,6 +1,6 @@
-<%@ page errorPage="error.jsp" import="com.homelinux.bela.web.manager.CompetitionManager,
-                                       com.homelinux.bela.web.config.WebConfig,
-                                       com.homelinux.bela.web.util.FormUtil"%>
+<%@ page errorPage="error.jsp" import="com.robertcsiki.f1.web.manager.CompetitionManager,
+                                       com.robertcsiki.f1.web.config.WebConfig,
+                                       com.robertcsiki.f1.web.util.FormUtil"%>
 <HTML>
 <HEAD>
     <link rel="stylesheet" href='<%=FormUtil.makeURL(request, "/webcomponent/interface/style/globalstyle.css")%>' type="text/css">

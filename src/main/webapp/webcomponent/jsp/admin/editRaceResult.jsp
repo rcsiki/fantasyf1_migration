@@ -1,5 +1,5 @@
 <%@ page errorPage="../error.jsp"
-    import="com.homelinux.bela.web.manager.CompetitionManager,com.homelinux.bela.web.fc.IRace,java.text.SimpleDateFormat,com.homelinux.bela.web.util.FormUtil"%>
+    import="com.robertcsiki.f1.web.manager.CompetitionManager,com.robertcsiki.f1.web.fc.IRace,java.text.SimpleDateFormat,com.robertcsiki.f1.web.util.FormUtil"%>
     
 <HTML>
 <HEAD>

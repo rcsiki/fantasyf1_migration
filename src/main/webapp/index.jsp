@@ -1,4 +1,4 @@
-<%@ page errorPage="../error.jsp" import="java.lang.System,com.homelinux.bela.web.manager.CompetitionManager"%>
+<%@ page errorPage="../error.jsp" import="java.lang.System,com.robertcsiki.f1.web.manager.CompetitionManager"%>
 
 <%
      // set the app root path and app data path
@@ -21,7 +21,7 @@
 <HTML>
   <HEAD>
 	<TITLE>Fantasy Formula 1</TITLE>
-	<LINK REL="icon" HREF="http://dev2017-formula1.rhcloud.com/favicon.ico" TYPE="image/vnd.microsoft.icon" />
+	<LINK REL="icon" HREF="http://fantasy-formula1.rhcloud.com/favicon.ico" TYPE="image/vnd.microsoft.icon" />
   </HEAD>
 
   <FRAMESET ROWS="0,*,0" NORESIZE BORDER="0" FRAMEBORDER="0" FRAMEBORDER="no" FRAMESPACING="0">

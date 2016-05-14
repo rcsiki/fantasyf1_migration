@@ -1,4 +1,4 @@
-<%@ page errorPage="error.jsp" import="java.lang.System,com.homelinux.bela.web.manager.CompetitionManager,com.homelinux.bela.web.fc.IConstants,com.homelinux.bela.web.util.FormUtil"%>
+<%@ page errorPage="error.jsp" import="java.lang.System,com.robertcsiki.f1.web.manager.CompetitionManager,com.robertcsiki.f1.web.fc.IConstants,com.robertcsiki.f1.web.util.FormUtil"%>
 
 <%
   // load the configuration if not already done
@@ -11,6 +11,8 @@
     <!--<script language='JavaScript1.2' src='<%=FormUtil.makeURL(request, "/webcomponent/interface/javascript/js_functions.js")%>'></script>-->
     <link rel="stylesheet" href="../interface/style/globalstyle.css" type="text/css">
     <script language="JavaScript1.2" src="../interface/javascript/js_functions.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--<meta name="google-signin-client_id" content="372565433332-s3ilhmj00lm2mqjm9ph1crc1uriav1j8.apps.googleusercontent.com">-->
 </HEAD>
 <BODY MARGINWIDTH=0 MARGINHEIGHT=0 LEFTMARGIN=0 TOPMARGIN=0 CLASS="inner">
 <TABLE BORDER=0 width='100%' height='100%' cellspacing=2 cellpadding=2>
@@ -109,6 +111,41 @@
       </TABLE>
     </TD>
   </TR>
+  <!--
+  <TR>
+    <TD>
+      <TABLE BORDER=0 cellspacing=2 cellpadding=2>
+        <TR>
+          <TD>
+              <div class="g-signin2" data-onsuccess="onSignIn"></div>
+              <script>
+                  function onSignIn(googleUser) {
+                      var profile = googleUser.getBasicProfile();
+                      console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                      console.log('Name: ' + profile.getName());
+                      console.log('Image URL: ' + profile.getImageUrl());
+                      console.log('Email: ' + profile.getEmail());
+                   }
+               </script>
+          </TD>
+        </TR>  
+        <TR>
+          <TD>
+              <a href="#" onclick="signOut();">Sign out</a>
+              <script>
+                  function signOut() {
+                      var auth2 = gapi.auth2.getAuthInstance();
+                      auth2.signOut().then(function () {
+                          console.log('User signed out.');
+                       });
+                   }
+               </script>
+          </TD>
+        </TR>  
+      </TABLE>
+    </TD>
+  </TR>
+  -->
   
 </TABLE>  
 </BODY>

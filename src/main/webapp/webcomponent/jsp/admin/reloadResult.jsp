@@ -1,4 +1,4 @@
-<%@ page errorPage="../error.jsp"  import="com.homelinux.bela.web.util.FormUtil"%>
+<%@ page errorPage="../error.jsp"  import="com.robertcsiki.f1.web.util.FormUtil"%>
 <HTML>
 <HEAD>
     <link rel="stylesheet" href='<%=FormUtil.makeURL(request, "/webcomponent/interface/style/globalstyle.css")%>' type="text/css">

@@ -1,4 +1,4 @@
-<%@ page isErrorPage="true" import="com.homelinux.bela.web.util.WebLogWriter,com.homelinux.bela.web.config.WebConfig, com.homelinux.bela.web.util.FormUtil"  %>
+<%@ page isErrorPage="true" import="com.robertcsiki.f1.web.util.WebLogWriter,com.robertcsiki.f1.web.config.WebConfig, com.robertcsiki.f1.web.util.FormUtil"  %>
 
 <HTML>
     <HEAD>

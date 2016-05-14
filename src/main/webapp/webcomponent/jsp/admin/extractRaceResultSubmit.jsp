@@ -1,4 +1,4 @@
-<%@ page errorPage="../error.jsp"  import="com.homelinux.bela.web.manager.CompetitionManager"%>
+<%@ page errorPage="../error.jsp"  import="com.robertcsiki.f1.web.manager.CompetitionManager"%>
 <HTML>
 <HEAD>
     <SCRIPT LANGUAGE='JavaScript1.2'>

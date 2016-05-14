@@ -8,6 +8,7 @@
     <driver1>driver_01</driver1>      <!-- Lewis Hamilton -->
     <driver2>driver_02</driver2>      <!-- Nico Rosberg -->
     <cost>16</cost>
+    <replacements/>
   </team>
 					
   <team>
@@ -17,6 +18,7 @@
     <driver1>driver_03</driver1>      <!-- Sebastian Vettel -->
     <driver2>driver_04</driver2>      <!-- Kimi Räikkönen -->
     <cost>15</cost>
+    <replacements/>
   </team>
 					
   <team>
@@ -26,6 +28,7 @@
     <driver1>driver_05</driver1>      <!-- Valtteri Bottas -->
     <driver2>driver_06</driver2>      <!-- Felipe Massa -->
     <cost>12</cost>
+    <replacements/>
   </team>
 					
   <team>
@@ -35,6 +38,76 @@
     <driver1>driver_07</driver1>      <!-- Daniil Kvyat -->
     <driver2>driver_08</driver2>      <!-- Daniel Ricciardo -->
     <cost>10</cost>
+    <replacements>
+       <replacement>
+          <raceid>race_05</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_06</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_07</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_08</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_09</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_10</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_11</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_12</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_13</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_14</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_15</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_16</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_17</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_18</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_19</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_20</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+       <replacement>
+          <raceid>race_21</raceid>
+          <driver1>driver_14</driver1>    <!-- Max Verstappen -->
+       </replacement>
+    </replacements>
   </team>
 					
   <team>
@@ -44,6 +117,7 @@
     <driver1>driver_09</driver1>      <!-- Sergio Pérez -->
     <driver2>driver_10</driver2>      <!-- Nico Hülkenberg -->
     <cost>9</cost>
+    <replacements/>
   </team>
 					
   <team>
@@ -53,6 +127,7 @@
     <driver1>driver_11</driver1>      <!-- Romain Grosjean -->
     <driver2>driver_12</driver2>      <!-- Esteban Gutiérrez -->
     <cost>7</cost>
+    <replacements/>
   </team>
 					
   <team>
@@ -62,6 +137,76 @@
     <driver1>driver_14</driver1>      <!-- Max Verstappen -->
     <driver2>driver_15</driver2>      <!-- Carlos Sainz -->
     <cost>8</cost>
+    <replacements>
+       <replacement>
+          <raceid>race_05</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_06</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_07</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_08</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_09</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_10</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_11</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_12</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_13</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_14</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_15</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_16</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_17</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_18</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_19</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_20</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+       <replacement>
+          <raceid>race_21</raceid>
+          <driver1>driver_07</driver1>   <!-- Daniil Kvyat -->
+       </replacement>
+    </replacements>
   </team>
 					
   <team>
@@ -71,6 +216,7 @@
     <driver1>driver_16</driver1>      <!-- Felipe Nasr -->
     <driver2>driver_17</driver2>      <!-- Marcus Ericsson -->
     <cost>5</cost>
+    <replacements/>
   </team>
 					
   <team>
@@ -80,6 +226,7 @@
     <driver1>driver_18</driver1>      <!-- Jenson Button -->
     <driver2>driver_19</driver2>      <!-- Fernando Alonso -->
     <cost>14</cost>
+    <replacements/>
   </team>
 					
   <team>
@@ -89,6 +236,7 @@
     <driver1>driver_20</driver1>      <!-- Jolyon Palmer -->
     <driver2>driver_21</driver2>      <!-- Kevin Magnussen -->
     <cost>6</cost>
+    <replacements/>
   </team>
 					
   <team>
@@ -98,6 +246,7 @@
     <driver1>driver_22</driver1>      <!-- Pascal Wehrlein -->
     <driver2>driver_23</driver2>      <!-- Rio Haryanto -->
     <cost>3</cost>
+    <replacements/>
   </team>
 					
 </teams>

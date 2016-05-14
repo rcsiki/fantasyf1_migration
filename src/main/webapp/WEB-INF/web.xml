@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>RaceResultsProcessor</servlet-name>
-        <servlet-class>com.homelinux.bela.web.servlet.RaceResultsProcessor</servlet-class>
+        <servlet-class>com.robertcsiki.f1.web.servlet.RaceResultsProcessor</servlet-class>
     </servlet>  
     
     <servlet-mapping>

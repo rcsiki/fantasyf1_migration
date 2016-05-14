@@ -1,4 +1,4 @@
-<%@ page errorPage="../error.jsp" import="java.lang.System,com.homelinux.bela.web.manager.CompetitionManager,com.homelinux.bela.web.util.FormUtil"%>
+<%@ page errorPage="../error.jsp" import="java.lang.System,com.robertcsiki.f1.web.manager.CompetitionManager,com.robertcsiki.f1.web.util.FormUtil"%>
 
 <%
   String strPwd = request.getParameter("admword");
