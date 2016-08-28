@@ -179,7 +179,44 @@
       <name>Rio Haryanto</name>
       <description>Rio Haryanto</description>
       <cost>3</cost>
-      <replacements/>
+    <replacements>
+       <replacement>
+          <raceid>race_13</raceid>
+          <drivername>Esteban Ocon</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_14</raceid>
+          <drivername>Esteban Ocon</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_15</raceid>
+          <drivername>Esteban Ocon</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_16</raceid>
+          <drivername>Esteban Ocon</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_17</raceid>
+          <drivername>Esteban Ocon</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_18</raceid>
+          <drivername>Esteban Ocon</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_19</raceid>
+          <drivername>Esteban Ocon</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_20</raceid>
+          <drivername>Esteban Ocon</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_21</raceid>
+          <drivername>Esteban Ocon</drivername>
+       </replacement>
+    </replacements>
    </driver>
 	 	 	 
 </drivers>
