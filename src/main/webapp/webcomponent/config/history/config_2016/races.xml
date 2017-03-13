@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<races>
+	
+  <!-- Grand Prix of Australia -->
+  <race>
+    <id>race_01</id> 
+    <name>Grand Prix of Australia</name>
+    <description>2016 Australian Grand Prix</description>
+    <date>2016/03/20</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/1/results</url>
+  </race>
+	
+  <!-- Grand Prix of Bahrain -->
+  <race>
+    <id>race_02</id> 
+    <name>Grand Prix of Bahrain</name>
+    <description>2016 Bahrain Grand Prix</description>
+    <date>2016/04/03</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/2/results</url>
+  </race>
+	
+  <!-- Grand Prix of China -->
+  <race>
+    <id>race_03</id> 
+    <name>Grand Prix of China</name>
+    <description>2016 Chinese Grand Prix</description>
+    <date>2016/04/17</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/3/results</url>
+  </race>
+	
+  <!-- Grand Prix of Russia -->
+  <race>
+    <id>race_04</id> 
+    <name>Grand Prix of Russia</name>
+    <description>2016 Russian Grand Prix</description>
+    <date>2016/05/01</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/4/results</url>
+  </race>
+	
+  <!-- Grand Prix of Spain -->
+  <race>
+    <id>race_05</id> 
+    <name>Grand Prix of Spain</name>
+    <description>2016 Spanish Grand Prix</description>
+    <date>2016/05/15</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/5/results</url>
+  </race>
+	
+  <!-- Grand Prix of Monaco -->
+  <race>
+    <id>race_06</id> 
+    <name>Grand Prix of Monaco</name>
+    <description>2016 Monaco Grand Prix</description>
+    <date>2016/05/29</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/6/results</url>
+  </race>
+	
+  <!-- Grand Prix of Canada -->
+  <race>
+    <id>race_07</id> 
+    <name>Grand Prix of Canada</name>
+    <description>2016 Canadian Grand Prix</description>
+    <date>2016/06/12</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/7/results</url>
+  </race>
+	
+  <!-- Grand Prix of Europe -->
+  <race>
+    <id>race_08</id> 
+    <name>Grand Prix of Europe</name>
+    <description>2016 European Grand Prix</description>
+    <date>2016/06/19</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/8/results</url>
+  </race>
+	
+  <!-- Grand Prix of Austria -->
+  <race>
+    <id>race_09</id> 
+    <name>Grand Prix of Austria</name>
+    <description>2016 Austrian Grand Prix</description>
+    <date>2016/07/03</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/9/results</url>
+  </race>
+	
+  <!-- Grand Prix of Britain -->
+  <race>
+    <id>race_10</id> 
+    <name>Grand Prix of Britain</name>
+    <description>2016 British Grand Prix</description>
+    <date>2016/07/10</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/10/results</url>
+  </race>
+	
+  <!-- Grand Prix of Hungary -->
+  <race>
+    <id>race_11</id> 
+    <name>Grand Prix of Hungary</name>
+    <description>2016 Hungarian Grand Prix</description>
+    <date>2016/07/24</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/11/results</url>
+  </race>
+	
+  <!-- Grand Prix of Germany -->
+  <race>
+    <id>race_12</id> 
+    <name>Grand Prix of Germany</name>
+    <description>2016 German Grand Prix</description>
+    <date>2016/07/31</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/12/results</url>
+  </race>
+	
+  <!-- Grand Prix of Belgium -->
+  <race>
+    <id>race_13</id> 
+    <name>Grand Prix of Belgium</name>
+    <description>2016 Belgian Grand Prix</description>
+    <date>2016/08/28</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/13/results</url>
+  </race>
+	
+  <!-- Grand Prix of Italy -->
+  <race>
+    <id>race_14</id> 
+    <name>Grand Prix of Italy</name>
+    <description>2016 Italian Grand Prix</description>
+    <date>2016/09/04</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/14/results</url>
+  </race>
+	
+  <!-- Grand Prix of Singapore -->
+  <race>
+    <id>race_15</id> 
+    <name>Grand Prix of Singapore</name>
+    <description>2016 Singaporean Grand Prix</description>
+    <date>2016/09/18</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/15/results</url>
+  </race>
+	
+  <!-- Grand Prix of Malaysia -->
+  <race>
+    <id>race_16</id> 
+    <name>Grand Prix of Malaysia</name>
+    <description>2016 Malaysian Grand Prix</description>
+    <date>2016/10/02</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/16/results</url>
+  </race>
+	
+  <!-- Grand Prix of Japan -->
+  <race>
+    <id>race_17</id> 
+    <name>Grand Prix of Japan</name>
+    <description>2016 Japanese Grand Prix</description>
+    <date>2016/10/09</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/17/results</url>
+  </race>
+	
+  <!-- Grand Prix of USA -->
+  <race>
+    <id>race_18</id> 
+    <name>Grand Prix of USA</name>
+    <description>2016 USA Grand Prix</description>
+    <date>2016/10/23</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/18/results</url>
+  </race>
+	
+  <!-- Grand Prix of Mexico -->
+  <race>
+    <id>race_19</id> 
+    <name>Grand Prix of Mexico</name>
+    <description>2016 Mexican Grand Prix</description>
+    <date>2016/10/30</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/19/results</url>
+  </race>
+	
+  <!-- Grand Prix of Brasil -->
+  <race>
+    <id>race_20</id> 
+    <name>Grand Prix of Brasil</name>
+    <description>2016 Brasilian Grand Prix</description>
+    <date>2016/11/13</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/20/results</url>
+  </race>
+	
+  <!-- Grand Prix of Abu Dhabi -->
+  <race>
+    <id>race_21</id> 
+    <name>Grand Prix of Abu Dhabi</name>
+    <description>2016 Abu Dhabi Grand Prix</description>
+    <date>2016/11/27</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2016/21/results</url>
+  </race>
+	
+</races>

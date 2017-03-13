@@ -1,214 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <races>
 	
-  <!-- Grand Prix of Australia -->
+  <!-- Australian Grand Prix -->
   <race>
     <id>race_01</id> 
     <name>Grand Prix of Australia</name>
-    <description>2016 Australian Grand Prix</description>
-    <date>2016/03/20</date>
+    <description>2017 Australian Grand Prix</description>
+    <date>2017/03/26</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/1/results</url>
+    <url>http://ergast.com/api/f1/2017/1/results</url>
   </race>
 	
-  <!-- Grand Prix of Bahrain -->
+  <!-- Chinese Grand Prix -->
   <race>
     <id>race_02</id> 
-    <name>Grand Prix of Bahrain</name>
-    <description>2016 Bahrain Grand Prix</description>
-    <date>2016/04/03</date>
+    <name>Grand Prix of China</name>
+    <description>2017 Chinese Grand Prix</description>
+    <date>2017/04/09</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/2/results</url>
+    <url>http://ergast.com/api/f1/2017/2/results</url>
   </race>
 	
-  <!-- Grand Prix of China -->
+  <!-- Bahrain Grand Prix -->
   <race>
     <id>race_03</id> 
-    <name>Grand Prix of China</name>
-    <description>2016 Chinese Grand Prix</description>
-    <date>2016/04/17</date>
+    <name>Grand Prix of Bahrain</name>
+    <description>2017 Bahrain Grand Prix</description>
+    <date>2017/04/16</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/3/results</url>
+    <url>http://ergast.com/api/f1/2017/3/results</url>
   </race>
 	
   <!-- Grand Prix of Russia -->
   <race>
     <id>race_04</id> 
     <name>Grand Prix of Russia</name>
-    <description>2016 Russian Grand Prix</description>
-    <date>2016/05/01</date>
+    <description>2017 Russian Grand Prix</description>
+    <date>2017/04/30</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/4/results</url>
+    <url>http://ergast.com/api/f1/2017/4/results</url>
   </race>
 	
-  <!-- Grand Prix of Spain -->
+  <!-- Spanish Grand Prix -->
   <race>
     <id>race_05</id> 
     <name>Grand Prix of Spain</name>
-    <description>2016 Spanish Grand Prix</description>
-    <date>2016/05/15</date>
+    <description>2017 Spanish Grand Prix</description>
+    <date>2017/05/14</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/5/results</url>
+    <url>http://ergast.com/api/f1/2017/5/results</url>
   </race>
 	
-  <!-- Grand Prix of Monaco -->
+  <!-- Monaco Grand Prix -->
   <race>
     <id>race_06</id> 
     <name>Grand Prix of Monaco</name>
-    <description>2016 Monaco Grand Prix</description>
-    <date>2016/05/29</date>
+    <description>2017 Monaco Grand Prix</description>
+    <date>2017/05/28</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/6/results</url>
+    <url>http://ergast.com/api/f1/2017/6/results</url>
   </race>
 	
-  <!-- Grand Prix of Canada -->
+  <!-- Canadian Grand Prix -->
   <race>
     <id>race_07</id> 
     <name>Grand Prix of Canada</name>
-    <description>2016 Canadian Grand Prix</description>
-    <date>2016/06/12</date>
+    <description>2017 Canadian Grand Prix</description>
+    <date>2017/06/11</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/7/results</url>
+    <url>http://ergast.com/api/f1/2017/7/results</url>
   </race>
 	
-  <!-- Grand Prix of Europe -->
+  <!-- Azerbaijan Grand Prix -->
   <race>
     <id>race_08</id> 
-    <name>Grand Prix of Europe</name>
-    <description>2016 European Grand Prix</description>
-    <date>2016/06/19</date>
+    <name>Grand Prix of Azerbaijan</name>
+    <description>2017 Azerbaijan Grand Prix</description>
+    <date>2017/06/25</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/8/results</url>
+    <url>http://ergast.com/api/f1/2017/8/results</url>
   </race>
 	
-  <!-- Grand Prix of Austria -->
+  <!-- Austrian Grand Prix -->
   <race>
     <id>race_09</id> 
     <name>Grand Prix of Austria</name>
-    <description>2016 Austrian Grand Prix</description>
-    <date>2016/07/03</date>
+    <description>2017 Austrian Grand Prix</description>
+    <date>2017/07/09</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/9/results</url>
+    <url>http://ergast.com/api/f1/2017/9/results</url>
   </race>
 	
-  <!-- Grand Prix of Britain -->
+  <!-- British Grand Prix -->
   <race>
     <id>race_10</id> 
     <name>Grand Prix of Britain</name>
-    <description>2016 British Grand Prix</description>
-    <date>2016/07/10</date>
+    <description>2017 British Grand Prix</description>
+    <date>2017/07/16</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/10/results</url>
+    <url>http://ergast.com/api/f1/2017/10/results</url>
   </race>
 	
-  <!-- Grand Prix of Hungary -->
+  <!-- Hungarian Grand Prix -->
   <race>
     <id>race_11</id> 
     <name>Grand Prix of Hungary</name>
-    <description>2016 Hungarian Grand Prix</description>
-    <date>2016/07/24</date>
+    <description>2017 Hungarian Grand Prix</description>
+    <date>2017/07/30</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/11/results</url>
+    <url>http://ergast.com/api/f1/2017/11/results</url>
   </race>
 	
-  <!-- Grand Prix of Germany -->
+  <!-- Belgian Grand Prix -->
   <race>
     <id>race_12</id> 
-    <name>Grand Prix of Germany</name>
-    <description>2016 German Grand Prix</description>
-    <date>2016/07/31</date>
+    <name>Grand Prix of Belgium</name>
+    <description>2017 Belgian Grand Prix</description>
+    <date>2017/08/27</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/12/results</url>
+    <url>http://ergast.com/api/f1/2017/12/results</url>
   </race>
 	
-  <!-- Grand Prix of Belgium -->
+  <!-- Italian Grand Prix -->
   <race>
     <id>race_13</id> 
-    <name>Grand Prix of Belgium</name>
-    <description>2016 Belgian Grand Prix</description>
-    <date>2016/08/28</date>
+    <name>Grand Prix of Italy</name>
+    <description>2017 Italian Grand Prix</description>
+    <date>2017/09/03</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/13/results</url>
+    <url>http://ergast.com/api/f1/2017/13/results</url>
   </race>
 	
-  <!-- Grand Prix of Italy -->
+  <!-- Singapore Grand Prix -->
   <race>
     <id>race_14</id> 
-    <name>Grand Prix of Italy</name>
-    <description>2016 Italian Grand Prix</description>
-    <date>2016/09/04</date>
+    <name>Grand Prix of Singapore</name>
+    <description>2017 Singapore Grand Prix</description>
+    <date>2017/09/17</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/14/results</url>
+    <url>http://ergast.com/api/f1/2017/14/results</url>
   </race>
 	
-  <!-- Grand Prix of Singapore -->
+  <!-- Malaysian Grand Prix -->
   <race>
     <id>race_15</id> 
-    <name>Grand Prix of Singapore</name>
-    <description>2016 Singaporean Grand Prix</description>
-    <date>2016/09/18</date>
+    <name>Grand Prix of Malaysia</name>
+    <description>2017 Malaysian Grand Prix</description>
+    <date>2017/10/01</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/15/results</url>
+    <url>http://ergast.com/api/f1/2017/15/results</url>
   </race>
 	
-  <!-- Grand Prix of Malaysia -->
+  <!-- Japanese Grand Prix -->
   <race>
     <id>race_16</id> 
-    <name>Grand Prix of Malaysia</name>
-    <description>2016 Malaysian Grand Prix</description>
-    <date>2016/10/02</date>
+    <name>Grand Prix of Japan</name>
+    <description>2017 Japanese Grand Prix</description>
+    <date>2017/10/08</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/16/results</url>
+    <url>http://ergast.com/api/f1/2017/16/results</url>
   </race>
 	
-  <!-- Grand Prix of Japan -->
+  <!-- United States Grand Prix	-->
   <race>
     <id>race_17</id> 
-    <name>Grand Prix of Japan</name>
-    <description>2016 Japanese Grand Prix</description>
-    <date>2016/10/09</date>
+    <name>Grand Prix of United States</name>
+    <description>2017 United States Grand Prix</description>
+    <date>2017/10/22</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/17/results</url>
+    <url>http://ergast.com/api/f1/2017/17/results</url>
   </race>
 	
-  <!-- Grand Prix of USA -->
+  <!-- Mexican Grand Prix -->
   <race>
     <id>race_18</id> 
-    <name>Grand Prix of USA</name>
-    <description>2016 USA Grand Prix</description>
-    <date>2016/10/23</date>
+    <name>Grand Prix of Mexico</name>
+    <description>2017 Mexican Grand Prix</description>
+    <date>2017/10/29</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/18/results</url>
+    <url>http://ergast.com/api/f1/2017/18/results</url>
   </race>
 	
-  <!-- Grand Prix of Mexico -->
+  <!-- Brazilian Grand Prix -->
   <race>
     <id>race_19</id> 
-    <name>Grand Prix of Mexico</name>
-    <description>2016 Mexican Grand Prix</description>
-    <date>2016/10/30</date>
+    <name>Grand Prix of Brazil</name>
+    <description>2017 Brazilian Grand Prix</description>
+    <date>2017/11/12</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/19/results</url>
+    <url>http://ergast.com/api/f1/2017/19/results</url>
   </race>
 	
-  <!-- Grand Prix of Brasil -->
+  <!-- Abu Dhabi Grand Prix -->
   <race>
     <id>race_20</id> 
-    <name>Grand Prix of Brasil</name>
-    <description>2016 Brasilian Grand Prix</description>
-    <date>2016/11/13</date>
-    <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/20/results</url>
-  </race>
-	
-  <!-- Grand Prix of Abu Dhabi -->
-  <race>
-    <id>race_21</id> 
     <name>Grand Prix of Abu Dhabi</name>
-    <description>2016 Abu Dhabi Grand Prix</description>
-    <date>2016/11/27</date>
+    <description>2017 Abu Dhabi Grand Prix</description>
+    <date>2017/11/26</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2016/21/results</url>
+    <url>http://ergast.com/api/f1/2017/20/results</url>
   </race>
 	
 </races>

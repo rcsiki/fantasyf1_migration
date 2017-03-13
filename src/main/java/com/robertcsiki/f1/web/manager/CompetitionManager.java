@@ -1284,7 +1284,9 @@ public class CompetitionManager
 	{
 		StringBuffer sb = new StringBuffer();
 		sb.append("<table border='0' cellspacing='2' cellpadding='2'>");
-		sb.append("<tr height='20'><td class=\"tablelayoutheader\">Driver" +			"</td><td class=\"tablelayoutheader\">Cost</td><td class=\"tablelayoutheader\">" +			"Races For</td></tr>");
+		sb.append("<tr height='20'><td class=\"tablelayoutheader\">Driver" +
+			"</td><td class=\"tablelayoutheader\">Cost</td><td class=\"tablelayoutheader\">" +
+			"Races For</td></tr>");
 		Set set = m_drivers.keySet();
 		IDriver driver = null;		
 		int iPosCount = 1;
@@ -1306,7 +1308,7 @@ public class CompetitionManager
 			sb.append("<td class=\"tablelayout\">$"+driver.getCost());
 			sb.append(" million</td>");
             sb.append("<td class=\"tablelayout\">"
-                    + (getTeamById(driver.getTeamId(getLastDisputedRace().getId()))).getName());
+                    + (getTeamById(driver.getTeamId(m_racesResults.isEmpty() ? "race_01" : getLastDisputedRace().getId()))).getName());
 			sb.append("</td></tr>");
 			iPosCount ++;
 		}
