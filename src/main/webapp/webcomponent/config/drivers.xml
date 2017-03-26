@@ -126,7 +126,12 @@
       <name>Pascal Wehrlein</name>
       <description>Pascal Wehrlein</description>
       <cost>3</cost>
-      <replacements/>
+    <replacements>
+       <replacement>
+          <raceid>race_01</raceid>
+          <drivername>Antonio Giovinazzi</drivername>
+       </replacement>
+    </replacements>
    </driver>
 	 	 	 
    <driver>
