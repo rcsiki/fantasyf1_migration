@@ -131,6 +131,10 @@
           <raceid>race_01</raceid>
           <drivername>Antonio Giovinazzi</drivername>
        </replacement>
+       <replacement>
+          <raceid>race_02</raceid>
+          <drivername>Antonio Giovinazzi</drivername>
+       </replacement>
     </replacements>
    </driver>
 	 	 	 
