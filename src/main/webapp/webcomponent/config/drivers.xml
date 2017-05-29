@@ -62,7 +62,12 @@
       <name>Fernando Alonso</name>
       <description>Fernando Alonso</description>
       <cost>6</cost>
-      <replacements/>
+      <replacements>
+       <replacement>
+          <raceid>race_06</raceid>
+          <drivername>Jenson Button</drivername>
+       </replacement>
+      </replacements>
    </driver>
 	 	 	 
    <driver>
