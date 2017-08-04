@@ -172,7 +172,12 @@
       <name>Felipe Massa</name>
       <description>Felipe Massa</description>
       <cost>11</cost>
-      <replacements/>
+    <replacements>
+       <replacement>
+          <raceid>race_11</raceid>
+          <drivername>Paul di Resta</drivername>
+       </replacement>
+    </replacements>
    </driver>
 	 	 	 	 	 	 
 </drivers>
