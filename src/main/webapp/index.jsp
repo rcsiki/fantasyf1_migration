@@ -13,7 +13,7 @@
          }
          else {
              // the app is deployed on OpenShift
-             CompetitionManager.APP_ROOT_FOLDER_PATH = strOpenShiftRepoDir + "/webapps/fantasy/;
+             CompetitionManager.APP_ROOT_FOLDER_PATH = strOpenShiftRepoDir + "/webapps/fantasy/";
              CompetitionManager.APP_DATA_FOLDER_PATH = CompetitionManager.APP_ROOT_FOLDER_PATH;
          }
      }
