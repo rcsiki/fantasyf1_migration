@@ -10,17 +10,17 @@
    </driver>
 	 	 	 
    <driver>
-      <id>driver_02</id>                           <!-- Kimi Räikkönen -->
-      <name>Kimi Räikkönen</name>
-      <description>Kimi Räikkönen</description>
+      <id>driver_02</id>                           <!-- Kimi RÃ¤ikkÃ¶nen -->
+      <name>Kimi RÃ¤ikkÃ¶nen</name>
+      <description>Kimi RÃ¤ikkÃ¶nen</description>
       <cost>15</cost>
       <replacements/>
    </driver>
 	 	 	 
    <driver>
-      <id>driver_03</id>                           <!-- Sergio Pérez -->
-      <name>Sergio Pérez</name>
-      <description>Sergio Pérez</description>
+      <id>driver_03</id>                           <!-- Sergio PÃ©rez -->
+      <name>Sergio PÃ©rez</name>
+      <description>Sergio PÃ©rez</description>
       <cost>10</cost>
       <replacements/>
    </driver>
@@ -103,9 +103,9 @@
    </driver>
 	 	 	 
    <driver>
-      <id>driver_14</id>                           <!-- Nico Hülkenberg -->
-      <name>Nico Hülkenberg</name>
-      <description>Nico Hülkenberg</description>
+      <id>driver_14</id>                           <!-- Nico HÃ¼lkenberg -->
+      <name>Nico HÃ¼lkenberg</name>
+      <description>Nico HÃ¼lkenberg</description>
       <cost>10</cost>
       <replacements/>
    </driver>
@@ -148,7 +148,16 @@
       <name>Daniil Kvyat</name>
       <description>Daniil Kvyat</description>
       <cost>7</cost>
-      <replacements/>
+    <replacements>
+       <replacement>
+          <raceid>race_15</raceid>
+          <drivername>Pierre Gasly</drivername>
+       </replacement>
+       <replacement>
+          <raceid>race_16</raceid>
+          <drivername>Pierre Gasly</drivername>
+       </replacement>
+    </replacements>
    </driver>
 	 	 	 
    <driver>
