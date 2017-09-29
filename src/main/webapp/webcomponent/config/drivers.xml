@@ -148,16 +148,16 @@
       <name>Daniil Kvyat</name>
       <description>Daniil Kvyat</description>
       <cost>7</cost>
-    <replacements>
-       <replacement>
-          <raceid>race_15</raceid>
-          <drivername>Pierre Gasly</drivername>
-       </replacement>
-       <replacement>
-          <raceid>race_16</raceid>
-          <drivername>Pierre Gasly</drivername>
-       </replacement>
-    </replacements>
+      <replacements>
+        <replacement>
+           <raceid>race_15</raceid>
+           <drivername>Pierre Gasly</drivername>
+        </replacement>
+        <replacement>
+           <raceid>race_16</raceid>
+           <drivername>Pierre Gasly</drivername>
+        </replacement>
+      </replacements>
    </driver>
 	 	 	 
    <driver>
