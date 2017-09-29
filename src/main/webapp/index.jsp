@@ -4,8 +4,8 @@
      // set the app root path and app data path
      if (CompetitionManager.APP_DATA_FOLDER_PATH == null)
      {	      
-         String strOpenShiftDataDir =  System.getenv("OPENSHIFT_DATA_DIR");
-         String strOpenShiftRepoDir =  System.getenv("OPENSHIFT_REPO_DIR");
+         String strOpenShiftDataDir =  System.getenv("JWS_HOME"); // System.getProperty("java.io.tmpdir");
+         String strOpenShiftRepoDir =  System.getenv("JWS_HOME");
          if (strOpenShiftRepoDir == null && strOpenShiftDataDir == null){
              // the app is not deployed on OpenShift
              CompetitionManager.APP_ROOT_FOLDER_PATH = application.getRealPath("/");
@@ -13,15 +13,15 @@
          }
          else {
              // the app is deployed on OpenShift
-             CompetitionManager.APP_ROOT_FOLDER_PATH = strOpenShiftRepoDir + "target/fantasy/";
-             CompetitionManager.APP_DATA_FOLDER_PATH = strOpenShiftDataDir;
+             CompetitionManager.APP_ROOT_FOLDER_PATH = strOpenShiftRepoDir + "/webapps/fantasy/;
+             CompetitionManager.APP_DATA_FOLDER_PATH = CompetitionManager.APP_ROOT_FOLDER_PATH;
          }
      }
 %>
 <HTML>
   <HEAD>
 	<TITLE>Fantasy Formula 1</TITLE>
-	<LINK REL="icon" HREF="http://fantasy-formula1.rhcloud.com/favicon.ico" TYPE="image/vnd.microsoft.icon" />
+	<LINK REL="icon" HREF="http://http://unguru-bulan.1d35.starter-us-east-1.openshiftapps.com/fantasy/favicon.ico" TYPE="image/vnd.microsoft.icon" />
   </HEAD>
 
   <FRAMESET ROWS="0,*,0" NORESIZE BORDER="0" FRAMEBORDER="0" FRAMEBORDER="no" FRAMESPACING="0">
