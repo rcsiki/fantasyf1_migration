@@ -21,7 +21,7 @@
 <HTML>
   <HEAD>
 	<TITLE>Fantasy Formula 1</TITLE>
-	<LINK REL="icon" HREF="http://http://unguru-bulan.1d35.starter-us-east-1.openshiftapps.com/fantasy/favicon.ico" TYPE="image/vnd.microsoft.icon" />
+	<LINK REL="icon" HREF="http://unguru-bulan.1d35.starter-us-east-1.openshiftapps.com/fantasy/favicon.ico" TYPE="image/vnd.microsoft.icon" />
   </HEAD>
 
   <FRAMESET ROWS="0,*,0" NORESIZE BORDER="0" FRAMEBORDER="0" FRAMEBORDER="no" FRAMESPACING="0">
