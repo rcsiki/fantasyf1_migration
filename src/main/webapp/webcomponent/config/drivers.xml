@@ -115,7 +115,24 @@
       <name>Jolyon Palmer</name>
       <description>Jolyon Palmer</description>
       <cost>8</cost>
-      <replacements/>
+      <replacements>
+        <replacement>
+           <raceid>race_17</raceid>
+           <drivername>Carlos Sainz</drivername>
+        </replacement>
+        <replacement>
+           <raceid>race_18</raceid>
+           <drivername>Carlos Sainz</drivername>
+        </replacement>
+        <replacement>
+           <raceid>race_19</raceid>
+           <drivername>Carlos Sainz</drivername>
+        </replacement>
+        <replacement>
+           <raceid>race_20</raceid>
+           <drivername>Carlos Sainz</drivername>
+        </replacement>
+      </replacements>
    </driver>
 	 	 	 
    <driver>
@@ -165,7 +182,12 @@
       <name>Carlos Sainz</name>
       <description>Carlos Sainz</description>
       <cost>9</cost>
-      <replacements/>
+      <replacements>
+        <replacement>
+           <raceid>race_17</raceid>
+           <drivername>Brendon Hartley</drivername>
+        </replacement>
+      </replacements>
    </driver>
 	 	 	 
    <driver>
