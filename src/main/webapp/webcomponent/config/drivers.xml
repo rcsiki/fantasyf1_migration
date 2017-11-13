@@ -178,6 +178,10 @@
            <raceid>race_18</raceid>
            <drivername>Pierre Gasly</drivername>
         </replacement>
+        <replacement>
+           <raceid>race_18</raceid>
+           <drivername>Pierre Gasly</drivername>
+        </replacement>
       </replacements>
    </driver>
 	 	 	 
@@ -189,6 +193,10 @@
       <replacements>
         <replacement>
            <raceid>race_17</raceid>
+           <drivername>Brendon Hartley</drivername>
+        </replacement>
+        <replacement>
+           <raceid>race_18</raceid>
            <drivername>Brendon Hartley</drivername>
         </replacement>
         <replacement>
