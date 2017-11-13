@@ -2232,4 +2232,128 @@
         </driver>
         <fastestlap>driver_01</fastestlap>
     </race>
+    <race>
+        <id>race_19</id>
+        <driver familyName="Vettel" fastestLapRank="7" givenName="Sebastian">
+            <pos>1</pos>
+            <id>driver_01</id>
+            <laps>71</laps>
+            <grid>2</grid>
+        </driver>
+        <driver familyName="Bottas" fastestLapRank="5" givenName="Valtteri">
+            <pos>2</pos>
+            <id>driver_10</id>
+            <laps>71</laps>
+            <grid>1</grid>
+        </driver>
+        <driver familyName="Räikkönen" fastestLapRank="6" givenName="Kimi">
+            <pos>3</pos>
+            <id>driver_02</id>
+            <laps>71</laps>
+            <grid>3</grid>
+        </driver>
+        <driver familyName="Hamilton" fastestLapRank="2" givenName="Lewis">
+            <pos>4</pos>
+            <id>driver_09</id>
+            <laps>71</laps>
+            <grid>20</grid>
+        </driver>
+        <driver familyName="Verstappen" fastestLapRank="1" givenName="Max">
+            <pos>5</pos>
+            <id>driver_12</id>
+            <laps>71</laps>
+            <grid>4</grid>
+        </driver>
+        <driver familyName="Ricciardo" fastestLapRank="4" givenName="Daniel">
+            <pos>6</pos>
+            <id>driver_11</id>
+            <laps>71</laps>
+            <grid>14</grid>
+        </driver>
+        <driver familyName="Massa" fastestLapRank="11" givenName="Felipe">
+            <pos>7</pos>
+            <id>driver_21</id>
+            <laps>71</laps>
+            <grid>9</grid>
+        </driver>
+        <driver familyName="Alonso" fastestLapRank="10" givenName="Fernando">
+            <pos>8</pos>
+            <id>driver_08</id>
+            <laps>71</laps>
+            <grid>6</grid>
+        </driver>
+        <driver familyName="Pérez" fastestLapRank="8" givenName="Sergio">
+            <pos>9</pos>
+            <id>driver_03</id>
+            <laps>71</laps>
+            <grid>5</grid>
+        </driver>
+        <driver familyName="Hülkenberg" fastestLapRank="15" givenName="Nico">
+            <pos>10</pos>
+            <id>driver_14</id>
+            <laps>70</laps>
+            <grid>7</grid>
+        </driver>
+        <driver familyName="Sainz" fastestLapRank="13" givenName="Carlos">
+            <pos>11</pos>
+            <id>driver_15</id>
+            <laps>70</laps>
+            <grid>8</grid>
+        </driver>
+        <driver familyName="Gasly" fastestLapRank="9" givenName="Pierre">
+            <pos>12</pos>
+            <id>driver_18</id>
+            <laps>70</laps>
+            <grid>19</grid>
+        </driver>
+        <driver familyName="Ericsson" fastestLapRank="14" givenName="Marcus">
+            <pos>13</pos>
+            <id>driver_16</id>
+            <laps>70</laps>
+            <grid>17</grid>
+        </driver>
+        <driver familyName="Wehrlein" fastestLapRank="17" givenName="Pascal">
+            <pos>14</pos>
+            <id>driver_17</id>
+            <laps>70</laps>
+            <grid>15</grid>
+        </driver>
+        <driver familyName="Grosjean" fastestLapRank="12" givenName="Romain">
+            <pos>15</pos>
+            <id>driver_05</id>
+            <laps>69</laps>
+            <grid>11</grid>
+        </driver>
+        <driver familyName="Stroll" fastestLapRank="3" givenName="Lance">
+            <pos>16</pos>
+            <id>driver_20</id>
+            <laps>69</laps>
+            <grid>16</grid>
+        </driver>
+        <driver familyName="Hartley" fastestLapRank="16" givenName="Brendon">
+            <pos>ret</pos>
+            <id>driver_19</id>
+            <laps>40</laps>
+            <grid>18</grid>
+        </driver>
+        <driver familyName="Ocon" fastestLapRank="" givenName="Esteban">
+            <pos>ret</pos>
+            <id>driver_04</id>
+            <laps>0</laps>
+            <grid>10</grid>
+        </driver>
+        <driver familyName="Vandoorne" fastestLapRank="" givenName="Stoffel">
+            <pos>ret</pos>
+            <id>driver_07</id>
+            <laps>0</laps>
+            <grid>12</grid>
+        </driver>
+        <driver familyName="Magnussen" fastestLapRank="" givenName="Kevin">
+            <pos>ret</pos>
+            <id>driver_06</id>
+            <laps>0</laps>
+            <grid>13</grid>
+        </driver>
+        <fastestlap>driver_12</fastestlap>
+    </race>
 </results>
