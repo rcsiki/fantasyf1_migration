@@ -66,7 +66,7 @@
     <name>Renault</name>
     <description>Renault</description>
     <driver1>driver_14</driver1>      <!-- Nico Hülkenberg -->
-    <driver2>driver_15</driver2>      <!-- Jolyon Palmer -->
+    <driver2>driver_15</driver2>      <!-- Carlos Sainz -->
     <cost>9</cost>
     <replacements/>
   </team>
@@ -76,7 +76,7 @@
     <name>Sauber</name>
     <description>Sauber</description>
     <driver1>driver_16</driver1>      <!-- Marcus Ericsson -->
-    <driver2>driver_17</driver2>      <!-- Pascal Wehrlein -->
+    <driver2>driver_17</driver2>      <!-- Charles Leclerc -->
     <cost>4</cost>
     <replacements/>
   </team>
@@ -85,8 +85,8 @@
     <id>team_09</id>                  <!-- Toro Rosso -->
     <name>Toro Rosso</name>
     <description>Toro Rosso</description>
-    <driver1>driver_18</driver1>      <!-- Daniil Kvyat -->
-    <driver2>driver_19</driver2>      <!-- Carlos Sainz -->
+    <driver1>driver_18</driver1>      <!-- Pierre Gasly -->
+    <driver2>driver_19</driver2>      <!-- Brendon Hartley -->
     <cost>8</cost>
     <replacements/>
   </team>
@@ -96,7 +96,7 @@
     <name>Williams</name>
     <description>Williams</description>
     <driver1>driver_20</driver1>      <!-- Lance Stroll -->
-    <driver2>driver_21</driver2>      <!-- Felipe Massa -->
+    <driver2>driver_21</driver2>      <!-- Sergey Sirotkin -->
     <cost>10</cost>
     <replacements/>
   </team>

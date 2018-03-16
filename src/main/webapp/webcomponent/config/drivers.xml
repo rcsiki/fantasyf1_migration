@@ -62,12 +62,7 @@
       <name>Fernando Alonso</name>
       <description>Fernando Alonso</description>
       <cost>6</cost>
-      <replacements>
-       <replacement>
-          <raceid>race_06</raceid>
-          <drivername>Jenson Button</drivername>
-       </replacement>
-      </replacements>
+      <replacements/>
    </driver>
 	 	 	 
    <driver>
@@ -111,28 +106,11 @@
    </driver>
 	 	 	 
    <driver>
-      <id>driver_15</id>                           <!-- Jolyon Palmer -->
-      <name>Jolyon Palmer</name>
-      <description>Jolyon Palmer</description>
+      <id>driver_15</id>                           <!-- Carlos Sainz -->
+      <name>Carlos Sainz</name>
+      <description>Carlos Sainz</description>
       <cost>8</cost>
-      <replacements>
-        <replacement>
-           <raceid>race_17</raceid>
-           <drivername>Carlos Sainz</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_18</raceid>
-           <drivername>Carlos Sainz</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_19</raceid>
-           <drivername>Carlos Sainz</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_20</raceid>
-           <drivername>Carlos Sainz</drivername>
-        </replacement>
-      </replacements>
+      <replacements/>
    </driver>
 	 	 	 
    <driver>
@@ -144,74 +122,27 @@
    </driver>
 	 	 	 
    <driver>
-      <id>driver_17</id>                           <!-- Pascal Wehrlein -->
-      <name>Pascal Wehrlein</name>
-      <description>Pascal Wehrlein</description>
+      <id>driver_17</id>                           <!-- Charles Leclerc -->
+      <name>Charles Leclerc</name>
+      <description>Charles Leclerc</description>
       <cost>3</cost>
-    <replacements>
-       <replacement>
-          <raceid>race_01</raceid>
-          <drivername>Antonio Giovinazzi</drivername>
-       </replacement>
-       <replacement>
-          <raceid>race_02</raceid>
-          <drivername>Antonio Giovinazzi</drivername>
-       </replacement>
-    </replacements>
+      <replacements/>
    </driver>
 	 	 	 
    <driver>
-      <id>driver_18</id>                           <!-- Daniil Kvyat -->
-      <name>Daniil Kvyat</name>
-      <description>Daniil Kvyat</description>
+      <id>driver_18</id>                           <!-- Pierre Gasly -->
+      <name>Pierre Gasly</name>
+      <description>Pierre Gasly</description>
       <cost>7</cost>
-      <replacements>
-        <replacement>
-           <raceid>race_15</raceid>
-           <drivername>Pierre Gasly</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_16</raceid>
-           <drivername>Pierre Gasly</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_18</raceid>
-           <drivername>Pierre Gasly</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_19</raceid>
-           <drivername>Pierre Gasly</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_20</raceid>
-           <drivername>Pierre Gasly</drivername>
-        </replacement>
-      </replacements>
+      <replacements/>
    </driver>
 	 	 	 
    <driver>
-      <id>driver_19</id>                           <!-- Carlos Sainz -->
-      <name>Carlos Sainz</name>
-      <description>Carlos Sainz</description>
+      <id>driver_19</id>                           <!-- Brendon Hartley -->
+      <name>Brendon Hartley</name>
+      <description>Brendon Hartley</description>
       <cost>9</cost>
-      <replacements>
-        <replacement>
-           <raceid>race_17</raceid>
-           <drivername>Brendon Hartley</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_18</raceid>
-           <drivername>Brendon Hartley</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_19</raceid>
-           <drivername>Brendon Hartley</drivername>
-        </replacement>
-        <replacement>
-           <raceid>race_20</raceid>
-           <drivername>Brendon Hartley</drivername>
-        </replacement>
-      </replacements>
+      <replacements/>
    </driver>
 	 	 	 
    <driver>
@@ -223,16 +154,11 @@
    </driver>
 	 	 	 
    <driver>
-      <id>driver_21</id>                           <!-- Felipe Massa -->
-      <name>Felipe Massa</name>
-      <description>Felipe Massa</description>
+      <id>driver_21</id>                           <!-- Sergey Sirotkin -->
+      <name>Sergey Sirotkin</name>
+      <description>Sergey Sirotkin</description>
       <cost>11</cost>
-    <replacements>
-       <replacement>
-          <raceid>race_11</raceid>
-          <drivername>Paul di Resta</drivername>
-       </replacement>
-    </replacements>
+      <replacements/>
    </driver>
 	 	 	 	 	 	 
 </drivers>
