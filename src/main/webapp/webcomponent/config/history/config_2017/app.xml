@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+   <config>
+      <playerbudget>36</playerbudget>
+      <contenttype>UTF-8</contenttype>
+      <seasonracecount>20</seasonracecount>
+      <racewinnerrealpoints>25</racewinnerrealpoints>
+      <regdeadline>Fri Mar 24 24:00:00 EDT 2017</regdeadline>
+      <paymentdeadlinetext>April 7th, 2017</paymentdeadlinetext>
+      <paymentmailaddress>Laszlo Benedek, 37 Old Orchard Crescent, Richmond Hill, ON, L4S 0A2, Canada</paymentmailaddress>
+      <contactinfo>Robert Csiki at robert.csiki@gmail.com, Laszlo Benedek at benedekl@yahoo.com</contactinfo>
+      <adminpwd>belizna</adminpwd>
+      <tiebreakerdrivername>Fernando Alonso</tiebreakerdrivername>
+   </config>
+</app>
