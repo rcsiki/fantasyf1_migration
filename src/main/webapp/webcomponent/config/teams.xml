@@ -7,7 +7,7 @@
     <description>Ferrari</description>
     <driver1>driver_01</driver1>      <!-- Sebastian Vettel -->
     <driver2>driver_02</driver2>      <!-- Kimi Räikkönen -->
-    <cost>15</cost>
+    <cost>13</cost>
     <replacements/>
   </team>
 					
@@ -17,7 +17,7 @@
     <description>Force India</description>
     <driver1>driver_03</driver1>      <!-- Sergio Pérez -->
     <driver2>driver_04</driver2>      <!-- Esteban Ocon -->
-    <cost>9</cost>
+    <cost>10</cost>
     <replacements/>
   </team>
 					
@@ -37,7 +37,7 @@
     <description>McLaren</description>
     <driver1>driver_07</driver1>      <!-- Stoffel Vandoorne -->
     <driver2>driver_08</driver2>      <!-- Fernando Alonso -->
-    <cost>6</cost>
+    <cost>5</cost>
     <replacements/>
   </team>
 					
@@ -47,7 +47,7 @@
     <description>Mercedes</description>
     <driver1>driver_09</driver1>      <!-- Lewis Hamilton -->
     <driver2>driver_10</driver2>      <!-- Valtteri Bottas -->
-    <cost>15</cost>
+    <cost>16</cost>
     <replacements/>
   </team>
 					
@@ -57,7 +57,7 @@
     <description>Red Bull</description>
     <driver1>driver_11</driver1>      <!-- Daniel Ricciardo -->
     <driver2>driver_12</driver2>      <!-- Max Verstappen -->
-    <cost>14</cost>
+    <cost>9</cost>
     <replacements/>
   </team>
 					
@@ -67,7 +67,7 @@
     <description>Renault</description>
     <driver1>driver_14</driver1>      <!-- Nico Hülkenberg -->
     <driver2>driver_15</driver2>      <!-- Carlos Sainz -->
-    <cost>9</cost>
+    <cost>4</cost>
     <replacements/>
   </team>
 					
@@ -77,7 +77,7 @@
     <description>Sauber</description>
     <driver1>driver_16</driver1>      <!-- Marcus Ericsson -->
     <driver2>driver_17</driver2>      <!-- Charles Leclerc -->
-    <cost>4</cost>
+    <cost>6</cost>
     <replacements/>
   </team>
 					
@@ -87,7 +87,7 @@
     <description>Toro Rosso</description>
     <driver1>driver_18</driver1>      <!-- Pierre Gasly -->
     <driver2>driver_19</driver2>      <!-- Brendon Hartley -->
-    <cost>8</cost>
+    <cost>4</cost>
     <replacements/>
   </team>
 					
@@ -97,7 +97,7 @@
     <description>Williams</description>
     <driver1>driver_20</driver1>      <!-- Lance Stroll -->
     <driver2>driver_21</driver2>      <!-- Sergey Sirotkin -->
-    <cost>10</cost>
+    <cost>8</cost>
     <replacements/>
   </team>
 					

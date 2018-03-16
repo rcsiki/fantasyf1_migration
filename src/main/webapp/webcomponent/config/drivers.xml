@@ -5,7 +5,7 @@
       <id>driver_01</id>                           <!-- Sebastian Vettel -->
       <name>Sebastian Vettel</name>
       <description>Sebastian Vettel</description>
-      <cost>15</cost>
+      <cost>13</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -13,7 +13,7 @@
       <id>driver_02</id>                           <!-- Kimi Räikkönen -->
       <name>Kimi Räikkönen</name>
       <description>Kimi Räikkönen</description>
-      <cost>15</cost>
+      <cost>10</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -21,7 +21,7 @@
       <id>driver_03</id>                           <!-- Sergio Pérez -->
       <name>Sergio Pérez</name>
       <description>Sergio Pérez</description>
-      <cost>10</cost>
+      <cost>9</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -37,7 +37,7 @@
       <id>driver_05</id>                           <!-- Romain Grosjean -->
       <name>Romain Grosjean</name>
       <description>Romain Grosjean</description>
-      <cost>7</cost>
+      <cost>6</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -45,7 +45,7 @@
       <id>driver_06</id>                           <!-- Kevin Magnussen -->
       <name>Kevin Magnussen</name>
       <description>Kevin Magnussen</description>
-      <cost>8</cost>
+      <cost>5</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -61,7 +61,7 @@
       <id>driver_08</id>                           <!-- Fernando Alonso -->
       <name>Fernando Alonso</name>
       <description>Fernando Alonso</description>
-      <cost>6</cost>
+      <cost>5</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -77,7 +77,7 @@
       <id>driver_10</id>                           <!-- Valtteri Bottas -->
       <name>Valtteri Bottas</name>
       <description>Valtteri Bottas</description>
-      <cost>14</cost>
+      <cost>13</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -85,7 +85,7 @@
       <id>driver_11</id>                           <!-- Daniel Ricciardo -->
       <name>Daniel Ricciardo</name>
       <description>Daniel Ricciardo</description>
-      <cost>14</cost>
+      <cost>10</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -93,7 +93,7 @@
       <id>driver_12</id>                           <!-- Max Verstappen -->
       <name>Max Verstappen</name>
       <description>Max Verstappen</description>
-      <cost>14</cost>
+      <cost>8</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -101,7 +101,7 @@
       <id>driver_14</id>                           <!-- Nico Hülkenberg -->
       <name>Nico Hülkenberg</name>
       <description>Nico Hülkenberg</description>
-      <cost>10</cost>
+      <cost>4</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -109,7 +109,7 @@
       <id>driver_15</id>                           <!-- Carlos Sainz -->
       <name>Carlos Sainz</name>
       <description>Carlos Sainz</description>
-      <cost>8</cost>
+      <cost>4</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -117,7 +117,7 @@
       <id>driver_16</id>                           <!-- Marcus Ericsson -->
       <name>Marcus Ericsson</name>
       <description>Marcus Ericsson</description>
-      <cost>4</cost>
+      <cost>6</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -125,7 +125,7 @@
       <id>driver_17</id>                           <!-- Charles Leclerc -->
       <name>Charles Leclerc</name>
       <description>Charles Leclerc</description>
-      <cost>3</cost>
+      <cost>5</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -133,7 +133,7 @@
       <id>driver_18</id>                           <!-- Pierre Gasly -->
       <name>Pierre Gasly</name>
       <description>Pierre Gasly</description>
-      <cost>7</cost>
+      <cost>4</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -141,7 +141,7 @@
       <id>driver_19</id>                           <!-- Brendon Hartley -->
       <name>Brendon Hartley</name>
       <description>Brendon Hartley</description>
-      <cost>9</cost>
+      <cost>4</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -149,7 +149,7 @@
       <id>driver_20</id>                           <!-- Lance Stroll -->
       <name>Lance Stroll</name>
       <description>Lance Stroll</description>
-      <cost>8</cost>
+      <cost>7</cost>
       <replacements/>
    </driver>
 	 	 	 
@@ -157,7 +157,7 @@
       <id>driver_21</id>                           <!-- Sergey Sirotkin -->
       <name>Sergey Sirotkin</name>
       <description>Sergey Sirotkin</description>
-      <cost>11</cost>
+      <cost>6</cost>
       <replacements/>
    </driver>
 	 	 	 	 	 	 
