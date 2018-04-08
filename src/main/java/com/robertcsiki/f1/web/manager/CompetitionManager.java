@@ -49,6 +49,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -1132,7 +1133,7 @@ public class CompetitionManager
 		}
 	}
 	
-	public String drawOverallStandingsBody()
+	public String drawOverallStandingsBody(boolean paidOnly)
 	   throws Exception
 	{
 		if (m_racesResults.size() == 0)
@@ -1156,6 +1157,10 @@ public class CompetitionManager
 		{
 			player = (IPlayer)m_players.get(iter.next());
 			
+			if (paidOnly && !player.isPaymentReceived()) {
+				continue;
+			}
+
 			int tieBreakerDecision = Math.abs(player.getTieBreakerAnswer() - iTieBreakerRealResponse);
 			
 			ppc = new PlayerPositionComparator( player.getGrandTotalPoints(), tieBreakerDecision );
@@ -1171,6 +1176,8 @@ public class CompetitionManager
 		String strDropdownClass = null;						
 		for (Iterator iter = sortedPlayers.iterator() ; iter.hasNext() ; )
 		{						
+			player = (IPlayer)standings.get(iter.next());
+			
 			// alternating the bg color
 			if (iPosCount % 2 == 0)
 			{
@@ -1183,8 +1190,6 @@ public class CompetitionManager
 				strDropdownClass = "altdropdown";
   		    }
   		    
-			player = (IPlayer)standings.get(iter.next());
-			
 			int previousPos = getPreviousPlayerPosition(player, previousStandings);
 			String strImgName = null;
 			String strAlt = null;
@@ -2596,6 +2601,184 @@ public class CompetitionManager
 		return sb.toString();
     }
 
+    private String drawStatsPointsByRace() throws Exception {
+		if (m_racesResults.size() == 0)
+		{
+			return "<table width='100%' border='0'><tr><td class=\"tablelayout\" align='center' valign='top'>The standings will be available once the season starts.</td></tr></table>";
+		}
+		StringBuffer sb = new StringBuffer();
+		sb.append("<table width='100%' cellspacing='6'>");
+		sb.append("<tr>");
+		sb.append("<td align='center' valign='top'>");
+		sb.append("<table border='0' cellspacing='2' cellpadding='2'><tr>");
+		// header
+		sb.append("<td width=30' nowrap class='tablelayoutheader' align='right' valign='middle'>Pos</td>");
+		sb.append("<td width='160' nowrap class='tablelayoutheader' align='left' valign='middle'>&nbsp;&nbsp;&nbsp;Team Name</td>");
+		sb.append("<td width='160' nowrap class='tablelayoutheader' align='left' valign='middle'>Team Manager</td>");
+		sb.append("<td width='60' nowrap class='tablelayoutheader' align='left' valign='middle'>Total Points&nbsp;&nbsp;&nbsp;</td>");
+		IRaceResult raceResult = null;
+		Object[] racesResultsSet = m_racesResults.keySet().toArray();
+		for (int i = 0 ; i < racesResultsSet.length; i++)
+		{
+			raceResult = (IRaceResult)m_racesResults.get(racesResultsSet[i]);
+			sb.append("<td width='40' nowrap class='tablelayoutheader' align='left' valign='middle'>"+getRaceVeryShortName(getRaceById(raceResult.getRaceId()).getName())+"&nbsp;&nbsp;&nbsp;</td>");
+		}
+        sb.append("</tr>");
+
+		String strDriverId = getDriverIdByDriverNameAndRaceId(WebConfig.TIEBREAKER_DRIVER_NAME, "race_01");
+		IDriver tieBreakerDriverName = this.getDriverById(strDriverId);
+		int iTieBreakerRealResponse = tieBreakerDriverName.getTotalRealPoints();
+		PlayerPositionComparator ppc = null;
+		
+		Map standings = new TreeMap(new PlayerPositionComparator());
+		Set set = m_players.keySet();
+		IPlayer player = null;
+		IRace lastDisputedRace = getLastDisputedRace();
+		for (Iterator iter = set.iterator() ; iter.hasNext() ; )
+		{
+			player = (IPlayer)m_players.get(iter.next());
+			
+			int tieBreakerDecision = Math.abs(player.getTieBreakerAnswer() - iTieBreakerRealResponse);
+			
+			ppc = new PlayerPositionComparator( player.getGrandTotalPoints(), tieBreakerDecision );
+			standings.put(ppc, player);
+		}
+		
+		int iPosCount = 1;
+		Set sortedPlayers = standings.keySet();
+		String strDropdownClass = null;						
+		for (Iterator iter = sortedPlayers.iterator() ; iter.hasNext() ; )
+		{						
+			player = (IPlayer)standings.get(iter.next());
+			
+			// alternating the bg color
+			if (iPosCount % 2 == 0)
+			{
+  			   sb.append("<tr class='standingsRowBackgroundColor'>");
+			   strDropdownClass = "dropdown";
+			}
+  		    else
+  		    {
+				sb.append("<tr class='standingsRowAltBackgroundColor'>");
+				strDropdownClass = "altdropdown";
+  		    }
+  		    
+			sb.append("<td width=30' nowrap class='tablelayout' align='right' valign='middle'>" + iPosCount + "</td>");
+			// Team Name
+			sb.append("<td width='160' nowrap class='tablelayout' align='left' valign='middle'>&nbsp;&nbsp;&nbsp;"+player.getName()+"</td>");
+			// Team Manager
+			sb.append("<td width='160' nowrap class='tablelayout' align='left' valign='middle'>"+player.getDescription()+"</td>");
+			
+			sb.append("<td width='60' nowrap class='tablelayout' align='left' valign='middle'>"+StringUtil.formatFloat(player.getGrandTotalPoints())+"&nbsp;&nbsp;&nbsp;</td>");
+			for (int i = 0 ; i < racesResultsSet.length; i++)
+			{
+				raceResult = (IRaceResult)m_racesResults.get(racesResultsSet[i]);
+				sb.append("<td width='40' nowrap class='tablelayout' align='left' valign='middle'>"+StringUtil.formatFloat(player.getRacePoints(raceResult.getRaceId()))+"&nbsp;&nbsp;&nbsp;</td>");
+			}
+			sb.append("</tr>");
+			iPosCount++;
+		}				
+		sb.append("</table></td></tr></table>");
+		return sb.toString();
+    }
+
+    private String drawStatsPositionByRace() throws Exception {
+		if (m_racesResults.size() == 0)
+		{
+			return "<table width='100%' border='0'><tr><td class=\"tablelayout\" align='center' valign='top'>The standings will be available once the season starts.</td></tr></table>";
+		}
+		StringBuffer sb = new StringBuffer();
+		sb.append("<table width='100%' cellspacing='6'>");
+		sb.append("<tr>");
+		sb.append("<td align='center' valign='top'>");
+		sb.append("<table border='0' cellspacing='2' cellpadding='2'><tr>");
+		// header
+	    sb.append("<tr>");
+		sb.append("<td width='160' nowrap class='tablelayoutheader' align='left' valign='middle'>&nbsp;&nbsp;&nbsp;Team Name</td>");
+		sb.append("<td width='160' nowrap class='tablelayoutheader' align='left' valign='middle'>Team Manager</td>");
+		IRaceResult raceResult = null;
+		Object[] racesResultsSet = m_racesResults.keySet().toArray();
+		for (int i = 0 ; i < racesResultsSet.length; i++)
+		{
+			raceResult = (IRaceResult)m_racesResults.get(racesResultsSet[i]);
+			sb.append("<td width='40' nowrap class='tablelayoutheader' align='left' valign='middle'>"+getRaceVeryShortName(getRaceById(raceResult.getRaceId()).getName())+"&nbsp;&nbsp;&nbsp;</td>");
+		}
+        sb.append("</tr>");
+
+        String strDriverId = getDriverIdByDriverNameAndRaceId(WebConfig.TIEBREAKER_DRIVER_NAME, "race_01");
+		IDriver tieBreakerDriverName = this.getDriverById(strDriverId);
+		int iTieBreakerRealResponse = tieBreakerDriverName.getTotalRealPoints();
+		PlayerPositionComparator ppc = null;
+		
+		Map standings = new TreeMap(new PlayerPositionComparator());
+		Map previousStandings = new HashMap();	
+		Set set = m_players.keySet();
+		IPlayer player = null;
+		int racesDisputed = m_racesResults.size();
+		for (Iterator iter = set.iterator() ; iter.hasNext() ; )
+		{
+			player = (IPlayer)m_players.get(iter.next());
+			
+			int tieBreakerDecision = Math.abs(player.getTieBreakerAnswer() - iTieBreakerRealResponse);
+			
+			ppc = new PlayerPositionComparator( player.getGrandTotalPoints(), tieBreakerDecision );
+			standings.put(ppc, player);
+			for (int r = 1; r <= racesDisputed ; r++) {
+				PlayerPositionComparator ppc1 = new PlayerPositionComparator( player.getGrandTotalPoints(r), tieBreakerDecision );
+				Map previousStandingsAfterRRaces = (Map)previousStandings.get(r);
+				if (previousStandingsAfterRRaces == null) {
+					previousStandingsAfterRRaces = new TreeMap(new PlayerPositionComparator());
+				}
+				previousStandingsAfterRRaces.put(ppc1, player);
+				previousStandings.put(r, previousStandingsAfterRRaces);
+			}
+		}
+		
+		int iPosCount = 1;
+		Set sortedPlayers = standings.keySet();
+		String strDropdownClass = null;						
+		for (Iterator iter = sortedPlayers.iterator() ; iter.hasNext() ; )
+		{						
+			player = (IPlayer)standings.get(iter.next());
+			
+			// alternating the bg color
+			if (iPosCount % 2 == 0)
+			{
+  			   sb.append("<tr class='standingsRowBackgroundColor'>");
+			   strDropdownClass = "dropdown";
+			}
+  		    else
+  		    {
+				sb.append("<tr class='standingsRowAltBackgroundColor'>");
+				strDropdownClass = "altdropdown";
+  		    }
+  		    
+			// Team Name
+			sb.append("<td width='160' nowrap class='tablelayout' align='left' valign='middle'>&nbsp;&nbsp;&nbsp;"+player.getName()+"</td>");
+			// Team Manager
+			sb.append("<td width='160' nowrap class='tablelayout' align='left' valign='middle'>"+player.getDescription()+"</td>");
+
+			for (int r = 1 ; r <= racesDisputed; r++)
+			{
+				Map previousStandingsAfterRRaces = (Map)previousStandings.get(r);
+				Set sortedPlayersAfterRRaces = previousStandingsAfterRRaces.keySet();
+				int pos = 0;
+				for (Iterator iter1 = sortedPlayersAfterRRaces.iterator() ; iter1.hasNext() ; ) {
+					pos ++;
+					IPlayer player1 = (IPlayer)previousStandingsAfterRRaces.get(iter1.next());
+					if (player1.getId().equals(player.getId())) {
+						break;
+					}
+				}
+				sb.append("<td width='40' nowrap class='tablelayout' align='left' valign='middle'>"+pos+"&nbsp;&nbsp;&nbsp;</td>");
+			}
+			sb.append("</tr>");
+			iPosCount++;
+		}				
+		sb.append("</table></td></tr></table>");
+		return sb.toString();
+    }
+
     private String isRegisteredPlayer(IPlayer player)
     {
     	StringBuffer sb = new StringBuffer("");
@@ -2682,6 +2865,14 @@ public class CompetitionManager
 				case IConstants.STATS_TOP_25:
 					   strResult = "This table shows the top 25 of all time scores";
 					   break;
+
+				case IConstants.STATS_POINTS_BY_RACE:
+					   strResult = "This table details the points accumulated for each race";
+					   break;
+
+				case IConstants.STATS_POSITION_BY_RACE:
+					   strResult = "This table details player's position after each race";
+					   break;
 			}
 			
 		}
@@ -2735,6 +2926,14 @@ public class CompetitionManager
 
 				case IConstants.STATS_TOP_25:
 					   strResult = drawStatsTop25();
+					   break;
+
+				case IConstants.STATS_POINTS_BY_RACE:
+					   strResult = drawStatsPointsByRace();
+					   break;
+
+				case IConstants.STATS_POSITION_BY_RACE:
+					   strResult = drawStatsPositionByRace();
 					   break;
 			}
 			
@@ -2801,6 +3000,11 @@ public class CompetitionManager
 		return rnShort;
 	}
 	
+
+    private String getRaceVeryShortName(String raceName)
+	{
+		return getRaceShortName(raceName).substring(0, 3);
+	}
 
     // The Unique instance for our manager
     private static CompetitionManager m_CompetitionManager;

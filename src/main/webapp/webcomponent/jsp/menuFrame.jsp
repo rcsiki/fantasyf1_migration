@@ -32,6 +32,9 @@
         <TR>
          <TD class="tablelayoutnobold"><A href="standingsBody.jsp" target="dataframe" onclick="resetRaceOptionSelector();">Standings</A></TD>
         </TR>  
+        <TR>
+         <TD class="tablelayoutnobold"><b>New!</b>&nbsp;<A href="standingsBody.jsp?paidonly=yes" target="dataframe" onclick="resetRaceOptionSelector();">Standings (paid only)</A></TD>
+        </TR>  
       </TABLE>
     </TD>
   </TR>
@@ -66,6 +69,12 @@
         </TR>  
         <TR>
           <TD class="tablelayoutnobold"><A href="statsBody.jsp?component=<%=IConstants.STATS_TOP_25%>" target="dataframe" onclick="resetRaceOptionSelector();">Top 25 All Time</A></TD>
+        </TR>  
+        <TR>
+          <TD class="tablelayoutnobold"><b>New!</b>&nbsp;<A href="statsBody.jsp?component=<%=IConstants.STATS_POINTS_BY_RACE%>" target="dataframe" onclick="resetRaceOptionSelector();">Points by Race</A></TD>
+        </TR>  
+        <TR>
+          <TD class="tablelayoutnobold"><b>New!</b>&nbsp;<A href="statsBody.jsp?component=<%=IConstants.STATS_POSITION_BY_RACE%>" target="dataframe" onclick="resetRaceOptionSelector();">Position by Race</A></TD>
         </TR>  
       </TABLE>
     </TD>

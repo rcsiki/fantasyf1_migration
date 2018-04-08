@@ -59,6 +59,8 @@ public interface IConstants
 	public static final int STATS_RACE_STANDINGS = 5;
 	public static final int STATS_WINNERS = 6;
 	public static final int STATS_TOP_25 = 7;
+	public static final int STATS_POINTS_BY_RACE = 8;
+	public static final int STATS_POSITION_BY_RACE = 9;
 	
 	
 //*******************************************************************

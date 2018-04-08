@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="/home/brlrcsik/xalan-j_2_7_2/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="/home/brlrcsik/xalan-j_2_7_2/xalan.jar"/>
 	<classpathentry kind="lib" path="/home/brlrcsik/xalan-j_2_7_2/serializer.jar"/>
+	<classpathentry kind="lib" path="/opt/tomcat/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

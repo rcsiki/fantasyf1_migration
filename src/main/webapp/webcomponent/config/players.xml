@@ -19,7 +19,7 @@
 <description>Mia</description>
 <email>mia_csiki@yahoo.com</email>
 <tiebreakeranswer>17</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_05</driver1>
 <driver2>driver_09</driver2>
@@ -33,7 +33,7 @@
 <description>Aputzy</description>
 <email>aputzy@rip.hu</email>
 <tiebreakeranswer>21</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_01</driver1>
 <driver2>driver_10</driver2>
@@ -47,7 +47,7 @@
 <description>Unguru Bulan</description>
 <email>robert.csiki@gmail.com</email>
 <tiebreakeranswer>19</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_09</driver1>
 <driver2>driver_20</driver2>
@@ -159,7 +159,7 @@
 <description>Liviu Slavei</description>
 <email>liviu.slavei@gmail.com</email>
 <tiebreakeranswer>62</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_01</driver1>
 <driver2>driver_12</driver2>
@@ -173,7 +173,7 @@
 <description>Luci</description>
 <email>fam_csiki@yahoo.ca</email>
 <tiebreakeranswer>17</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_11</driver1>
 <driver2>driver_15</driver2>
@@ -215,7 +215,7 @@
 <description>Cos</description>
 <email>cbicheru@hotmail.com</email>
 <tiebreakeranswer>52</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_01</driver1>
 <driver2>driver_12</driver2>
@@ -229,7 +229,7 @@
 <description>MiniMe</description>
 <email>benedekl@yahoo.com</email>
 <tiebreakeranswer>55</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_08</driver1>
 <driver2>driver_09</driver2>
@@ -243,7 +243,7 @@
 <description>Vanilla French</description>
 <email>lcbenedek@yahoo.com</email>
 <tiebreakeranswer>55</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_01</driver1>
 <driver2>driver_10</driver2>
@@ -369,7 +369,7 @@
 <description>Dragos</description>
 <email>dragos5@hotmail.com</email>
 <tiebreakeranswer>30</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_01</driver1>
 <driver2>driver_15</driver2>
@@ -397,7 +397,7 @@
 <description>Relux</description>
 <email>vabucur@gmail.com</email>
 <tiebreakeranswer>37</tiebreakeranswer>
-<paymentreceived>false</paymentreceived>
+<paymentreceived>true</paymentreceived>
 <picks>
 <driver1>driver_01</driver1>
 <driver2>driver_20</driver2>
@@ -462,4 +462,3 @@
 </picks>
 </player>
 </players>
-

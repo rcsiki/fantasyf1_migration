@@ -536,6 +536,21 @@ public class Player extends ObjectBase implements IPlayer
 		return fGrandTotalPoints;				
 	}
 	
+	public float getGrandTotalPoints(int raceCount) throws Exception {
+		CompetitionManager cm = CompetitionManager.getInstance();
+		float fGrandTotalPoints = 0;
+		IPlayerComponent pc = cm.getDriverById( getDriverId1() );
+		fGrandTotalPoints += pc.getGrandTotalPoints(raceCount);
+		pc = cm.getDriverById( getDriverId2() );
+		fGrandTotalPoints += pc.getGrandTotalPoints(raceCount);
+		pc = cm.getTeamById( getTeamId1() );
+		fGrandTotalPoints += pc.getGrandTotalPoints(raceCount);
+		pc = cm.getTeamById( getTeamId2() );
+		fGrandTotalPoints += pc.getGrandTotalPoints(raceCount);
+		
+		return fGrandTotalPoints;				
+	}
+
 	public float getGrandTotalPointsLessRace(IRace race) throws Exception
 	{
 		CompetitionManager cm = CompetitionManager.getInstance();

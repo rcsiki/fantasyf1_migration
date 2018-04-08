@@ -96,6 +96,23 @@ public abstract class PlayerComponent extends ObjectBase implements IPlayerCompo
 		return fPoints;
 	}
 	
+	public float getGrandTotalPoints(int raceCount)
+	{
+		float fPoints = 0;
+		Collection coll = m_mapPoints.keySet();
+		int rc = 0;
+		for ( Iterator iter = coll.iterator(); iter.hasNext() ; )
+		{
+			String strKey = (String)iter.next();
+			fPoints += getPointsForRace(strKey);
+			rc ++;
+			if (rc == raceCount) {
+				break;
+			}
+		}
+		return fPoints;
+	}
+
 	public float getGrandTotalPointsLessRace(IRace race)
 	{
 		float fPoints = 0;

@@ -10,9 +10,11 @@
 		// for all the completed races
 		CompetitionManager cm = CompetitionManager.getInstance();
 		cm.applyRules();
+		boolean paidOnly = (request.getParameter("paidonly") != null);
+		
 %>
 </HEAD>
-<BODY CLASS="inner" onLoad="top.mainframe.headerframe.location.href='standingsHeader.jsp'" onunload="top.mainframe.headerframe.location.href='<%=FormUtil.makeURL(request, "/webcomponent/html/empty.html")%>'">
-<%=cm.drawOverallStandingsBody()%>
+<BODY CLASS="inner" onload="top.mainframe.headerframe.location.href='standingsHeader.jsp'" onunload="top.mainframe.headerframe.location.href='<%=FormUtil.makeURL(request, "/webcomponent/html/empty.html")%>'">
+<%=cm.drawOverallStandingsBody(paidOnly)%>
 </BODY>
 </HTML>

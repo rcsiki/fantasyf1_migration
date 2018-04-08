@@ -26,6 +26,8 @@ public interface IPlayerComponent extends IObjectBase
 	
 	public float getGrandTotalPoints();
 	
+	public float getGrandTotalPoints(int raceCount) throws Exception;
+
 	public float getGrandTotalPointsLessRace(IRace race);
 	
 	public String getRaceDetails(String strRaceId) throws Exception;
