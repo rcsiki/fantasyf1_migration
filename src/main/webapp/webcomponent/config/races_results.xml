@@ -192,41 +192,41 @@
             <laps>56</laps>
             <grid>10</grid>
         </driver>
-        <driver familyName="Pérez" fastestLapRank="14" givenName="Sergio">
-            <pos>12</pos>
-            <id>driver_03</id>
-            <laps>56</laps>
-            <grid>12</grid>
-        </driver>
-        <driver familyName="Hartley" fastestLapRank="10" givenName="Brendon">
-            <pos>13</pos>
-            <id>driver_19</id>
-            <laps>56</laps>
-            <grid>11</grid>
-        </driver>
         <driver familyName="Leclerc" fastestLapRank="13" givenName="Charles">
-            <pos>14</pos>
+            <pos>12</pos>
             <id>driver_17</id>
             <laps>56</laps>
             <grid>19</grid>
         </driver>
         <driver familyName="Grosjean" fastestLapRank="3" givenName="Romain">
-            <pos>15</pos>
+            <pos>13</pos>
             <id>driver_05</id>
             <laps>56</laps>
             <grid>16</grid>
         </driver>
         <driver familyName="Stroll" fastestLapRank="17" givenName="Lance">
-            <pos>16</pos>
+            <pos>14</pos>
             <id>driver_20</id>
             <laps>56</laps>
             <grid>20</grid>
         </driver>
         <driver familyName="Sirotkin" fastestLapRank="8" givenName="Sergey">
-            <pos>17</pos>
+            <pos>15</pos>
             <id>driver_21</id>
             <laps>56</laps>
             <grid>18</grid>
+        </driver>
+        <driver familyName="Pérez" fastestLapRank="14" givenName="Sergio">
+            <pos>16</pos>
+            <id>driver_03</id>
+            <laps>56</laps>
+            <grid>12</grid>
+        </driver>
+        <driver familyName="Hartley" fastestLapRank="10" givenName="Brendon">
+            <pos>17</pos>
+            <id>driver_19</id>
+            <laps>56</laps>
+            <grid>11</grid>
         </driver>
         <driver familyName="Räikkönen" fastestLapRank="6" givenName="Kimi">
             <pos>ret</pos>

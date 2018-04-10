@@ -1109,29 +1109,9 @@ public class CompetitionManager
 		return sb.toString();
 	}
 
-	public String drawOverallStandingsHeader()
-	   throws Exception	   
-{
-		if (m_racesResults.size() > 0)
-		{
-		   StringBuffer sb = new StringBuffer();
-		   sb.append("<table border='0'>");
-		   sb.append("<tr>");
-		   sb.append("<td width='30' nowrap class='tablelayoutheader' align='right' valign='middle'>Pos</td>");
-		   sb.append("<td width='30' nowrap class='tablelayoutheader' align='center' valign='middle'>+/-</td>");
-	       sb.append("<td width='160' nowrap class='tablelayoutheader' align='left' valign='middle'>&nbsp;&nbsp;&nbsp;Team Name</td>");
-		   sb.append("<td width=160' nowrap class='tablelayoutheader' align='left' valign='middle'>Team Manager</td>");
-	       sb.append("<td width='60' class='tablelayoutheader' align='center' valign='middle'>Paid</td>");
-		   sb.append("<td width='60' nowrap class='tablelayoutheader' align='left' valign='middle'>Points&nbsp;&nbsp;&nbsp;</td>");
-   	       sb.append("<td width='175' class='tablelayoutheader' align='right' valign='middle'>Race Details</td>");
-		   sb.append("</tr></table>");
-		   return sb.toString();
-		}
-		else
-		{
-			return "";
-		}
-	}
+	public String drawOverallStandingsHeader() throws Exception {
+        return "";
+    }
 	
 	public String drawOverallStandingsBody(boolean paidOnly)
 	   throws Exception
@@ -1147,7 +1127,19 @@ public class CompetitionManager
 		PlayerPositionComparator ppc2 = null;
 		
 		StringBuffer sb = new StringBuffer();
-		sb.append("<table border='0'>");	
+        sb.append("<table width='100%' cellspacing='6'>");
+        sb.append("<tr>");
+        sb.append("<td align='center' valign='top'>");
+		   sb.append("<table border='0'>");
+		   sb.append("<tr style=\"height:30;\">");
+		   sb.append("<td width='30' nowrap class='tablelayoutheader' align='right' valign='middle'>Pos</td>");
+		   sb.append("<td width='30' nowrap class='tablelayoutheader' align='center' valign='middle'>+/-</td>");
+	       sb.append("<td width='160' nowrap class='tablelayoutheader' align='left' valign='middle'>&nbsp;&nbsp;&nbsp;Team Name</td>");
+		   sb.append("<td width=160' nowrap class='tablelayoutheader' align='left' valign='middle'>Team Manager</td>");
+	       sb.append("<td width='60' class='tablelayoutheader' align='center' valign='middle'>Paid</td>");
+		   sb.append("<td width='60' nowrap class='tablelayoutheader' align='left' valign='middle'>Points&nbsp;&nbsp;&nbsp;</td>");
+	       sb.append("<td width='175' class='tablelayoutheader' align='center' valign='middle'>Race Details</td>");
+		   sb.append("</tr>");
 		Map standings = new TreeMap(new PlayerPositionComparator());
 		Map previousStandings = new TreeMap(new PlayerPositionComparator());
 		Set set = m_players.keySet();
@@ -1265,7 +1257,7 @@ public class CompetitionManager
 			sb.append("</tr>");
 			iPosCount++;
 		}				
-		sb.append("</table>");
+		sb.append("</table></td></tr></table>");
 		return sb.toString();
 	}
 	
