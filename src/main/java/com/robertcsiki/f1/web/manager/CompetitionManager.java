@@ -43,6 +43,7 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collection;
@@ -498,6 +499,46 @@ public class CompetitionManager
 			result.append("</td>");
 			result.append("</tr>");			
     	}
+    	else if (isPlayerDriversAndCarsSelectionTaken(strDriverId1, strDriverId2, strTeamId1, strTeamId2))
+    	{
+			// team name already on database
+			result.append(" class=\"tablelayoutnobold\"><b>REGISTRATION FAILED!</b><p>We are sorry, but your selected combination of drivers and cars: ");
+			
+			result.append("<br><br><table border='0'>");
+			
+			result.append("<tr><td class=\"tablelayoutnobold\">");
+			result.append("Driver 1:");
+			result.append("</td><td class=\"tablelayout\">");
+			result.append(this.getDriverById(strDriverId1).getName());
+			result.append("</td></tr>");
+
+			result.append("<tr><td class=\"tablelayoutnobold\">");
+			result.append("Driver 2:");
+			result.append("</td><td class=\"tablelayout\">");
+			result.append(this.getDriverById(strDriverId2).getName());
+			result.append("</td></tr>");
+
+			result.append("<tr><td class=\"tablelayoutnobold\">");
+			result.append("Car 1:");
+			result.append("</td><td class=\"tablelayout\">");
+			result.append(this.getTeamById(strTeamId1).getName());
+			result.append("</td></tr>");
+
+			result.append("<tr><td class=\"tablelayoutnobold\">");
+			result.append("Car 2:");
+			result.append("</td><td class=\"tablelayout\">");
+			result.append(this.getTeamById(strTeamId2).getName());
+			result.append("</td></tr></table></td></tr><tr><td class=\"tablelayoutnobold\">");
+			
+			result.append(" is <b>already taken</b> by another registered player. Please use the link below to go back to the Registration page and choose a different combination of drivers and cars for your Team.");
+			result.append("</TD></TR>");
+			// the Back Button
+			result.append("<tr>");
+			result.append("<td align='right' valign='top'>");
+			result.append("<br><table><tr><td align'right'><a href='JavaScript:window.history.go(-2)'>Back to Registration</a></td></tr></table>");
+			result.append("</td>");
+			result.append("</tr>");			
+    	}
     	else
     	{
 			// all ok, proceed with the registration
@@ -527,7 +568,7 @@ public class CompetitionManager
 			}
 			if (error)
 			{
-				// an error has occured during writting the XML
+				// an error has occurred during writing the XML
 				result.append(" class=\"tablelayoutnobold\"><b>REGISTRATION FAILED!</b><p>A server error has occured. Please try again later.");
 			}
 			else
@@ -585,14 +626,14 @@ public class CompetitionManager
 				result.append("</td></tr></table></td></tr>");
 				result.append("<tr><td class=\"tablelayoutnobold\">");
 
-			    result.append("<br><p><b>Remainder:</b> In order to be eligible to win any prize at the end of the season,");
-			    result.append(" you are now asked to please mail in a <b>personal check</b>");
+			    result.append("<br><p><b>Reminder:</b> In order to be eligible to win any prize at the end of the season,");
+			    result.append(" you are now asked to please do an <b>eTransfer</b>");
                 result.append(" valued at $20 CDN by <b>" + WebConfig.PAYMENT_DEADLINE_TEXT
-                        + "</b>, to the following mail address:<p>");
+                        + "</b>, to the following e-mail address:<p>");
                 result.append("<b>" + WebConfig.PAYMENT_MAIL_ADDRESS + "</b><p>");
 				result.append("representing the entry fee to the competition. Please <b>don't forget</b> to mention");
 				result.append(" your <b>Team Name</b> when submitting the fee. When the payment is received, ");
-				result.append("an acknowledgement will be sent back to you by e-mail.");
+				result.append("you will be added to the payee list.");
                 result.append("<br><p><b>Thank You and we wish you have a strong "
                         + WebConfig.CURRENT_YEAR + " Fantasy Formula 1 Season!</b>");
 			}    		
@@ -601,6 +642,27 @@ public class CompetitionManager
     	return result.toString();
     }
 	
+	private boolean isPlayerDriversAndCarsSelectionTaken(String strDriverId1, String strDriverId2, String strTeamId1,
+			String strTeamId2) {
+		List<String> drivers = new ArrayList<>(2);
+		List<String> teams = new ArrayList<>(2);
+		for (Object playerObj: m_players.values()) {
+			IPlayer player = (IPlayer)playerObj;
+			drivers.add(player.getDriverId1());
+			drivers.add(player.getDriverId2());
+			teams.add(player.getTeamId1());
+			teams.add(player.getTeamId2());
+			
+			if (drivers.contains(strDriverId1) && drivers.contains(strDriverId2) &&
+					teams.contains(strTeamId1) && teams.contains(strTeamId2)) {
+				return true;
+			}
+			drivers.clear();
+			teams.clear();
+		}
+		return false;
+	}
+
 	private boolean validatePlayerSelection( String strTeamName,
 								 			 String strTeamManager,
 											 String strEmailAddress,

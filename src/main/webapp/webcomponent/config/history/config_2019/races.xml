@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<races>
+	
+  <!-- Australian Grand Prix -->
+  <race>
+    <id>race_01</id> 
+    <name>Grand Prix of Australia</name>
+    <description>2019 Australian Grand Prix</description>
+    <date>2019/03/17</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/1/results</url>
+  </race>
+	
+  <!-- Bahrain Grand Prix -->
+  <race>
+    <id>race_02</id> 
+    <name>Grand Prix of Bahrain</name>
+    <description>2019 Bahrain Grand Prix</description>
+    <date>2019/03/31</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/2/results</url>
+  </race>
+	
+  <!-- Chinese Grand Prix -->
+  <race>
+    <id>race_03</id> 
+    <name>Grand Prix of China</name>
+    <description>2019 Chinese Grand Prix</description>
+    <date>2019/04/14</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/3/results</url>
+  </race>
+	
+  <!-- Grand Prix of Azerbaijan -->
+  <race>
+    <id>race_04</id> 
+    <name>Grand Prix of Azerbaijan</name>
+    <description>2019 Azerbaijan Grand Prix</description>
+    <date>2019/04/28</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/4/results</url>
+  </race>
+	
+  <!-- Spanish Grand Prix -->
+  <race>
+    <id>race_05</id> 
+    <name>Grand Prix of Spain</name>
+    <description>2019 Spanish Grand Prix</description>
+    <date>2019/05/12</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/5/results</url>
+  </race>
+	
+  <!-- Monaco Grand Prix -->
+  <race>
+    <id>race_06</id> 
+    <name>Grand Prix of Monaco</name>
+    <description>2019 Monaco Grand Prix</description>
+    <date>2019/05/26</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/6/results</url>
+  </race>
+	
+  <!-- Canadian Grand Prix -->
+  <race>
+    <id>race_07</id> 
+    <name>Grand Prix of Canada</name>
+    <description>2019 Canadian Grand Prix</description>
+    <date>2019/06/09</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/7/results</url>
+  </race>
+	
+  <!-- French Grand Prix -->
+  <race>
+    <id>race_08</id> 
+    <name>Grand Prix of France</name>
+    <description>2019 French Grand Prix</description>
+    <date>2019/06/23</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/8/results</url>
+  </race>
+	
+  <!-- Austrian Grand Prix -->
+  <race>
+    <id>race_09</id> 
+    <name>Grand Prix of Austria</name>
+    <description>2019 Austrian Grand Prix</description>
+    <date>2019/06/30</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/9/results</url>
+  </race>
+	
+  <!-- British Grand Prix -->
+  <race>
+    <id>race_10</id> 
+    <name>Grand Prix of Britain</name>
+    <description>2019 British Grand Prix</description>
+    <date>2019/07/14</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/10/results</url>
+  </race>
+	
+  <!-- German Grand Prix -->
+  <race>
+    <id>race_11</id> 
+    <name>Grand Prix of Germany</name>
+    <description>2019 German Grand Prix</description>
+    <date>2019/07/28</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/11/results</url>
+  </race>
+
+  <!-- Hungarian Grand Prix -->
+  <race>
+    <id>race_12</id> 
+    <name>Grand Prix of Hungary</name>
+    <description>2019 Hungarian Grand Prix</description>
+    <date>2019/08/04</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/12/results</url>
+  </race>
+	
+  <!-- Belgian Grand Prix -->
+  <race>
+    <id>race_13</id> 
+    <name>Grand Prix of Belgium</name>
+    <description>2019 Belgian Grand Prix</description>
+    <date>2019/09/01</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/13/results</url>
+  </race>
+	
+  <!-- Italian Grand Prix -->
+  <race>
+    <id>race_14</id> 
+    <name>Grand Prix of Italy</name>
+    <description>2019 Italian Grand Prix</description>
+    <date>2019/09/08</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/14/results</url>
+  </race>
+	
+  <!-- Singapore Grand Prix -->
+  <race>
+    <id>race_15</id> 
+    <name>Grand Prix of Singapore</name>
+    <description>2019 Singapore Grand Prix</description>
+    <date>2019/09/22</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/15/results</url>
+  </race>
+	
+  <!-- Russian Grand Prix -->
+  <race>
+    <id>race_16</id> 
+    <name>Grand Prix of Russia</name>
+    <description>2019 Russian Grand Prix</description>
+    <date>2019/09/29</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/16/results</url>
+  </race>
+	
+  <!-- Japanese Grand Prix -->
+  <race>
+    <id>race_17</id> 
+    <name>Grand Prix of Japan</name>
+    <description>2019 Japanese Grand Prix</description>
+    <date>2019/10/13</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/17/results</url>
+  </race>
+	
+  <!-- Mexican Grand Prix -->
+  <race>
+    <id>race_18</id> 
+    <name>Grand Prix of Mexico</name>
+    <description>2019 Mexican Grand Prix</description>
+    <date>2019/10/27</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/18/results</url>
+  </race>
+
+  <!-- United States Grand Prix	-->
+  <race>
+    <id>race_19</id> 
+    <name>Grand Prix of United States</name>
+    <description>2019 United States Grand Prix</description>
+    <date>2019/11/03</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/19/results</url>
+  </race>
+		
+  <!-- Brazilian Grand Prix -->
+  <race>
+    <id>race_20</id> 
+    <name>Grand Prix of Brazil</name>
+    <description>2019 Brazilian Grand Prix</description>
+    <date>2019/11/17</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/20/results</url>
+  </race>
+	
+  <!-- Abu Dhabi Grand Prix -->
+  <race>
+    <id>race_21</id> 
+    <name>Grand Prix of Abu Dhabi</name>
+    <description>2019 Abu Dhabi Grand Prix</description>
+    <date>2019/12/01</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2019/21/results</url>
+  </race>
+	
+</races>

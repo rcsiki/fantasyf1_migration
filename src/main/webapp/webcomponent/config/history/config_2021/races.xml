@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<races>
+	
+  <!-- Bahrain Grand Prix -->
+  <race>
+    <id>race_01</id> 
+    <name>Grand Prix of Bahrain</name>
+    <description>2021 Bahrain Grand Prix</description>
+    <date>2021/03/28</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/1/results</url>
+  </race>
+  <!-- Emilia Romagna Grand Prix -->
+  <race>
+    <id>race_02</id> 
+    <name>Grand Prix of Emilia Romagna</name>
+    <description>2021 Emilia Romagna Grand Prix</description>
+    <date>2021/04/18</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/2/results</url>
+  </race>	
+  <!-- Portuguese Grand Prix -->
+  <race>
+    <id>race_03</id> 
+    <name>Grand Prix of Portugal</name>
+    <description>2021 Portuguese Grand Prix</description>
+    <date>2021/05/02</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/3/results</url>
+  </race>	
+  <!-- Spanish Grand Prix -->
+  <race>
+    <id>race_04</id> 
+    <name>Grand Prix of Spain</name>
+    <description>2021 Spanish Grand Prix</description>
+    <date>2021/05/09</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/4/results</url>
+  </race>	
+  <!-- Monaco Grand Prix -->
+  <race>
+    <id>race_05</id> 
+    <name>Grand Prix of Monaco</name>
+    <description>2021 Monaco Grand Prix</description>
+    <date>2021/05/23</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/5/results</url>
+  </race>	
+  <!-- Azerbaijan Grand Prix -->
+  <race>
+    <id>race_06</id> 
+    <name>Grand Prix of Azerbaijan</name>
+    <description>2021 Azerbaijan Grand Prix</description>
+    <date>2021/06/06</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/6/results</url>
+  </race>	
+  <!-- French Grand Prix -->
+  <race>
+    <id>race_07</id> 
+    <name>Grand Prix of France</name>
+    <description>2021 French Grand Prix</description>
+    <date>2021/06/20</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/7/results</url>
+  </race>	
+  <!-- Styrian Grand Prix -->
+  <race>
+    <id>race_08</id> 
+    <name>Grand Prix of Styria</name>
+    <description>2021 Styrian Grand Prix</description>
+    <date>2021/06/27</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/8/results</url>
+  </race>	
+  <!-- Austrian Grand Prix -->
+  <race>
+    <id>race_09</id> 
+    <name>Grand Prix of Austria</name>
+    <description>2021 Austrian Grand Prix</description>
+    <date>2021/07/04</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/9/results</url>
+  </race>	
+  <!-- British Grand Prix -->
+  <race>
+    <id>race_10</id> 
+    <name>Grand Prix of Great Britain</name>
+    <description>2021 British Grand Prix</description>
+    <date>2021/07/18</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/10/results</url>
+  </race>	
+  <!-- Hungarian Grand Prix -->
+  <race>
+    <id>race_11</id> 
+    <name>Grand Prix of Hungary</name>
+    <description>2021 Hungarian Grand Prix</description>
+    <date>2021/08/01</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/11/results</url>
+  </race>	
+  <!-- Belgian Grand Prix -->
+  <race>
+    <id>race_12</id> 
+    <name>Grand Prix of Belgium</name>
+    <description>2021 Belgian Grand Prix</description>
+    <date>2021/08/29</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/12/results</url>
+  </race>	
+  <!-- Dutch Grand Prix -->
+  <race>
+    <id>race_13</id> 
+    <name>Grand Prix of Dutch</name>
+    <description>2021 Dutch Grand Prix</description>
+    <date>2021/09/05</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/13/results</url>
+  </race>	
+  <!-- Italian Grand Prix -->
+  <race>
+    <id>race_14</id> 
+    <name>Grand Prix of Italy</name>
+    <description>2021 Italian Grand Prix</description>
+    <date>2021/09/12</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/14/results</url>
+  </race>	
+  <!-- Russian Grand Prix -->
+  <race>
+    <id>race_15</id> 
+    <name>Grand Prix of Russia</name>
+    <description>2021 Russian Grand Prix</description>
+    <date>2021/09/26</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/15/results</url>
+  </race>	
+  <!-- Turkey Grand Prix -->
+  <race>
+    <id>race_16</id> 
+    <name>Grand Prix of Turkey</name>
+    <description>2021 Turkish Grand Prix</description>
+    <date>2021/10/10</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/16/results</url>
+  </race>	
+  <!-- USA Grand Prix -->
+  <race>
+    <id>race_17</id> 
+    <name>Grand Prix of United States</name>
+    <description>2021 United States Grand Prix</description>
+    <date>2021/10/24</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/17/results</url>
+  </race>	
+  <!-- Mexico Grand Prix -->
+  <race>
+    <id>race_18</id> 
+    <name>Grand Prix of Mexico</name>
+    <description>2021 Mexican States Grand Prix</description>
+    <date>2021/11/07</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/18/results</url>
+  </race>	
+  <!-- Brazilian Grand Prix -->
+  <race>
+    <id>race_19</id> 
+    <name>Grand Prix of Brazil</name>
+    <description>2021 Brazilian Grand Prix</description>
+    <date>2021/11/14</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/19/results</url>
+  </race>	
+  <!-- Qatar Grand Prix -->
+  <race>
+    <id>race_20</id> 
+    <name>Grand Prix of Qatar</name>
+    <description>2021 Qatar Grand Prix</description>
+    <date>2021/11/21</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/20/results</url>
+  </race>	
+  <!-- Saudi Arabian Grand Prix -->
+  <race>
+    <id>race_21</id> 
+    <name>Grand Prix of Saudi Arabia</name>
+    <description>2021 Saudi Arabian Grand Prix</description>
+    <date>2021/12/05</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/21/results</url>
+  </race>	
+  <!-- Abu Dhabi Grand Prix -->
+  <race>
+    <id>race_22</id> 
+    <name>Grand Prix of Abu Dhabi</name>
+    <description>2021 Abu Dhabi Grand Prix</description>
+    <date>2021/12/12</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2021/22/results</url>
+  </race>	
+	
+</races>

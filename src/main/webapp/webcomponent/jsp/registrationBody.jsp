@@ -50,9 +50,9 @@
           </td>
         </tr>
         <tr height='30'>
-          <td  class="tablelayoutheader" valign='bottom'>
+          <td  class="tablelayoutheader">
             <br>Build your Team (2 drivers and 2 cars) within an overall budget of <u>$<%=WebConfig.PLAYER_BUDGET%> million</u>
-           </td>
+          </td>
         </tr>
         <!-- Driver & Teams, add/remove buttons, current selection panel -->
         <tr>
@@ -70,10 +70,35 @@
             </table>
           </td>
         </tr>
+        <tr>
+          <td  class="tablelayout">
+            <u>NOTE:</u>&nbsp;Your 2 drivers 2 cars selection will have to be UNIQUE across all the registered players.
+          </td>
+        </tr>
+        <tr>
+          <td class="tablelayout">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We do enforce that, once you submit your selection.
+          </td>
+        </tr>
+        <tr>
+          <td class="tablelayout">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First-come, first-served! Please carefully check your registration's result message.
+          </td>
+        </tr>
+        <tr>
+          <td class="tablelayout">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If somebody else has registered it before, then you will be given the opportunity
+          </td>
+        </tr>
+        <tr>
+          <td class="tablelayout">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to try again with a different drivers and cars combination.
+          </td>
+        </tr>
         <!-- Register button -->
         <tr>
-          <td align='center' valign='bottom'>
-            <INPUT TYPE=SUBMIT NAME="submit" value="Register" onClick='return validateRegistrationForm(<%=WebConfig.PLAYER_BUDGET%>,<%=WebConfig.RACES_THIS_SEASON * WebConfig.RACE_WINNER_REAL_POINTS%>);'>          
+          <td  height='30' align='middle' valign='bottom'>
+            <b><INPUT TYPE=SUBMIT NAME="submit" value="Register" onClick='return validateRegistrationForm(<%=WebConfig.PLAYER_BUDGET%>,<%=WebConfig.RACES_THIS_SEASON * WebConfig.RACE_WINNER_REAL_POINTS%>);'></b>          
           </td>
         </tr>
       </table>    

@@ -12,7 +12,8 @@
 <b>GENERAL INSTRUCTIONS</b>
 <p>
 1. During the registration process, you (also referred as <b>the player</b>) will be required to build a <b>team</b>, composed by
-<b>two drivers</b> and <b>two constructors</b> (cars). The drivers and cars that will compete are available for your selection.
+<b>two drivers</b> and <b>two constructors</b> (cars). The drivers and cars that will compete in the Formula 1 season are available for your selection.
+<b><u>Important:</u></b>&nbsp;This selection must be <b>unique</b>. If somebody else has registered it before, then you will be given the opportunity to try again with a different drivers/cars combination.
 
 <p>
 2. Each driver and car has a published cost and you must not exceed an

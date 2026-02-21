@@ -33,7 +33,7 @@
          <TD class="tablelayoutnobold"><A href="standingsBody.jsp" target="dataframe" onclick="resetRaceOptionSelector();">Standings</A></TD>
         </TR>  
         <TR>
-         <TD class="tablelayoutnobold"><b>New!</b>&nbsp;<A href="standingsBody.jsp?paidonly=yes" target="dataframe" onclick="resetRaceOptionSelector();">Standings (paid only)</A></TD>
+         <TD class="tablelayoutnobold"><A href="standingsBody.jsp?paidonly=yes" target="dataframe" onclick="resetRaceOptionSelector();">Standings (paid only)</A></TD>
         </TR>  
       </TABLE>
     </TD>
@@ -71,29 +71,12 @@
           <TD class="tablelayoutnobold"><A href="statsBody.jsp?component=<%=IConstants.STATS_TOP_25%>" target="dataframe" onclick="resetRaceOptionSelector();">Top 25 All Time</A></TD>
         </TR>  
         <TR>
-          <TD class="tablelayoutnobold"><b>New!</b>&nbsp;<A href="statsBody.jsp?component=<%=IConstants.STATS_POINTS_BY_RACE%>" target="dataframe" onclick="resetRaceOptionSelector();">Points by Race</A></TD>
+          <TD class="tablelayoutnobold"><A href="statsBody.jsp?component=<%=IConstants.STATS_POINTS_BY_RACE%>" target="dataframe" onclick="resetRaceOptionSelector();">Points by Race</A></TD>
         </TR>  
         <TR>
-          <TD class="tablelayoutnobold"><b>New!</b>&nbsp;<A href="statsBody.jsp?component=<%=IConstants.STATS_POSITION_BY_RACE%>" target="dataframe" onclick="resetRaceOptionSelector();">Position by Race</A></TD>
+          <TD class="tablelayoutnobold"><A href="statsBody.jsp?component=<%=IConstants.STATS_POSITION_BY_RACE%>" target="dataframe" onclick="resetRaceOptionSelector();">Position by Race</A></TD>
         </TR>  
       </TABLE>
-    </TD>
-  </TR>
-  <TR>
-    <TD>
-      <!--
-      <TABLE BORDER=0 cellspacing=2 cellpadding=2>
-        <TR>
-          <TD class="tablelayoutheader">2010 Fantasy Stats<b></TD>
-        </TR>  
-        <TR>
-          <TD class="tablelayoutnobold"><A href="<%=FormUtil.makeURL(request, "/webcomponent/config/history/config_2010/drivers_perf.html")%>" target="dataframe" onclick="resetRaceOptionSelector();">Drivers Performance</A></TD>
-        </TR>  
-        <TR>
-          <TD class="tablelayoutnobold"><A href="<%=FormUtil.makeURL(request, "/webcomponent/config/history/config_2010/cars_perf.html")%>" target="dataframe" onclick="resetRaceOptionSelector();">Cars Performance</A></TD>
-        </TR>
-      </TABLE>
-      -->
     </TD>
   </TR>
   <%=cm.renderAdminLinks()%>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drivers>
+
+   <driver>
+      <id>driver_01</id>                           <!-- Kimi Räikkönen -->
+      <name>Kimi Räikkönen</name>
+      <description>Kimi Räikkönen</description>
+      <cost>8</cost>
+      <replacements>
+        <replacement>
+          <raceid>race_13</raceid>
+          <drivername>Robert Kubica</drivername>
+        </replacement>
+        <replacement>
+          <raceid>race_14</raceid>
+          <drivername>Robert Kubica</drivername>
+        </replacement>
+      </replacements> 
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_02</id>                           <!-- Antonio Giovinazzi -->
+      <name>Antonio Giovinazzi</name>
+      <description>Antonio Giovinazzi</description>
+      <cost>7</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_03</id>                           <!-- Pierre Gasly -->
+      <name>Pierre Gasly</name>
+      <description>Pierre Gasly</description>
+      <cost>8</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_04</id>                           <!-- Yuki Tsunoda -->
+      <name>Yuki Tsunoda</name>
+      <description>Yuki Tsunoda</description>
+      <cost>6</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_05</id>                           <!-- Fernando Alonso -->
+      <name>Fernando Alonso</name>
+      <description>Fernando Alonso</description>
+      <cost>8</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_06</id>                           <!--  Esteban Ocon -->
+      <name>Esteban Ocon</name>
+      <description>Esteban Ocon</description>
+      <cost>8</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_07</id>                           <!-- Sebastian Vettel -->
+      <name>Sebastian Vettel</name>
+      <description>Sebastian Vettel</description>
+      <cost>9</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_08</id>                           <!-- Lance Stroll -->
+      <name>Lance Stroll</name>
+      <description>Lance Stroll</description>
+      <cost>6</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_09</id>                           <!--Charles Leclerc -->
+      <name>Charles Leclerc</name>
+      <description>Charles Leclerc</description>
+      <cost>7</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_10</id>                           <!-- Carlos Sainz -->
+      <name>Carlos Sainz</name>
+      <description>Carlos Sainz</description>
+      <cost>9</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_11</id>                           <!-- Nikita Mazepin -->
+      <name>Nikita Mazepin</name>
+      <description>Nikita Mazepin</description>
+      <cost>4</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_12</id>                           <!-- Mick Schumacher -->
+      <name>Mick Schumacher</name>
+      <description>Mick Schumacher</description>
+      <cost>4</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_14</id>                           <!-- Daniel Ricciardo -->
+      <name>Daniel Ricciardo</name>
+      <description>Daniel Ricciardo</description>
+      <cost>10</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_15</id>                           <!-- Lando Norris -->
+      <name>Lando Norris</name>
+      <description>Lando Norris</description>
+      <cost>11</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_16</id>                           <!-- Lewis Hamilton -->
+      <name>Lewis Hamilton</name>
+      <description>Lewis Hamilton</description>
+      <cost>16</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_17</id>                           <!-- Valtteri Bottas -->
+      <name>Valtteri Bottas</name>
+      <description>Valtteri Bottas</description>
+      <cost>11</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_18</id>                           <!-- Sergio Pérez -->
+      <name>Sergio Pérez</name>
+      <description>Sergio Pérez</description>
+      <cost>9</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_19</id>                           <!-- Max Verstappen -->
+      <name>Max Verstappen</name>
+      <description>Max Verstappen</description>
+      <cost>14</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_20</id>                           <!-- Nicholas Latifi -->
+      <name>Nicholas Latifi</name>
+      <description>Nicholas Latifi</description>
+      <cost>7</cost>
+      <replacements/>
+   </driver>
+	 	 	 
+   <driver>
+      <id>driver_21</id>                           <!-- George Russell -->
+      <name>George Russell</name>
+      <description>George Russell</description>
+      <cost>4</cost>
+      <replacements/>
+   </driver>
+	 	 	 	 	 	 
+</drivers>

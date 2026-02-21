@@ -29,8 +29,8 @@
         </ul>
         You can participate but <b>you can not win</b> 
         any prizes if <b>your payment is not received by <%=WebConfig.PAYMENT_DEADLINE_TEXT%></b>.</br>
-        If you would like to contribute to the prize pool please mail in a <b>personal check</b> 
-			  valued at $20 CDN, to the following address:
+        If you would like to contribute to the prize pool please do an <b>eTransfer</b> 
+			  valued at $20 CDN, to the following e-mail address:
         <p>
         <b><%=WebConfig.PAYMENT_MAIL_ADDRESS%></b>
         <p>
