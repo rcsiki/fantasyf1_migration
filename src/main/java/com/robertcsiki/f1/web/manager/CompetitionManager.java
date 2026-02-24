@@ -454,7 +454,8 @@ public class CompetitionManager
     	// check to see if the player did use the Registration page or not to register
 		if ( Calendar.getInstance().getTime().after( WebConfig.REGISTRATION_DEADLINE) )
 		{
-			result.append(" class=\"tablelayoutnobold\"><b>REGISTRATION FAILED!</b><p>We are sorry, but the registration ");
+			result.append(" class=\"tablelayoutbigred\"><b>REGISTRATION FAILED!</b></td></tr><tr>"
+					+ "<td  class=\"tablelayoutnobold\"><p>We are sorry,  but the registration ");
 			result.append("period has expired.");
 			result.append("</TD></TR>");
 		}
@@ -467,14 +468,16 @@ public class CompetitionManager
 									  strTeamId2,
 									  strTieBreakerAnswer ))    	
 		{
-			result.append(" class=\"tablelayoutnobold\"><b>REGISTRATION FAILED!</b><p>We are sorry, but your team cannot be registered");
+			result.append(" class=\"tablelayoutbigred\"><b>REGISTRATION FAILED!</b></td></tr><tr>"
+					+ "<td  class=\"tablelayoutnobold\"><p>We are sorry, but your team cannot be registered\"");
 			result.append(" because you did not use the correct procedure to do it.");
 			result.append("</TD></TR>");
 		}
 		else if (allRegisteredEmails.contains(strEmailAddress))
 		{
 			// email already on database
-			result.append(" class=\"tablelayoutnobold\"><b>REGISTRATION FAILED!</b><p>We are sorry, but the email you entered ");
+			result.append(" class=\"tablelayoutbigred\"><b>REGISTRATION FAILED!</b></td></tr><tr>"
+					+ "<td  class=\"tablelayoutnobold\"><p>We are sorry, but the email you entered ");
 			result.append("<b>"+strEmailAddress+"</b>");
 			result.append(" is already used by another Player. Please use the<br>link below to go back to the Registration page and choose another.");
 			result.append("</TD></TR>");
@@ -488,7 +491,8 @@ public class CompetitionManager
     	else if (allRegisteredTeamNames.contains(strTeamName))
     	{
 			// team name already on database
-			result.append(" class=\"tablelayoutnobold\"><b>REGISTRATION FAILED!</b><p>We are sorry, but a Team with name ");
+			result.append(" class=\"tablelayoutbigred\"><b>REGISTRATION FAILED!</b></td></tr><tr>"
+					+ "<td  class=\"tablelayoutnobold\"><p>We are sorry, but a Team with name ");
 			result.append("<b>"+strTeamName+"</b>");
 			result.append(" is already registered. Please use the<br>link below to go back to the Registration page and choose another name for your Team.");
 			result.append("</TD></TR>");
@@ -502,7 +506,8 @@ public class CompetitionManager
     	else if (isPlayerDriversAndCarsSelectionTaken(strDriverId1, strDriverId2, strTeamId1, strTeamId2))
     	{
 			// team name already on database
-			result.append(" class=\"tablelayoutnobold\"><b>REGISTRATION FAILED!</b><p>We are sorry, but your selected combination of drivers and cars: ");
+			result.append(" class=\"tablelayoutbigred\"><b>REGISTRATION FAILED!</b></td></tr><tr>"
+					+ "<td  class=\"tablelayoutnobold\"><p>We are sorry, but your selected combination of drivers and cars: ");
 			
 			result.append("<br><br><table border='0'>");
 			
@@ -655,6 +660,7 @@ public class CompetitionManager
 			
 			if (drivers.contains(strDriverId1) && drivers.contains(strDriverId2) &&
 					teams.contains(strTeamId1) && teams.contains(strTeamId2)) {
+				System.out.println("Registration failed, selection already taken: " + strDriverId1 + ", " + strDriverId2 + ", "+ strTeamId1 + ", " + strTeamId2);
 				return true;
 			}
 			drivers.clear();

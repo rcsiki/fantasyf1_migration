@@ -5,210 +5,216 @@
   <race>
     <id>race_01</id> 
     <name>Grand Prix of Australia</name>
-    <description>2018 Australian Grand Prix</description>
-    <date>2018/03/25</date>
+    <description>2026 Australian Grand Prix</description>
+    <date>2026/03/08</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/1/results</url>
+    <url>http://ergast.com/api/f1/2026/1/results</url>
   </race>
-	
-  <!-- Bahrain Grand Prix -->
-  <race>
-    <id>race_02</id> 
-    <name>Grand Prix of Bahrain</name>
-    <description>2018 Bahrain Grand Prix</description>
-    <date>2018/04/08</date>
-    <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/2/results</url>
-  </race>
-	
   <!-- Chinese Grand Prix -->
   <race>
-    <id>race_03</id> 
+    <id>race_02</id> 
     <name>Grand Prix of China</name>
-    <description>2018 Chinese Grand Prix</description>
-    <date>2018/04/15</date>
+    <description>2026 Chinese Grand Prix</description>
+    <date>2026/03/15</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/3/results</url>
+    <url>http://ergast.com/api/f1/2026/2/results</url>
   </race>
-	
-  <!-- Grand Prix of Azerbaijan -->
+  <!-- Japanese Grand Prix -->
+  <race>
+    <id>race_03</id> 
+    <name>Grand Prix of Japan</name>
+    <description>2026 Japanese Grand Prix</description>
+    <date>2026/03/29</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2026/3/results</url>
+  </race>	
+  <!-- Bahrain Grand Prix -->
   <race>
     <id>race_04</id> 
-    <name>Grand Prix of Azerbaijan</name>
-    <description>2018 Azerbaijan Grand Prix</description>
-    <date>2018/04/29</date>
+    <name>Grand Prix of Bahrain</name>
+    <description>2026 Bahrain Grand Prix</description>
+    <date>2026/04/12</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/4/results</url>
+    <url>http://ergast.com/api/f1/2026/4/results</url>
   </race>
-	
-  <!-- Spanish Grand Prix -->
+  <!-- Saudi Arabian Grand Prix -->
   <race>
     <id>race_05</id> 
-    <name>Grand Prix of Spain</name>
-    <description>2018 Spanish Grand Prix</description>
-    <date>2018/05/13</date>
+    <name>Grand Prix of Saudi Arabia</name>
+    <description>2026 Saudi Arabian Grand Prix</description>
+    <date>2026/04/19</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/5/results</url>
-  </race>
-	
-  <!-- Monaco Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/5/results</url>
+  </race>		
+  <!-- Miami Grand Prix -->
   <race>
     <id>race_06</id> 
-    <name>Grand Prix of Monaco</name>
-    <description>2018 Monaco Grand Prix</description>
-    <date>2018/05/27</date>
+    <name>Grand Prix of Miami</name>
+    <description>2026 Miami Grand Prix</description>
+    <date>2026/05/03</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/6/results</url>
-  </race>
-	
-  <!-- Canadian Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/6/results</url>
+  </race>		
+ <!-- Canadian Grand Prix -->
   <race>
     <id>race_07</id> 
     <name>Grand Prix of Canada</name>
-    <description>2018 Canadian Grand Prix</description>
-    <date>2018/06/10</date>
+    <description>2026 Canadian Grand Prix</description>
+    <date>2026/05/24</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/7/results</url>
+    <url>http://ergast.com/api/f1/2026/7/results</url>
   </race>
-	
-  <!-- French Grand Prix -->
+   <!-- Monaco Grand Prix -->
   <race>
     <id>race_08</id> 
-    <name>Grand Prix of France</name>
-    <description>2018 French Grand Prix</description>
-    <date>2018/06/24</date>
+    <name>Grand Prix of Monaco</name>
+    <description>2026 Monaco Grand Prix</description>
+    <date>2026/06/07</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/8/results</url>
-  </race>
-	
-  <!-- Austrian Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/8/results</url>
+  </race> 
+   <!-- Barcelona-Catalunya Grand Prix -->
   <race>
     <id>race_09</id> 
-    <name>Grand Prix of Austria</name>
-    <description>2018 Austrian Grand Prix</description>
-    <date>2018/07/01</date>
+    <name>Grand Prix of Barcelona-Catalunya</name>
+    <description>2026 Barcelona-Catalunya Grand Prix</description>
+    <date>2026/06/14</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/9/results</url>
+    <url>http://ergast.com/api/f1/2026/9/results</url>	
   </race>
-	
-  <!-- British Grand Prix -->
+  <!-- Austrian Grand Prix -->
   <race>
     <id>race_10</id> 
-    <name>Grand Prix of Britain</name>
-    <description>2018 British Grand Prix</description>
-    <date>2018/07/08</date>
+    <name>Grand Prix of Austria</name>
+    <description>2026 Austrian Grand Prix</description>
+    <date>2026/06/28</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/10/results</url>
+    <url>http://ergast.com/api/f1/2026/10/results</url>
   </race>
-	
-  <!-- German Grand Prix -->
+  <!-- British Grand Prix -->
   <race>
     <id>race_11</id> 
-    <name>Grand Prix of Germany</name>
-    <description>2018 German Grand Prix</description>
-    <date>2018/07/22</date>
+    <name>Grand Prix of Great Britain</name>
+    <description>2026 British Grand Prix</description>
+    <date>2026/07/05</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/11/results</url>
-  </race>
-
-  <!-- Hungarian Grand Prix -->
-  <race>
-    <id>race_12</id> 
-    <name>Grand Prix of Hungary</name>
-    <description>2018 Hungarian Grand Prix</description>
-    <date>2018/07/29</date>
-    <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/11/results</url>
-  </race>
-	
+    <url>http://ergast.com/api/f1/2026/11/results</url>
+  </race>	
   <!-- Belgian Grand Prix -->
   <race>
-    <id>race_13</id> 
+    <id>race_12</id> 
     <name>Grand Prix of Belgium</name>
-    <description>2018 Belgian Grand Prix</description>
-    <date>2018/08/26</date>
+    <description>2026 Belgian Grand Prix</description>
+    <date>2026/07/19</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/12/results</url>
-  </race>
-	
-  <!-- Italian Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/12/results</url>
+  </race>	
+  <!-- Hungarian Grand Prix -->
+  <race>
+    <id>race_13</id> 
+    <name>Grand Prix of Hungary</name>
+    <description>2026 Hungarian Grand Prix</description>
+    <date>2026/07/26</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2026/13/results</url>
+  </race>				
+  <!-- Dutch Grand Prix -->
   <race>
     <id>race_14</id> 
-    <name>Grand Prix of Italy</name>
-    <description>2018 Italian Grand Prix</description>
-    <date>2018/09/02</date>
+    <name>Grand Prix of Dutch</name>
+    <description>2026 Dutch Grand Prix</description>
+    <date>2026/08/23</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/13/results</url>
-  </race>
-	
-  <!-- Singapore Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/14/results</url>
+  </race>	
+  <!-- Italian Grand Prix -->
   <race>
     <id>race_15</id> 
-    <name>Grand Prix of Singapore</name>
-    <description>2018 Singapore Grand Prix</description>
-    <date>2018/09/16</date>
+    <name>Grand Prix of Italy</name>
+    <description>2026 Italian Grand Prix</description>
+    <date>2026/09/06</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/14/results</url>
-  </race>
-	
-  <!-- Russian Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/15/results</url>
+  </race>	
+  <!-- Italian Grand Prix -->
   <race>
     <id>race_16</id> 
-    <name>Grand Prix of Russia</name>
-    <description>2018 Russian Grand Prix</description>
-    <date>2018/09/30</date>
+    <name>Grand Prix of Spain</name>
+    <description>2026 Spanish Grand Prix</description>
+    <date>2026/09/13</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/15/results</url>
-  </race>
-	
-  <!-- Japanese Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/16/results</url>
+  </race>	
+  <!-- Azerbaijan Grand Prix -->
   <race>
     <id>race_17</id> 
-    <name>Grand Prix of Japan</name>
-    <description>2018 Japanese Grand Prix</description>
-    <date>2018/10/07</date>
+    <name>Grand Prix of Azerbaijan</name>
+    <description>2026 Azerbaijan Grand Prix</description>
+    <date>2026/09/26</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/16/results</url>
+    <url>http://ergast.com/api/f1/2026/17/results</url>
   </race>
-	
-  <!-- United States Grand Prix	-->
+  <!-- Singapore Grand Prix -->
   <race>
     <id>race_18</id> 
-    <name>Grand Prix of United States</name>
-    <description>2018 United States Grand Prix</description>
-    <date>2018/10/21</date>
+    <name>Grand Prix of Singapore</name>
+    <description>2026 Singapore Grand Prix</description>
+    <date>2026/10/11</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/17/results</url>
-  </race>
-	
-  <!-- Mexican Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/18/results</url>
+  </race>	
+  <!-- USA Grand Prix -->
   <race>
     <id>race_19</id> 
-    <name>Grand Prix of Mexico</name>
-    <description>2018 Mexican Grand Prix</description>
-    <date>2018/10/28</date>
+    <name>Grand Prix of United States</name>
+    <description>2026 United States Grand Prix</description>
+    <date>2026/10/25</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/18/results</url>
-  </race>
-	
-  <!-- Brazilian Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/19/results</url>
+  </race>	
+  <!-- Mexico Grand Prix -->
   <race>
     <id>race_20</id> 
-    <name>Grand Prix of Brazil</name>
-    <description>2018 Brazilian Grand Prix</description>
-    <date>2018/11/11</date>
+    <name>Grand Prix of Mexico</name>
+    <description>2026 Mexican States Grand Prix</description>
+    <date>2026/11/01</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/19/results</url>
-  </race>
-	
-  <!-- Abu Dhabi Grand Prix -->
+    <url>http://ergast.com/api/f1/2026/20/results</url>
+  </race>	
+  <!-- Brazilian Grand Prix -->
   <race>
     <id>race_21</id> 
-    <name>Grand Prix of Abu Dhabi</name>
-    <description>2018 Abu Dhabi Grand Prix</description>
-    <date>2018/11/25</date>
+    <name>Grand Prix of Brazil</name>
+    <description>2026 Brazilian Grand Prix</description>
+    <date>2026/11/08</date>
     <ended>no</ended>
-    <url>http://ergast.com/api/f1/2018/20/results</url>
-  </race>
-	
+    <url>http://ergast.com/api/f1/2026/21/results</url>
+  </race>		
+  <!-- Vegas Grand Prix -->
+  <race>
+    <id>race_22</id> 
+    <name>Grand Prix of Las Vegas</name>
+    <description>2026 Las Vegas Grand Prix</description>
+    <date>2026/11/21</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2026/22/results</url>
+  </race>	
+  <!-- Qatar Grand Prix -->
+  <race>
+    <id>race_23</id> 
+    <name>Grand Prix of Qatar</name>
+    <description>2026 Qatar Grand Prix</description>
+    <date>2026/11/29</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2026/23/results</url>
+  </race>	
+  <!-- Abu Dhabi Grand Prix -->
+  <race>
+    <id>race_24</id> 
+    <name>Grand Prix of Abu Dhabi</name>
+    <description>2026 Abu Dhabi Grand Prix</description>
+    <date>2026/12/06</date>
+    <ended>no</ended>
+    <url>http://ergast.com/api/f1/2026/24/results</url>
+  </race>		
 </races>

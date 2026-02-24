@@ -13,7 +13,7 @@
 <p>
 1. During the registration process, you (also referred as <b>the player</b>) will be required to build a <b>team</b>, composed by
 <b>two drivers</b> and <b>two constructors</b> (cars). The drivers and cars that will compete in the Formula 1 season are available for your selection.
-<b><u>Important:</u></b>&nbsp;This selection must be <b>unique</b>. If somebody else has registered it before, then you will be given the opportunity to try again with a different drivers/cars combination.
+<br><b><u>Important:</u></b>&nbsp;This selection must be <b>unique</b>. If somebody else has registered it before, then you will be given the opportunity to try again with a different drivers/cars combination.
 
 <p>
 2. Each driver and car has a published cost and you must not exceed an
@@ -70,7 +70,7 @@ sent the payment, as follows (they will be notified by e-mail):
  <li>4th place takes 10% from the prize pool
  <li>5th place takes 5% from the prize pool
 </ul>
-After registering, you will be asked to please mail in a <b>personal check</b> valued at $20 CDN, to the following address:
+After registering, you will be asked to please <b>eTransfer $20 CDN</b> to the following address:
 <p>
 <b><%=WebConfig.PAYMENT_MAIL_ADDRESS%></b>
 <p>
@@ -94,25 +94,27 @@ drivers in the race.<br>
 <p>
  - finishes in the top eight:<br>
 <ul>
-     <li>1st - 100 points
-     <li>2nd - 80 points
-     <li>3rd - 60 points
-     <li>4th - 50 points
-     <li>5th - 40 points
-     <li>6th - 30 points
-     <li>7th - 20 points
-     <li>8th - 10 points
+     <li>1st  -  100 points
+     <li>2nd  -  90 points
+     <li>3rd  -  80 points
+     <li>4th  -  70 points
+     <li>5th  -  60 points
+     <li>6th  -  50 points
+     <li>7th  -  40 points
+     <li>8th  -  30 points
+     <li>9th  -  20 points
+     <li>10th -  10 points
 </ul>
 
  - achieves a grid position (that is, all get points here, if they do race):<br>
 <ul>
-     <li>1st - 20 points
-     <li>2nd - 19 points
-     <li>3rd - 18 points
+     <li>1st - 22 points
+     <li>2nd - 21 points
+     <li>3rd - 20 points
      <li>.........................
-     <li>18th - 3 points
-     <li>19th - 2 points
-     <li>20th - 1 point
+     <li>20th - 3 points
+     <li>21st - 2 points
+     <li>22nd - 1 point
 </ul>
 
  - improves positions from starting grid to chequered flag, except where the car didn't finish the race: 10 points per position
@@ -136,7 +138,7 @@ drivers in the race.<br>
 10 points per position.
 
 <p>
-<b>No points are given if the car did not start the race or is disqualified.</b> 
+<b>If the car did not start the race or is disqualified after the race, no points are neither awarded nor deducted (the driver scores a total of zero points).</b> 
 
 <p>
 <b>DRIVERS AND CARS COST</b>
