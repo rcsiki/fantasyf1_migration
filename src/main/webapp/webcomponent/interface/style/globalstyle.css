@@ -57,6 +57,13 @@
                     vertical-align: middle;
                   }
                   
+	.tablelayoutrulesinner  { font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    color: navy;
+                    text-align: center;
+                    vertical-align: top;
+                  }
+
 	.tablelayoutheader  { font-family: Arial, Helvetica, sans-serif;
                     font-size: 14px;
                     color: navy;

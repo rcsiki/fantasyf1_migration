@@ -22,5 +22,8 @@ public interface IRace extends IObjectBase
 	public void setUrl(String strUrl);
 	public String getUrl();
 
+	public void setSprint();
+	public boolean isSprint();
+
 	public IRaceResult getRaceResult() throws Exception;
 }

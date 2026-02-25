@@ -68,6 +68,19 @@ public class Race extends ObjectBase implements IRace
 	}
 	
 	
+	@Override
+	public void setSprint() {
+		m_isSprint = true;
+		
+	}
+
+	@Override
+	public boolean isSprint() {
+
+		return m_isSprint;
+	}
+
 	private Date m_Date = null;
 	private String m_strUrl = null;
+	private boolean m_isSprint = false;
 }

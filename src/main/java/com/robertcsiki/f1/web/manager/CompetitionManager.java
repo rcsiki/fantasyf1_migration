@@ -1423,10 +1423,17 @@ public class CompetitionManager
 		return result;
 	}
 	
-	public String[] getRulesIds()
+	public String[] getRulesIds(boolean isSprint)
 	{
-		String[] result = new String[m_rules.keySet().size()];
-		m_rules.keySet().toArray(result);
+		List<String> ruleIds = new ArrayList<>();
+		for (Object obj : m_rules.keySet()) {
+			IRule rule = (IRule)m_rules.get(obj);
+			if(rule.isSprint() == isSprint) {
+				ruleIds.add(rule.getId());
+			}
+		}
+		String[] result = new String[ruleIds.size()];
+		ruleIds.toArray(result);
 		return result;
 	}
 	
@@ -1453,13 +1460,22 @@ public class CompetitionManager
 		IDriver driver = null;
 		ITeam team = null;
 		IRaceResult raceResult = null;
+		boolean isSprintRule = false;
+		boolean isSprintRace = false;
 		
 		for (int i = 0 ; i < strRulesKeys.length ; i++)
 		{
 			rule = (Rule)m_rules.get(strRulesKeys[i]);
+			isSprintRule = rule.isSprint();
 			for (int j = 0 ; j < strRacesResultsKeys.length ; j++)
 			{
 				raceResult = (RaceResult)m_racesResults.get(strRacesResultsKeys[j]);
+				isSprintRace = raceResult.isSprint();
+				
+				if (isSprintRule != isSprintRace) {
+					// sprint rules are for sprints and race rules are for races
+					continue;
+				}
 		    	
 				for (int k = 0 ; k < strDriversKeys.length ; k++)
 				{
@@ -1641,6 +1657,7 @@ public class CompetitionManager
 		String strDescription = null;
 		String strDate = null;
 		String strUrl = null;
+		boolean bIsSprint = false;
 		for (int i = 1 ; i <= nodesCount ; i++)
 		{
 			ni = XPathAPI.selectNodeIterator(doc, "/races/race["+i+"]/id");
@@ -1662,9 +1679,16 @@ public class CompetitionManager
 				strUrl = "http://... (to be completed)";         
 			}
 
+			ni = XPathAPI.selectNodeIterator(doc, "/races/race["+i+"]/type");
+			String strRaceType = ni.nextNode().getFirstChild().getNodeValue();
+			bIsSprint = "sprint".equals(strRaceType);
+
 			IRace race = new Race(strId, strName, strDescription);
 			race.setDate(new Date(Date.parse(strDate)));
 			race.setUrl(strUrl);
+			if (bIsSprint) {
+				race.setSprint();
+			}
 			m_races.put(strId, race);    
 		}     			         
 	}
@@ -1723,6 +1747,9 @@ public class CompetitionManager
 		strFastestLapDriverId = ni.nextNode().getFirstChild().getNodeValue();
 		
 		raceResult.setRaceId(strRaceId);
+		if (getRaceById(strRaceId).isSprint()) {
+			raceResult.setSprint();
+		}
 		raceResult.setFastestLapDriverId(strFastestLapDriverId);
 
 		// now lookup in the doc and build the rules map
@@ -1787,6 +1814,7 @@ public class CompetitionManager
 		String strName = null;
 		String strDescription = null;
 		String strIsApplicable = null;
+		boolean bIsSprint = false;
 		
 		ni = XPathAPI.selectNodeIterator(doc, "/rules/rule["+iRuleIndex+"]/id");
 		strRuleId = ni.nextNode().getFirstChild().getNodeValue();
@@ -1797,10 +1825,17 @@ public class CompetitionManager
 		ni = XPathAPI.selectNodeIterator(doc, "/rules/rule["+iRuleIndex+"]/description");
 		strDescription = ni.nextNode().getFirstChild().getNodeValue();
 		
+		ni = XPathAPI.selectNodeIterator(doc, "/rules/rule["+iRuleIndex+"]/type");
+		String strRuleType = ni.nextNode().getFirstChild().getNodeValue();
+		bIsSprint = "sprint".equals(strRuleType);
+
 		ni = XPathAPI.selectNodeIterator(doc, "/rules/rule["+iRuleIndex+"]/isapplicable");
 		strIsApplicable = ni.nextNode().getFirstChild().getNodeValue();
 		
 		IRule rule = new Rule(strRuleId, strName, strDescription, strIsApplicable);
+		if (bIsSprint) {
+			rule.setSprint();
+		}
 		
 		// now lookup in the doc and build the rules map
 		for (int i = 1 ; i <= nodesCount ; i++)
@@ -2461,7 +2496,7 @@ public class CompetitionManager
 		sb.append("<table border='0' cellspacing='2' cellpadding='2'><tr>");
 		sb.append("<td class=\"tablelayout\">Team Name</td>");
 		sb.append("<td class=\"tablelayout\">Team Manager</td>");
-		sb.append("<td class=\"tablelayout\">Races Won</td>");
+		sb.append("<td class=\"tablelayout\">Wins</td>");
 		sb.append("<td class=\"tablelayout\">Details</td></tr>");
 		
 		Map raceStandings = null;
@@ -2521,6 +2556,19 @@ public class CompetitionManager
 		String strDropdownClass = null;						
 		for (Iterator iter = sortedPlayers.iterator() ; iter.hasNext() ; )
 		{						
+			player = (IPlayer)winnersStandings.get(iter.next());
+
+			// the races won
+			int winnersCount = 0;
+			List winners = player.getWinners();
+			if (winners !=  null)
+			{
+				winnersCount = winners.size();
+			}
+			if (winnersCount == 0) {
+				break;
+			}
+
 			// alternating the bg color
 			if (iPosCount % 2 == 0)
 			{
@@ -2533,20 +2581,12 @@ public class CompetitionManager
 				strDropdownClass = "altdropdown";
 		    }
 		    
-			player = (IPlayer)winnersStandings.get(iter.next());
 
 			// Team Name
 			sb.append("<td width='175' nowrap class='tablelayout' align='left' valign='middle'>&nbsp;&nbsp;&nbsp;"+player.getName()+"</td>");
 			// Team Manager
 			sb.append("<td width='175' nowrap class='tablelayout' align='left' valign='middle'>"+player.getDescription()+"</td>");
 
-			// the races won
-			int winnersCount = 0;
-			List winners = player.getWinners();
-			if (winners !=  null)
-			{
-				winnersCount = winners.size();
-			}
 			sb.append("<td width='60' nowrap class='tablelayout' align='left' valign='middle'>"+winnersCount+"&nbsp;&nbsp;&nbsp;</td>");
 			
 			// details link
@@ -2681,7 +2721,11 @@ public class CompetitionManager
 		for (int i = 0 ; i < racesResultsSet.length; i++)
 		{
 			raceResult = (IRaceResult)m_racesResults.get(racesResultsSet[i]);
-			sb.append("<td width='40' nowrap class='tablelayoutheader' align='left' valign='middle'>"+getRaceVeryShortName(getRaceById(raceResult.getRaceId()).getName())+"&nbsp;&nbsp;&nbsp;</td>");
+			String raceResultVeryShortName = getRaceVeryShortName(getRaceById(raceResult.getRaceId()).getName());
+			if (raceResult.isSprint()) {
+				raceResultVeryShortName += "(S)";
+			}
+			sb.append("<td width='40' nowrap class='tablelayoutheader' align='left' valign='middle'>"+raceResultVeryShortName+"&nbsp;&nbsp;&nbsp;</td>");
 		}
         sb.append("</tr>");
 
@@ -2761,7 +2805,11 @@ public class CompetitionManager
 		for (int i = 0 ; i < racesResultsSet.length; i++)
 		{
 			raceResult = (IRaceResult)m_racesResults.get(racesResultsSet[i]);
-			sb.append("<td width='40' nowrap class='tablelayoutheader' align='left' valign='middle'>"+getRaceVeryShortName(getRaceById(raceResult.getRaceId()).getName())+"&nbsp;&nbsp;&nbsp;</td>");
+			String raceResultVeryShortName = getRaceVeryShortName(getRaceById(raceResult.getRaceId()).getName());
+			if (raceResult.isSprint()) {
+				raceResultVeryShortName += "(S)";
+			}
+			sb.append("<td width='40' nowrap class='tablelayoutheader' align='left' valign='middle'>"+raceResultVeryShortName+"&nbsp;&nbsp;&nbsp;</td>");
 		}
         sb.append("</tr>");
 
@@ -2899,11 +2947,11 @@ public class CompetitionManager
 				   break;
 				   
 				case IConstants.STATS_DRIVERS_PERF:
-				   strResult = "Drivers Performance (Fantasy Points) after " + iRaceResultsCount + " races";
+				   strResult = "Drivers Performance (Fantasy Points) after " + iRaceResultsCount + " races (including sprints)";
 				   break;
 				
 				case IConstants.STATS_CARS_PERF:
-				   strResult = "Cars Performance (Fantasy Points) after " + iRaceResultsCount + " races";
+				   strResult = "Cars Performance (Fantasy Points) after " + iRaceResultsCount + " races (including sprints)";
 				   break;
 				   
 				case IConstants.STATS_MOST_PICKED_DRIVER:
@@ -2919,7 +2967,7 @@ public class CompetitionManager
 					   break;
 
 				case IConstants.STATS_WINNERS:
-					   strResult = "This table shows how many races any of you had won";
+					   strResult = "Winners leaderboard";
 					   break;
 
 				case IConstants.STATS_TOP_25:
@@ -2927,11 +2975,11 @@ public class CompetitionManager
 					   break;
 
 				case IConstants.STATS_POINTS_BY_RACE:
-					   strResult = "This table details the points accumulated for each race";
+					   strResult = "This table details the points accumulated for each race (including sprints)";
 					   break;
 
 				case IConstants.STATS_POSITION_BY_RACE:
-					   strResult = "This table details player's position after each race";
+					   strResult = "This table details player's position after each race (including sprints)";
 					   break;
 			}
 			

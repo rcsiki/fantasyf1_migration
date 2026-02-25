@@ -106,6 +106,7 @@ public class Driver extends PlayerComponent implements IDriver
 		CompetitionManager cm = CompetitionManager.getInstance();
 		IRacePositionDetail racePositiondetail=
 		   cm.getRaceResultById(strRaceId).getRacePositionDetailByDriverId(this.getId());
+		boolean isSprint = cm.getRaceById(strRaceId).isSprint();
 		   
 		if (racePositiondetail.getRacePosition().equals(IConstants.DNS_KEYWORD_RULE))
 		{
@@ -116,7 +117,9 @@ public class Driver extends PlayerComponent implements IDriver
 		    sb.append("\\n* Position at start:\\t\\t" + racePositiondetail.getGridPosition());
 		    sb.append("\\n* Position at finish:\\t\\t" + racePositiondetail.getRacePosition());
 		    sb.append("\\n* Laps completed:\\t\\t" + racePositiondetail.getLapsCompleted());
-		    sb.append("\\n* Scored the fastest lap:\\t" + cm.getRaceResultById(strRaceId).hasFastestLap(this.getId()));;
+		    if (!isSprint) {
+			    sb.append("\\n* Scored the fastest lap:\\t" + cm.getRaceResultById(strRaceId).hasFastestLap(this.getId()));;
+		    }
 		}
 		
 		return sb.toString();				

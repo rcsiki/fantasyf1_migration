@@ -32,4 +32,8 @@ public interface IRaceResult
 	
 	public int getRealPointsForDriver(String strDriverId);
 	
+	public void setSprint();
+	
+	public boolean isSprint();
+	
 }

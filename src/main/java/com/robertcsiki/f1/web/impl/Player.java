@@ -207,7 +207,7 @@ public class Player extends ObjectBase implements IPlayer
 		sb.append("<caption  class='tablelayoutheader'>Points Details per Player Component and Rule</caption>");
 		
 		IPlayerComponent pc = null;
-		String[] strRulesIds = cm.getRulesIds();
+		String[] strRulesIds = cm.getRulesIds(race.isSprint());
 		int iRows = 0;
 		boolean wasDriver1Replaced = false;
 		boolean wasDriver2Replaced = false;

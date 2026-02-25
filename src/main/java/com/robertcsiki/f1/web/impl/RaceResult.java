@@ -123,9 +123,12 @@ public class RaceResult implements IRaceResult
 			iPosCount ++;			
 		}
 		sb.append("</table></td><br></tr>");
-		sb.append("<tr><td  class='tablelayout' align='left'><br>Fastest lap: ");
-		sb.append(cm.getDriverById(getFastestLapDriverId()).getNameByRace(this.getRaceId()));
-		sb.append("</td></tr>");
+		if (!isSprint()) {
+			// print the fastest lap
+			sb.append("<tr><td  class='tablelayout' align='left'><br>Fastest lap: ");
+			sb.append(cm.getDriverById(getFastestLapDriverId()).getNameByRace(this.getRaceId()));
+			sb.append("</td></tr>");
+		}
 		if (generateCloseBttn)
 		{
 			sb.append("<tr><td class=\"tablelayout\" align = 'right'><a href='#' onclick='window.close();'>Close</a></td><tr>");
@@ -140,43 +143,43 @@ public class RaceResult implements IRaceResult
 		switch (iPosition)
 		{
 			case 1:
-                strPoints = "25";
+                strPoints = !isSprint() ? "25" : "8";
 			   break;
 			   
 			case 2:
-                strPoints = "18";
+                strPoints = !isSprint() ? "18" : "7";
 			   break;
 			   
 			case 3:
-                strPoints = "15";
+                strPoints = !isSprint() ? "15" : "6";
 			   break;
 			   
 			case 4:
-                strPoints = "12";
+                strPoints = !isSprint() ? "12" : "5";
 			   break;
 			   
 			case 5:
-                strPoints = "10";
+                strPoints = !isSprint() ? "10" : "4";
 			   break;
 			   
 			case 6:
-                strPoints = "8";
+                strPoints = !isSprint() ? "8" : "3";
 			   break;
 			   
 			case 7:
-                strPoints = "6";
+                strPoints = !isSprint() ? "6" : "2";
 			   break;
 			   
 			case 8:
-                strPoints = "4";
+                strPoints = !isSprint() ? "4" : "1";
 			   break;
 			   
             case 9:
-                strPoints = "2";
+                strPoints = !isSprint() ? "2" : "";
                 break;
 
             case 10:
-                strPoints = "1";
+                strPoints = !isSprint() ? "1" : "";
                 break;
 
 			default:
@@ -201,7 +204,18 @@ public class RaceResult implements IRaceResult
 		return iPoints;	
 	}
 	
+	@Override
+	public void setSprint() {
+		m_bIsSprint = true;
+	}
+
+	@Override
+	public boolean isSprint() {
+		return m_bIsSprint;
+	}
+
 	private String m_strRaceId = null;
 	private String m_strFastestLapDriverId = null;
 	private Hashtable m_hashRacePositionDetails = new Hashtable();
+	private boolean m_bIsSprint = false;
 }

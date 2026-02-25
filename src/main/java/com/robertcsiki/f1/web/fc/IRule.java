@@ -14,6 +14,9 @@ package com.robertcsiki.f1.web.fc;
  */
 public interface IRule extends IObjectBase
 {
+	public void setSprint();
+	public boolean isSprint();
+
 	public void setIsApplicable(String applicable);
 	
 	public boolean isApplicableForDriverOnly();

@@ -13,7 +13,7 @@
 <p>
 1. During the registration process, you (also referred as <b>the player</b>) will be required to build a <b>team</b>, composed by
 <b>two drivers</b> and <b>two constructors</b> (cars). The drivers and cars that will compete in the Formula 1 season are available for your selection.
-<br><b><u>Important:</u></b>&nbsp;This selection must be <b>unique</b>. If somebody else has registered it before, then you will be given the opportunity to try again with a different drivers/cars combination.
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;<u>Important:</u></b>&nbsp;This selection must be <b>unique</b>. If somebody else has registered it before, then you will be given the opportunity to try again with a different drivers/cars combination.
 
 <p>
 2. Each driver and car has a published cost and you must not exceed an
@@ -53,7 +53,7 @@ the existing team.
 
 <p>
 10. The Fantasy Formula 1 results (i.e. <b>the overall standings</b>) will be updated and made 
-available soon after each Grand Prix race. Each race result will be based on those from 
+available soon after each Grand Prix race and sprint. Each race and sprint result will be based on those from 
 the FIA, moderated by the <a target="_blank" href= "http://www.formula1.com"><b>official Formula 1 website</b></a>.
 
 <p><p>
@@ -70,7 +70,7 @@ sent the payment, as follows (they will be notified by e-mail):
  <li>4th place takes 10% from the prize pool
  <li>5th place takes 5% from the prize pool
 </ul>
-After registering, you will be asked to please <b>eTransfer $20 CDN</b> to the following address:
+After registering, you will be asked to please <b>eTransfer $20 CDN</b> if you wish, to the following e-mail address:
 <p>
 <b><%=WebConfig.PAYMENT_MAIL_ADDRESS%></b>
 <p>
@@ -82,17 +82,20 @@ Please don't forget to mention your <b>Team Name</b> when submitting the fee. Wh
 <p>
 
 12. <b>Points</b> will be <b>awarded / deducted</b> according to how the components of the Player's 
-Team will perform in each Grand Prix race. Each Player component scores the sum of points 
+Team will perform in each Grand Prix race, including the sprints. Each Player component scores the sum of points 
 awarded less points deducted:
 <p>
  - Drivers points are awarded in full.<br>
  - Cars points are awarded as an <b>average</b> of the points scored by the constructor's 2 
-drivers in the race.<br>
+drivers in the race, including the sprints.<br>
 <p>
-<b>Points awarded for each race, if your driver or car</b> (unless specified otherwise):
+<b>Points awarded for each race and sprint, if your driver or car</b> (unless specified otherwise):
 
 <p>
- - finishes in the top eight:<br>
+ - finishes in the top positions:<br>
+<table>
+<tr>
+<td class="tablelayoutrulesinner">Race (top ten)
 <ul>
      <li>1st  -  100 points
      <li>2nd  -  90 points
@@ -105,8 +108,26 @@ drivers in the race.<br>
      <li>9th  -  20 points
      <li>10th -  10 points
 </ul>
+</td>
+<td class="tablelayoutrulesinner">Sprint (top eight)
+<ul>
+     <li>1st  -  30 points
+     <li>2nd  -  26 points
+     <li>3rd  -  22 points
+     <li>4th  -  18 points
+     <li>5th  -  14 points
+     <li>6th  -  10 points
+     <li>7th  -  6 points
+     <li>8th  -  3 points
+</ul>
+</td>
+</tr>
+</table> 
 
- - achieves a grid position (that is, all get points here, if they do race):<br>
+ - Grid position:<br>
+<table>
+<tr>
+<td class="tablelayoutrulesinner">Race
 <ul>
      <li>1st - 22 points
      <li>2nd - 21 points
@@ -116,29 +137,60 @@ drivers in the race.<br>
      <li>21st - 2 points
      <li>22nd - 1 point
 </ul>
+</td>
+<td class="tablelayoutrulesinner">Sprint
+<ul>
+     <li>1st - 11 points
+     <li>2nd - 10.5 points
+     <li>3rd - 10 points
+     <li>.........................
+     <li>20th - 1.5 points
+     <li>21st - 1 point
+     <li>22nd - 0.5 point
+</ul>
+</td>
+</tr>
+</table> 
 
- - improves positions from starting grid to chequered flag, except where the car didn't finish the race: 10 points per position
+
+ - improves positions from starting grid to chequered flag, if the car crossed the finish line:
+ <ul>
+     <li>Race - 10 points per position
+     <li>Sprint - 3 points per position
+</ul>
  
 <p>
- - completes laps: 1 point per lap
+ - completes laps:
+ <ul>
+     <li>Race - 1 point per lap
+     <li>Sprint - 0.5 points per lap
+</ul>
  
 <p>
- - has the fastest lap: 10 points <b>(applies to driver only!)</b>
+ - has the fastest lap: 10 points <b>(applies to driver only, and for races only!)</b>
  
 <p>
- - scores a hat-trick of pole position, fastest lap and winner: 50 points <b>(applies to driver only!)</b>
+ - scores a hat-trick of pole position, fastest lap and winner: 50 points <b>(applies to driver only, and for races only!)</b>
 
 <p>
 
-<b>Points deducted for each race, if your driver or car:</b>
+<b>Points deducted for each race and sprint, if your driver or car:</b>
 <p>
- - fails to finish the race: 100 points.
-<p>
- - loses positions between starting grid and finish, except where the car didn't finish the race: 
-10 points per position.
+ - fails to finish:
+ <ul>
+     <li>Race - 100 points
+     <li>Sprint - 30 points
+</ul>
 
 <p>
-<b>If the car did not start the race or is disqualified after the race, no points are neither awarded nor deducted (the driver scores a total of zero points).</b> 
+ - loses positions between starting grid and finish, if the car crossed the finish line:
+ <ul>
+     <li>Race - 10 points per position
+     <li>Sprint - 3 points per position
+</ul>
+
+<p>
+<b>If the car did not start the race or sprint, or is disqualified after the race or sprint, no points are neither awarded nor deducted (the driver scores a total of zero points).</b> 
 
 <p>
 <b>DRIVERS AND CARS COST</b>

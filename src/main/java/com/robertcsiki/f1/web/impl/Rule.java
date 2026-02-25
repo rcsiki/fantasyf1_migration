@@ -265,6 +265,19 @@ public class Rule extends ObjectBase implements IRule
 		
 	}
 	
+	@Override
+	public void setSprint() {
+		m_isSprint = true;
+		
+	}
+
+	@Override
+	public boolean isSprint() {
+
+		return m_isSprint;
+	}
+
 	private String m_strIsApplicable = null;
-	private Vector m_vectRuleCases = new Vector(); 
+	private Vector m_vectRuleCases = new Vector();
+	private boolean m_isSprint = false;
 }
